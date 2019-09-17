@@ -23,7 +23,7 @@ a {
   margin-top: 90%; }
 
 h1 {
-  margin-top: 30%;
+  margin-top: 25%;
   padding-left: 10%;
   font-size: 2.4rem;
   font-family: "Josefin Sans", sans-serif; }
@@ -39,19 +39,19 @@ hr {
   border: 1px solid #EF4924; }
 
 .registrationForm {
-  margin-top: 15%;
-  padding-left: 10%; }
+  margin-top: 10%;
+  margin-left: 10%; }
 
-.name, .password {
+.userName, .password, .email {
   font-size: 1.2rem;
   font-family: "Lato", sans-serif; }
 
-.userName, .passwordEnter {
+.name, .passwordEnter, .emailEnter {
   border-bottom: 2px solid black;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  width: 60%; }
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 80%; }
 
 .forgot {
   font-size: 0.8rem;
@@ -65,16 +65,20 @@ hr {
   color: #3BACD9;
   text-decoration: underline; }
 
+.forgotPassword {
+  float: right;
+  padding-right: 20%; }
+
+.homeStatus {
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  font-size: 0.8rem;
+  font-family: "Lato", sans-serif; }
+
 .fa-spinner {
   color: #EF4924;
   font-size: 3rem; }
-
-.logo {
-  padding-top: 5%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; }
 
 .backImg {
   background-image: url("../images/landing.jpg");
@@ -84,5 +88,57 @@ hr {
   padding: 0;
   margin: 0;
   height: 560px; }
+
+.logo {
+  padding-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+.homeBckImg {
+  width: 100%;
+  height: 50%; }
+
+.profileImg {
+  height: 20%;
+  width: 20%; }
+
+.mainBtn {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  padding-top: 20%;
+  text-align: center;
+  color: white;
+  width: 50%;
+  padding: 0.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  outline: none;
+  background-color: #EF4924;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  border-radius: 4%; }
+
+.firstBtnLogin, .firstBtnSignUp {
+  margin-top: 15%;
+  padding-left: 15%; }
+
+.secondBtnLogin, .secondBtnSignUp {
+  text-align: center;
+  padding-top: 10%;
+  padding-right: 22%; }
+
+.firstBtnSignUp {
+  padding-left: 25%; }
+
+.container {
+  position: relative; }
+
+.greeting {
+  position: absolute;
+  text-align: left;
+  top: 2%;
+  left: 5%;
+  z-index: 1; }
 
 /*# sourceMappingURL=style.css.map */

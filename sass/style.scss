@@ -10,13 +10,29 @@
 
 
 
-// background images on landing page
-.backImg {
-	background-image: url("../images/landing.jpg");
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	height: 560px;
+
+
+// span {
+// 	float: left;
+// }
+
+// span .group {
+//   display: block;
+// }
+
+
+// home page - container holding the image and the text
+.container {
+	position: relative;
+	// text-align: center;
 }
+
+.greeting {
+	position: absolute;
+	text-align: left;
+	top: 2%;
+	left: 5%;
+	z-index: 1;
+
+}
+

@@ -17,7 +17,7 @@
 
 // login page text
 h1 {
-	margin-top: 30%;
+	margin-top: 25%;
 	padding-left: 10%;
 	@include paraStyle($h1fs*2, $headerff);
 }
@@ -36,27 +36,32 @@ hr {
 
 
 .registrationForm {
-	margin-top: 15%;
-	padding-left: 10%;
+	margin-top: 10%;
+	margin-left: 10%;	
+	// width: 100%;
 }
 
-.name, .password {
+.userName, .password, .email {
 	@include paraStyle($h1fs, $bodyff);
 }
 
 
-.userName, .passwordEnter {
+
+.name, .passwordEnter, .emailEnter {
 	border-bottom: 2px solid black;
-	border-top: 0px;
-	border-left: 0px;
-	border-right: 0px;
-	width: 60%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 80%;
+
 }
+
 
 .forgot {
 	@include paraStyle($bodyfs, $bodyff);
 	color: $lightBlue;
 	text-decoration: underline;
+
 }
 
 
@@ -64,9 +69,21 @@ hr {
 	@include paraStyle($h2fs, $bodyff);
 	color: $lightBlue;
 	text-decoration: underline;
+
 }
 
 
+.forgotPassword {
+	float: right;
+	padding-right: 20%;
+}
 
 
+// 
+.homeStatus {
+	position: absolute;
+	z-index: 2;
+	top: 25%;
+	@include paraStyle($bodyfs, $bodyff);
+}
 
