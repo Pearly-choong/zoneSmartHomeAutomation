@@ -5,11 +5,84 @@
   list-style: none;
   text-decoration: none; }
 
-/* COLORS */
-/* FONTS */
-/* DEFAULT VALUES */
+a {
+  color: black; }
+
 /* shorthand mixin for image size */
-.fas {
-  color: #EF4924; }
+.text {
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #EF4924;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30%;
+  width: 50%;
+  text-align: center; }
+
+.loadText {
+  margin-top: 90%; }
+
+h1 {
+  margin-top: 30%;
+  padding-left: 10%;
+  font-size: 2.4rem;
+  font-family: "Josefin Sans", sans-serif; }
+
+.teReo {
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: #636262; }
+
+hr {
+  width: 20%;
+  margin-left: 15%;
+  border: 1px solid #EF4924; }
+
+.registrationForm {
+  margin-top: 15%;
+  padding-left: 10%; }
+
+.name, .password {
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif; }
+
+.userName, .passwordEnter {
+  border-bottom: 2px solid black;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  width: 60%; }
+
+.forgot {
+  font-size: 0.8rem;
+  font-family: "Lato", sans-serif;
+  color: #3BACD9;
+  text-decoration: underline; }
+
+.signUpBtn {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: #3BACD9;
+  text-decoration: underline; }
+
+.fa-spinner {
+  color: #EF4924;
+  font-size: 3rem; }
+
+.logo {
+  padding-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+.backImg {
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 560px; }
 
 /*# sourceMappingURL=style.css.map */

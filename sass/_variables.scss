@@ -1,23 +1,18 @@
-/* COLORS */
-
+// COLORS
 $orange: #EF4924;
 $darkBlue: #0A3459;
 $lightBlue: #3BACD9;
 $green: #34D293;  
-$greyColor: #CCCCCC;
+$grey: #636262;
 $overlayColor: rgba(0,0,0,0.4);
 
 
-/* FONTS */
+// FONTS
+$headerff: 'Josefin Sans', sans-serif;
+$bodyff: 'Lato', sans-serif;
+$h1fs: 1.2rem;
+$h2fs: 1rem;
+$bodyfs: 0.8rem;
 
-$headerFontFamily: 'Josefin Sans', sans-serif;
-$bodyFontFamily: 'Lato', sans-serif;
-$h1FontSize: 2rem;
-$h2FontSize: 1.4rem;
-$bodyFontSize: 1rem;
 
 
-/* DEFAULT VALUES */
-
-$padding: 2%;
-$margin: 2%;

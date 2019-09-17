@@ -13,10 +13,10 @@
 }
 
 
-@mixin paraStyle ($fs, $ff, $p) {
+@mixin paraStyle ($fs, $ff) {
 	font-size: $fs;
 	font-family: $ff;
-	padding: $p;
+	
 }
 
 
