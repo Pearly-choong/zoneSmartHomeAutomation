@@ -23,10 +23,13 @@
 
 <body>
 
+<div class="headerBackground">
 <!-- header -->
 	<div class="header">
-		<img class="headerIcon" src="images/icons/setting.png" alt="setting">
-		<img class="headerIcon" src="images/icons/notificationWhite.png" alt="notification">
+		<img class="headerSettingIcon" src="images/icons/setting.png" alt="setting">
+		<a href="notificaton.html">
+			<img class="headerNotificationIcon" src="images/icons/notificationWhite.png" alt="notification">
+		</a>
 	</div>
 
 <!-- home images with house status -->
@@ -34,47 +37,47 @@
 		<img class="homeBckImg" src="images/home.jpg" alt="myHome">
 			<div class="greeting">
 				<h1>Welcome Home !</h1>
-				<h3>Home Pōwhiri !</h3>
+				<h2>Home Pōwhiri !</h2>
 			</div>
 
-			<!-- <div class="homeStatus">
-				<div class="col houseTemp">
-					<p>24°C</p>
-					<p>Average house temperature</p>
-				</div>
-				<div class="col outsideTemp">
-					<p>13°C</p>
-					<p>Outside temperature</p>
-				</div>
-				<div class="col devices">
-					<p>4</p>
-					<p>Devices on</p>
-				</div>
-				<div class="col security">
-					<p>Safe</p>
-					<p>Security Level</p>
-				</div>
-			</div> -->
 			<div class="homeStatus">
-				<p>
-					<span>24°C<br>Avg house temperature</span>
-					<span>13°C<br>Outside temperature</span>
-					<br>
-					<span>4<br>Devices on</span>
-					<span>Safe<br>Security Level</span>
-				</p>
-
+				<div class="colHomeStatus">
+					<ul>
+						<li>24°C</li>
+						<li>House temp</li>
+					<ul>
+				</div>
+				<div class="colHomeStatus">
+					<ul>
+						<li>13°C<li>
+						<li>Outside temp</li>
+					</ul>
+				</div>
+				<div class="colHomeStatus">
+					<ul>
+						<li>4</li>
+						<li>Devices on</li>
+					</ul>
+				</div>
+				<div class="colHomeStatus">
+					<ul>
+						<li>Safe<li>
+						<li>Security Level</li>
+					</ul>
+				</div>				
+			</div>
 	</div>
-
+</div>
 <!-- user's profile pic and text -->
 	<div class="profile">
-		<div class="align">
+		<span>
 			<img class="profileImg" src="images/danielprofile.png" alt="Daniel">
-		</div>
-		<div class="align">
-			<p>Kia ora, Daniel <br>What are you up to?</p>
-		</div>
+			<div class="textAlign">
+			<small>Kia ora, Daniel</small>
+			<small>What are you up to?</small>
+			</div>
 	</div>
+
 
 
 <!-- cetegory button to choose where to go -->

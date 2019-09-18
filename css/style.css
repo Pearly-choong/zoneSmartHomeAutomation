@@ -9,6 +9,22 @@ a {
   color: black; }
 
 /* shorthand mixin for image size */
+.header {
+  padding: 5%; }
+
+.headerBackground {
+  background-color: #EF4924;
+  height: 200px;
+  margin-bottom: 25%; }
+
+h1 {
+  font-size: 1.2rem;
+  font-family: "Josefin Sans", sans-serif; }
+
+h2 {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif; }
+
 .text {
   font-size: 1.2rem;
   font-family: "Josefin Sans", sans-serif;
@@ -22,9 +38,7 @@ a {
 .loadText {
   margin-top: 90%; }
 
-h1 {
-  margin-top: 25%;
-  padding-left: 10%;
+.text h1 {
   font-size: 2.4rem;
   font-family: "Josefin Sans", sans-serif; }
 
@@ -37,6 +51,14 @@ hr {
   width: 20%;
   margin-left: 15%;
   border: 1px solid #EF4924; }
+
+.space {
+  padding-left: 10%; }
+
+.bigTitle {
+  margin-top: 25%;
+  font-size: 2.4rem;
+  font-family: "Josefin Sans", sans-serif; }
 
 .registrationForm {
   margin-top: 10%;
@@ -69,16 +91,48 @@ hr {
   float: right;
   padding-right: 20%; }
 
+.greeting {
+  padding-left: 3%;
+  padding-top: 2%; }
+  .greeting h2 {
+    padding-left: 2%;
+    padding-top: 1%; }
+
 .homeStatus {
   position: absolute;
   z-index: 2;
-  top: 25%;
-  font-size: 0.8rem;
-  font-family: "Lato", sans-serif; }
+  top: 80%;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 90%;
+  margin-left: 5%; }
+
+.homeStatus ul {
+  padding: 3%; }
+  .homeStatus ul li {
+    font-size: 0.7rem;
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: center;
+    padding: 1%; }
+
+.colHomeStatus {
+  float: left;
+  width: 25%; }
 
 .fa-spinner {
   color: #EF4924;
   font-size: 3rem; }
+
+.headerSettingIcon {
+  width: 10%;
+  height: 10%;
+  padding: 2%; }
+
+.headerNotificationIcon {
+  width: 10%;
+  height: 10%;
+  float: right;
+  padding: 2%; }
 
 .backImg {
   background-image: url("../images/landing.jpg");
@@ -97,12 +151,15 @@ hr {
   width: 50%; }
 
 .homeBckImg {
-  width: 100%;
-  height: 50%; }
+  width: 95%;
+  height: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5%; }
 
 .profileImg {
-  height: 20%;
-  width: 20%; }
+  width: 25%;
+  height: 25%; }
 
 .mainBtn {
   font-size: 1rem;
@@ -137,8 +194,18 @@ hr {
 .greeting {
   position: absolute;
   text-align: left;
-  top: 2%;
+  top: 3%;
   left: 5%;
   z-index: 1; }
+
+span img {
+  float: left;
+  padding: 5%; }
+
+small {
+  display: block; }
+
+.textAlign {
+  padding-top: 8%; }
 
 /*# sourceMappingURL=style.css.map */

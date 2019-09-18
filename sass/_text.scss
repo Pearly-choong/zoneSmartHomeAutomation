@@ -1,3 +1,13 @@
+// common h1 and h2 style
+h1 {
+	@include paraStyle($h1fs, $headerff);
+}
+
+h2 {
+	@include paraStyle($h2fs, $headerff);
+}
+
+
 // style the text on landing page
 .text {
 	@include paraStyle($h1fs, $headerff);
@@ -16,9 +26,7 @@
 
 
 // login page text
-h1 {
-	margin-top: 25%;
-	padding-left: 10%;
+.text h1 {	
 	@include paraStyle($h1fs*2, $headerff);
 }
 
@@ -34,6 +42,16 @@ hr {
 }
 
 
+
+// adjust padding for login and sign up title
+.space {
+	padding-left: 10%;
+}
+
+.bigTitle {
+	margin-top: 25%;
+	@include paraStyle($h1fs*2, $headerff);
+}
 
 .registrationForm {
 	margin-top: 10%;
@@ -79,11 +97,40 @@ hr {
 }
 
 
-// 
+// home page text
+.greeting {
+	padding-left: 3%;
+	padding-top: 2%;
+	h2 {
+		padding-left: 2%;
+		padding-top: 1%;
+	}
+}
+
+
+
 .homeStatus {
 	position: absolute;
 	z-index: 2;
-	top: 25%;
-	@include paraStyle($bodyfs, $bodyff);
+	top: 80%;
+	background-color: $overlayColor;
+	width: 90%;
+	margin-left: 5%;
+
+	
 }
 
+.homeStatus ul {
+	padding: 3%;
+	li {
+	@include paraStyle(0.7rem, $bodyff);
+	color: white;
+	text-align: center;
+	padding: 1%;
+	}
+}
+
+.colHomeStatus {
+	float: left;
+	width: 25%;
+}

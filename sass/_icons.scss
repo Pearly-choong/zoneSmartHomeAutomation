@@ -6,3 +6,15 @@
 
 
 
+// style header icons (setting cog and notification)
+.headerSettingIcon {
+	@include imgSize (10%, 10%);
+	padding: 2%;
+}
+
+.headerNotificationIcon {
+	@include imgSize(10%, 10%);
+	float: right;
+	padding: 2%;
+}
+

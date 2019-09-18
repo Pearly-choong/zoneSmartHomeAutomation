@@ -1,6 +1,7 @@
 @import 'cssReset';
 @import 'variables';
 @import 'mixin';
+@import 'header';
 @import 'nav';
 @import 'text';
 @import 'icons';
@@ -30,9 +31,33 @@
 .greeting {
 	position: absolute;
 	text-align: left;
-	top: 2%;
+	top: 3%;
 	left: 5%;
 	z-index: 1;
 
 }
 
+
+
+span img {
+	float: left;
+	padding: 5%;
+}
+
+small {
+	display: block;
+}
+
+.textAlign {
+	padding-top: 8%;
+}
+
+
+// .row {
+// 	overflow: auto;
+// }
+
+// .col {
+// 	float: left;
+// 	width: 50%;
+// }

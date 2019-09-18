@@ -23,13 +23,15 @@
 
 // style the image on home page
 .homeBckImg {
-	width: 100%;
-	height: 50%;
+	@include imgSize(95%, 50%);
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 5%;
+
 }
 
 //  profile image of Daneil
 .profileImg {
-	height: 20%;
-	width: 20%;
+	@include imgSize (25%,25%);
 }
 
