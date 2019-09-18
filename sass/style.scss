@@ -1,14 +1,67 @@
 @import 'cssReset';
 @import 'variables';
 @import 'mixin';
-@import 'header';
-@import 'nav';
-@import 'text';
-@import 'icons';
+@import 'header-nav';
+@import 'fonts';
+@import 'button-icons';
 @import 'images';
-@import 'button';
 @import 'tablet';
 
+
+
+
+// adjust padding for login and sign up title
+.space {
+	padding-left: 10%;
+}
+
+.bigTitle {
+	margin-top: 25%;
+	@include paraStyle($h1fs*2, $headerff);
+}
+
+.registrationForm {
+	margin-top: 10%;
+	margin-left: 10%;	
+	// width: 100%;
+}
+
+.userName, .password, .email {
+	@include paraStyle($h1fs, $bodyff);
+}
+
+
+
+.name, .passwordEnter, .emailEnter {
+	border-bottom: 2px solid black;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	width: 80%;
+
+}
+
+
+.forgot {
+	@include paraStyle($bodyfs, $bodyff);
+	color: $lightBlue;
+	text-decoration: underline;
+
+}
+
+
+.signUpBtn {
+	@include paraStyle($h2fs, $bodyff);
+	color: $lightBlue;
+	text-decoration: underline;
+
+}
+
+
+.forgotPassword {
+	float: right;
+	padding-right: 20%;
+}
 
 
 
@@ -22,21 +75,13 @@
 // }
 
 
-// home page - container holding the image and the text
-.container {
-	position: relative;
-	// text-align: center;
+// loop for repeating column layout 
+@for $i from 1 to 12 {
+	.col-#{$i}{
+		width: $i*8.33%;
+		float: left;
+	}
 }
-
-.greeting {
-	position: absolute;
-	text-align: left;
-	top: 3%;
-	left: 5%;
-	z-index: 1;
-
-}
-
 
 
 span img {
@@ -51,6 +96,16 @@ small {
 .textAlign {
 	padding-top: 8%;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 // .row {

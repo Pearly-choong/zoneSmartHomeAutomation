@@ -1,0 +1,25 @@
+// only for homepage
+.headerBackground {
+	background-color: $orange;
+	height: 200px;
+	margin-bottom: 20%;
+}
+
+
+// style header icons (setting cog and notification)
+.headerSettingIcon {
+	@include imgSize (15%, 15%);
+	padding: 3%;
+}
+
+.headerNotificationIcon {
+	@include imgSize(12%, 12%);
+	float: right;
+	padding: 3%;
+}
+
+
+// all the other pages
+.header {
+	background-color: $orange;
+}

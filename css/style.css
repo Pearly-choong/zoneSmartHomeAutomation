@@ -9,13 +9,24 @@ a {
   color: black; }
 
 /* shorthand mixin for image size */
-.header {
-  padding: 5%; }
-
 .headerBackground {
   background-color: #EF4924;
   height: 200px;
-  margin-bottom: 25%; }
+  margin-bottom: 20%; }
+
+.headerSettingIcon {
+  width: 15%;
+  height: 15%;
+  padding: 3%; }
+
+.headerNotificationIcon {
+  width: 12%;
+  height: 12%;
+  float: right;
+  padding: 3%; }
+
+.header {
+  background-color: #EF4924; }
 
 h1 {
   font-size: 1.2rem;
@@ -24,6 +35,10 @@ h1 {
 h2 {
   font-size: 1rem;
   font-family: "Josefin Sans", sans-serif; }
+
+p {
+  font-size: 0.8rem;
+  font-family: "Lato", sans-serif; }
 
 .text {
   font-size: 1.2rem;
@@ -51,6 +66,136 @@ hr {
   width: 20%;
   margin-left: 15%;
   border: 1px solid #EF4924; }
+
+.container {
+  position: relative; }
+
+.greeting {
+  position: absolute;
+  text-align: left;
+  top: 3%;
+  left: 5%;
+  z-index: 1;
+  padding-left: 3%;
+  padding-top: 2%; }
+  .greeting h2 {
+    padding-left: 2%;
+    padding-top: 1%; }
+
+.homeStatus {
+  position: absolute;
+  z-index: 2;
+  top: 80%;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 90%;
+  margin-left: 5%; }
+
+.homeStatus ul {
+  padding: 3%; }
+  .homeStatus ul li {
+    font-size: 0.7rem;
+    font-family: "Lato", sans-serif;
+    color: white;
+    text-align: center;
+    padding: 1%; }
+
+.title {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: white; }
+
+.categoryGroup p {
+  color: white; }
+
+.logoutSign a {
+  font-size: 0.8rem;
+  font-family: "Lato", sans-serif;
+  color: #34D293;
+  font-weight: bold;
+  font-size: 1rem; }
+
+.fa-spinner {
+  color: #EF4924;
+  font-size: 3rem; }
+
+.mainBtn {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  padding-top: 20%;
+  text-align: center;
+  color: white;
+  width: 50%;
+  padding: 0.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  outline: none;
+  background-color: #EF4924;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  border-radius: 4%; }
+
+.firstBtnLogin, .firstBtnSignUp {
+  margin-top: 15%;
+  padding-left: 15%; }
+
+.secondBtnLogin, .secondBtnSignUp {
+  text-align: center;
+  padding-top: 10%;
+  padding-right: 22%; }
+
+.firstBtnSignUp {
+  padding-left: 25%; }
+
+.iconAutomate, .iconSecurity, .iconStatistic {
+  width: 30%;
+  height: 30%;
+  padding-right: 8%; }
+
+.fa-sign-out-alt {
+  color: #34D293; }
+
+.categoryBox {
+  background-color: #EF4924;
+  border-radius: 3%;
+  margin: 5%;
+  padding: 5%;
+  width: 60%; }
+
+.categoryBtn {
+  margin-top: 10%;
+  margin-left: 25%; }
+
+.logoutSign {
+  float: right;
+  padding-right: 7%;
+  padding-top: 7%; }
+
+.backImg {
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 560px; }
+
+.logo {
+  padding-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; }
+
+.homeBckImg {
+  width: 95%;
+  height: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5%; }
+
+.profileImg {
+  width: 25%;
+  height: 25%; }
 
 .space {
   padding-left: 10%; }
@@ -91,112 +236,49 @@ hr {
   float: right;
   padding-right: 20%; }
 
-.greeting {
-  padding-left: 3%;
-  padding-top: 2%; }
-  .greeting h2 {
-    padding-left: 2%;
-    padding-top: 1%; }
+.col-1 {
+  width: 8.33%;
+  float: left; }
 
-.homeStatus {
-  position: absolute;
-  z-index: 2;
-  top: 80%;
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 90%;
-  margin-left: 5%; }
+.col-2 {
+  width: 16.66%;
+  float: left; }
 
-.homeStatus ul {
-  padding: 3%; }
-  .homeStatus ul li {
-    font-size: 0.7rem;
-    font-family: "Lato", sans-serif;
-    color: white;
-    text-align: center;
-    padding: 1%; }
+.col-3 {
+  width: 24.99%;
+  float: left; }
 
-.colHomeStatus {
-  float: left;
-  width: 25%; }
+.col-4 {
+  width: 33.32%;
+  float: left; }
 
-.fa-spinner {
-  color: #EF4924;
-  font-size: 3rem; }
+.col-5 {
+  width: 41.65%;
+  float: left; }
 
-.headerSettingIcon {
-  width: 10%;
-  height: 10%;
-  padding: 2%; }
+.col-6 {
+  width: 49.98%;
+  float: left; }
 
-.headerNotificationIcon {
-  width: 10%;
-  height: 10%;
-  float: right;
-  padding: 2%; }
+.col-7 {
+  width: 58.31%;
+  float: left; }
 
-.backImg {
-  background-image: url("../images/landing.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  height: 560px; }
+.col-8 {
+  width: 66.64%;
+  float: left; }
 
-.logo {
-  padding-top: 5%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%; }
+.col-9 {
+  width: 74.97%;
+  float: left; }
 
-.homeBckImg {
-  width: 95%;
-  height: 50%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 5%; }
+.col-10 {
+  width: 83.3%;
+  float: left; }
 
-.profileImg {
-  width: 25%;
-  height: 25%; }
-
-.mainBtn {
-  font-size: 1rem;
-  font-family: "Lato", sans-serif;
-  padding-top: 20%;
-  text-align: center;
-  color: white;
-  width: 50%;
-  padding: 0.7rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  outline: none;
-  background-color: #EF4924;
-  transition: background-color 0.2s ease-out, color 0.2s ease-out;
-  border-radius: 4%; }
-
-.firstBtnLogin, .firstBtnSignUp {
-  margin-top: 15%;
-  padding-left: 15%; }
-
-.secondBtnLogin, .secondBtnSignUp {
-  text-align: center;
-  padding-top: 10%;
-  padding-right: 22%; }
-
-.firstBtnSignUp {
-  padding-left: 25%; }
-
-.container {
-  position: relative; }
-
-.greeting {
-  position: absolute;
-  text-align: left;
-  top: 3%;
-  left: 5%;
-  z-index: 1; }
+.col-11 {
+  width: 91.63%;
+  float: left; }
 
 span img {
   float: left;

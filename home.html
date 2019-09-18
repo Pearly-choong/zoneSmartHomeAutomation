@@ -40,26 +40,26 @@
 				<h2>Home Pōwhiri !</h2>
 			</div>
 
-			<div class="homeStatus">
-				<div class="colHomeStatus">
+			<div class="homeStatus row">
+				<div class="colHomeStatus col-3">
 					<ul>
 						<li>24°C</li>
 						<li>House temp</li>
 					<ul>
 				</div>
-				<div class="colHomeStatus">
+				<div class="colHomeStatus col-3">
 					<ul>
 						<li>13°C<li>
 						<li>Outside temp</li>
 					</ul>
 				</div>
-				<div class="colHomeStatus">
+				<div class="colHomeStatus col-3">
 					<ul>
 						<li>4</li>
 						<li>Devices on</li>
 					</ul>
 				</div>
-				<div class="colHomeStatus">
+				<div class="colHomeStatus col-3">
 					<ul>
 						<li>Safe<li>
 						<li>Security Level</li>
@@ -81,40 +81,48 @@
 
 
 <!-- cetegory button to choose where to go -->
-	<div class="categoryBtn">
-		<div class="categoryBox">
-			<span>
-			<img src="images/icons/automateWhite.png" alt="automate"> 
-			<div class="group">
-				<a href="rooms.html">Automate</a>
-				<p>Hanga Aunoa</p>
-			</div>
-			</span>
+	<div class="categoryBtn row">
+		<div class="categoryBox co1">
+			<a href="rooms.html">
+				<span>
+				<img class="iconAutomate" src="images/icons/automateWhite.png" alt="automate"> 
+				<div class="categoryGroup">
+					<p class="title">Automate</p>
+					<p>Hanga Aunoa</p>
+				</div>
+				</span>
+			</a>
 		</div>
-		<div class="categoryBox">
-			<span class="selection">
-			<img src="images/icons/securityWhite.png" alt="security">     
-			<div class="group">
-				<a href="security.html">Security</a>
-				<p>Haumarutanga</p>
-			</div>
-			</span>
+		<div class="categoryBox co1">
+			<a href="security.html">
+				<span>
+				<img class="iconSecurity" src="images/icons/securityWhite.png" alt="security">     
+				<div class="categoryGroup">
+					<p class="title">Security</p>
+					<p>Haumarutanga</p>
+				</div>
+				</span>
+			</a>
 		</div>
-		<div class="categoryBox">
-			<span class="selection">
-			<img src="images/icons/statisticWhite.png" alt="statistic"> 
-			<div class="group">
-				<a href="statistic.html">Statistic</a>
-				<p>Tatauranga</p>
-			</div>
-			</span>
+		<div class="categoryBox co1">
+			<a href="statistic.html">
+				<span>
+				<img class="iconStatistic" src="images/icons/statisticWhite.png" alt="statistic"> 
+				<div class="categoryGroup">
+					<p class="title">Statistic</p>
+					<p>Tatauranga</p>
+				</div>
+				</span>
+			</a>
 		</div>
 	</div>
 
 <!-- sign out icons -->
 	<!-- <img src="images/icons/logout.png" alt="logout"> -->
-	<i class="fas fa-sign-out-alt"></i>
-	<p class="logoutText">Logout</p>
+	<div class="logoutSign">
+		<!-- <i class="fas fa-sign-out-alt"></i> -->
+		<a href="login.html">Logout</a>
+	</div>
 
 </body>
 
