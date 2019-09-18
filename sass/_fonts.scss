@@ -29,7 +29,7 @@ p {
 
 
 
-// login page text
+// login page fonts
 .text h1 {	
 	@include paraStyle($h1fs*2, $headerff);
 }
@@ -47,14 +47,13 @@ hr {
 
 
 
-
 // home page - container holding the image and the text
 .container {
 	position: relative;
 }
 
 
-// home page text
+// home page fonts
 .greeting {
 	position: absolute;
 	text-align: left;
@@ -114,4 +113,25 @@ hr {
 }
 
 
+// Rooms pages fonts
+.pageTitle {
+	@include paraStyle($h1fs*1.5, $headerff);
+	padding-top: 5%;
+	padding-left: 10%;
+}
+
+.tabelinks {
+	@include paraStyle($bodyfs, $bodyff);
+}
+
+.subTitle {
+	@include paraStyle($bodyfs, $bodyff);
+	text-align: center;
+}
+
+.desc {
+	@include paraStyle(0.7rem, $bodyff);
+	color: $grey;
+	text-align: center;
+}
 

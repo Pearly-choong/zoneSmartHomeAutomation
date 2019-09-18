@@ -91,6 +91,7 @@ span img {
 
 small {
 	display: block;
+	@include paraStyle($bodyfs, $bodyff);
 }
 
 .textAlign {
@@ -99,12 +100,43 @@ small {
 
 
 
+// Style Room page
+.roomBorder {
+	border: 2px solid $orange;
+	padding: 5%;
+}
+
+.gridWrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 1rem;
+	row-gap: 1rem;
+	margin: 10%;
+}
 
 
+.tab {
+	padding-left: 10%;
+}
+
+.tab button {
+	padding-right: 10%;
+}
+
+.info {
+	@extend .tab;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+}
 
 
-
-
+// style Device page
+.deviceBorder {
+	@extend .roomBorder;
+}
 
 
 

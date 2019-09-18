@@ -30,11 +30,13 @@
 		<i class="far fa-bell"></i> -->
 	</div>
 
-	<h1>
-		<span>ROOMS</span>
-		<span class="teReo">RUMA</span>
-	</h1>
-	<hr>
+	
+		<h1>
+			<span class="pageTitle">ROOMS</span>
+			<span class="teReo">RUMA</span>
+		</h1>
+		<hr>
+	
 
 	<br><br>
 
@@ -42,72 +44,82 @@
 	<div class="tab">
 		<button class="tablinks" onclick="openTab(event,'allRooms)">All Rooms</button>
 		<button class="tablinks" onclick="openTab(event,'Devices)">Devices</button>
+		<i class="fas fa-plus"></i>
 	</div>
 
 	<br>
 
 
 <!-- tab content -->
-	<div  id="allRooms" class="wrapper tabContent">
-		<p>Currently you can manage 4 rooms in your home.</p>
-
-		<div class="livingRoom">
+	<div id="allRooms" class="wrapper tabContent">
+		<p class="info">Currently you can manage 4 rooms in your home.</p>
+		<div class="gridWrapper">
 			<a href="livingroom.html">
-				<img src="images/icons/livingroomIcon.png" alt="livingroom">
+				<div class="roomBorder">				
+					<div class="center">
+						<img src="images/icons/livingroomIcon.png" alt="livingroom">
+					</div>								
+					<p class="subTitle">Living Room</p>
+					<p class="desc">3 devices</p>
+				</div>
 			</a>
-			<br>
-			<p class="title">Living Room</p>
-			<p class="desc">3 devices</p>
-		</div>
 
-		<div class="kitchen">
 			<a href="#">
-				<img src="images/icons/kitchenIcon.png" alt="kitchen">
+				<div class="roomBorder">
+					<div class="center">
+						<img src="images/icons/kitchenIcon.png" alt="kitchen">
+					</div>	
+					<p class="subTitle">Kitchen</p>
+					<p class="desc">2 devices</p>
+				</div>
 			</a>
-			<br>
-			<p class="title">Kitchen</p>
-			<p class="desc">2 devices</p>
-		</div>
 
-		<div class="bedroom">
 			<a href="#">
-				<img src="images/icons/bedroomIcon.png" alt="masterBedroom">
+				<div class="roomBorder">
+					<div class="center">
+						<img src="images/icons/bedroomIcon.png" alt="masterBedroom">
+					</div>
+					<p class="subTitle">Master Bedroom</p>
+					<p class="desc">3 devices</p>
+				</div>
 			</a>
-			<br>
-			<p class="title">Master Bedroom</p>
-			<p class="desc">3 devices</p>
-		</div>
 
-		<div class="office">
 			<a href="#">
-				<img src="images/icons/officeIcon.png" alt="office">
+				<div class="roomBorder">
+					<div class="center">
+						<img src="images/icons/officeIcon.png" alt="office">
+					</div>
+					<p class="subTitle">Office</p>
+					<p class="desc">1 devices</p>
+				</div>
 			</a>
-			<br>
-			<p class="title">Office</p>
-			<p class="desc">1 devices</p>
 		</div>
 	</div>
 
 
 	<div  id="devices" class="wrapper tabContent">
-		<p>Currently you can manage 2 different category devices in you home.</p>
-
-		<div class="lightingDevice">
+		<p class="info">Currently you can manage 2 different category devices in you home.</p>
+		<div class="gridWrapper">
 			<a href="lighting.html">
-				<img src="images/icons/lighting.png" alt="lighting">
-			</a>
-			<br>
-			<p class="title">Lighting</p>
-			<p class="desc">3 On</p>
-		</div>             
+				<div class="deviceBorder">
+					<div class="center">			
+						<img src="images/icons/lighting.png" alt="lighting">
+					</div>			
+					<p class="subTitle">Lighting</p>
+					<p class="desc">3 On</p>
+				</div> 
+			</a>            
 
-		<div class="thermostatDevice">
 			<a href="thermostat.html">
-				<img src="images/icons/thermostat.png" alt="thermostat">
+				<div class="deviceBorder">
+					<div class="center">
+						<img src="images/icons/thermostat.png" alt="thermostat">
+						<!-- <i class="fas fa-thermometer-three-quarters"></i> -->
+					</div>		
+					<p class="subTitle">Thermostat</p>
+					<p class="desc">2 On</p>	
+				</div>
 			</a>
-			<br>
-			<p class="title">Thermostat</p>
-			<p class="desc">2 On</p>
 		</div>
 	</div>
 
@@ -123,7 +135,7 @@
 
 			<li>
 				<img src="images/icons/automateWhite.png" alt="automate">
-				<a href="automate.html">AUTOMATE</a>
+				<a class="active" href="rooms.html">AUTOMATE</a>
 			</li>
 
 			<li>
