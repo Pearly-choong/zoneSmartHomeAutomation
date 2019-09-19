@@ -163,7 +163,7 @@
 .homeStatus {
 	position: absolute;
 	z-index: 2;
-	top: 80%;
+	top: 83%;
 	background-color: $overlayColor;
 	width: 90%;
 	margin-left: 5%;	
@@ -239,19 +239,21 @@ small {
 
 
 
-// =========== Rooms Page ============
+// =========== Automate Page ============
+
 
 // Style Room page 
 .roomBorder {
 	border: 2px solid $orange;
 	padding: 5%; 
-	.center {
+	box-shadow: $boxShadow;
+	 .center {
 		display: flex;
 		justify-content: center;	
 			img {
 				@include imgSize(80%,50%);
 			} //image finished here
-	} // center finished here	
+	 } // center finished here	
 } // style border finished here
 
 
@@ -264,6 +266,10 @@ small {
 	margin: 10%;
 }
 
+// add more padding on room page 
+.roomsGrid {
+	margin-bottom: 3%;
+}
 
 // adjust tab links padding
 .tab {
@@ -271,13 +277,23 @@ small {
 }
 
 .tab button {
-	padding-right: 10%;
+	cursor: pointer;
+	
 }
 
 
+.tab button:hover, .tab button:active{
+	background-color: $orange;
+	border-radius: 3px;
+	padding: 2%;
+	color: white;
+	// box-shadow: $boxShadow;
+}
+
 // style the tab content 
 .tabContent {
-	height: 500px;
+	height: 390px;
+	display: none;
 }
 
 
@@ -298,8 +314,34 @@ small {
 }
 
 
+.fa-plus {
+	margin-left: 3%;
+}
+
+.fa-thermometer-three-quarters {
+	font-size: 5rem;
+}
 
 
+.lightBulb {
+	@include imgSize(30%,30%);
+}
+
+
+// =============Security Page ===========
+
+.securityBorder {
+	@extend .roomBorder;
+}
+
+
+.burglarIcon {
+	@include imgSize(5%,5%);
+}
+
+// span {
+// 	padding: 5%;
+// }
 
 // .row {
 // 	overflow: auto;

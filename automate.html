@@ -17,24 +17,62 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
 	<!-- link to fontawesome -->
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 
 <!-- header -->
 	<div class="header">
+
+		<!-- setting icon -->
+		<!-- <i class="fas fa-cog settingIcon"></i> -->
+
+		<!-- setting nav list -->
+		<!-- <div class="settingNav">
+			<ul>
+				<li><img class="profileImgSetting" src="images/danielprofile.png" alt="Daniel"></li>
+				<li>
+					<span>
+						<i class="far fa-user"></i>
+						<a href="#">Account</a>
+					</span>
+				</li>
+				<li>
+					<span>
+					<i class="far fa-bell"></i>
+					<a href="#">Notification</a>
+					</span>
+				</li>
+				<li>
+					<span>
+					<i class="fas fa-globe"></i>
+					<a href="#">Māori Language</a>
+					</span>
+				</li>
+				<li>
+					<span>
+					<i class="far fa-question-circle"></i>
+					<a href="#">Help</a>
+					</span>
+				</li>
+			</ul>
+		</div> -->
+
 		<img class="headerSettingIcon" src="images/icons/setting.png" alt="setting">
 		<img class="headerNotificationIcon" src="images/icons/notificationWhite.png" alt="notification">
 		<!-- <i class="fas fa-user-cog"></i>
 		<i class="far fa-bell"></i> -->
 	</div>
 
+
 	
 		<h1>
-			<span class="pageTitle">ROOMS</span>
-			<span class="teReo">RUMA</span>
+			<span class="pageTitle smallerFontTitle">AUTOMATE</span>
+			<span class="teReo smallerFont">HANGA AUNOA</span>
 		</h1>
 		<hr>
 	
@@ -43,8 +81,8 @@
 
 <!-- tab links -->
 	<div class="tab">
-		<button class="tablinks" onclick="openTab(event,'allRooms)">All Rooms</button>
-		<button class="tablinks" onclick="openTab(event,'Devices)">Devices</button>
+		<button class="tabLinks tabLinksFont" onclick="openTab(event,'allRooms')" id="defaultOpen">Rooms</button>
+		<button class="tabLinks tabLinksFont" onclick="openTab(event,'devices')">Devices</button>
 		<i class="fas fa-plus"></i>
 	</div>
 
@@ -52,7 +90,7 @@
 
 
 <!-- tab content -->
-	<div id="allRooms" class="wrapper tabContent">
+	<div id="allRooms" class="wrapper tabContent roomsGrid">
 		<p class="para">Currently you can manage 4 rooms in your home.</p>
 		<div class="gridWrapper">
 			<a href="livingroom.html">
@@ -105,7 +143,7 @@
 			<a href="lighting.html">
 				<div class="deviceBorder">
 					<div class="center">			
-						<img src="images/icons/lighting.png" alt="lighting">
+						<img class="lightBulb" src="images/icons/lighting.png" alt="lighting">
 					</div>			
 					<p class="subTitle">Lighting</p>
 					<p class="desc">3 On</p>
@@ -115,8 +153,8 @@
 			<a href="thermostat.html">
 				<div class="deviceBorder">
 					<div class="center">
-						<img src="images/icons/thermostat.png" alt="thermostat">
-						<!-- <i class="fas fa-thermometer-three-quarters"></i> -->
+						<!-- <img class="thermostatIcon" src="images/icons/thermostat.png" alt="thermostat"> -->
+						<i class="fas fa-thermometer-three-quarters"></i>
 					</div>		
 					<p class="subTitle">Thermostat</p>
 					<p class="desc">2 On</p>	
@@ -129,30 +167,48 @@
 
 <!-- bottom fix navbar -->
 	<div class="nav">
-		<ul>
-			<li>
-				<img src="images/icons/homeWhite.png" alt="home">
-				<a href="home.html">HOME</a>
-			</li>
+		<div class="col-3">
+			<a href="home.html">
+			<ul>
+				<li><i class="fas fa-home"></i></li>
+				<li>HOME</li>
+			</ul>
+			</a>
+		</div>
 
-			<li>
-				<img src="images/icons/automateWhite.png" alt="automate">
-				<a class="active" href="rooms.html">AUTOMATE</a>
-			</li>
+		<div class="col-3">
+			<a href="automate.html">
+			<ul>
+				<li><i class="fas fa-wifi activeIcon"></i></li>
+				<li id="active">AUTOMATE</li>
+			</ul>
+			</a>
+		</div>
 
-			<li>
-				<img src="images/icons/securityWhite.png" alt="security">
-				<a href="security.html">SECURITY</a>
-			</li>
+		<div class="col-3">
+			<a href="security.html">
+			<ul>
+				<li><i class="fas fa-shield-alt"></i></li>
+				<li>SECURITY</li>
+			</ul>
+			</a>
+		</div>
 
-			<li>
-				<img src="images/icons/statisticWhite.png" alt="statistic">
-				<a href="statistic.html">STATISTIC</a>
-			</li>
-
-		</ul>
+		<div class="col-3">
+			<a href="statistic.html">
+			<ul>
+				<li><i class="far fa-chart-bar"></i></li>
+				<li>STATISTIC</li>
+			</ul>
+			</a>
+		</div>
 	</div>
 
+<!-- jquery cdn source -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- javascript file -->
+	<script src="js/script.js"></script>
 
 </body>
 

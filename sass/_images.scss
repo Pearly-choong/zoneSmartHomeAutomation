@@ -23,15 +23,33 @@
 
 // style the image on home page
 .homeBckImg {
-	@include imgSize(95%, 50%);
+	@include imgSize(90%, 50%);
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 5%;
+	// padding-left: 5%;
+	opacity: .9;
+	display: flex;
+	justify-content: center;
 
 }
 
 //  profile image of Daneil
 .profileImg {
-	@include imgSize (25%,25%);
+	@include imgSize(25%,25%);
 }
 
+
+.profileImgSetting {
+	@include imgSize(20%,20%);
+}
+
+
+// graph image on statistic page
+.graph {
+	@include imgSize(50%,50%);
+}
+
+.graphCenter {
+	display: flex;
+	justify-content: center;
+}

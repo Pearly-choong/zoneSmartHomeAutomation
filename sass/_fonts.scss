@@ -84,16 +84,17 @@ hr {
 }
 
 
-// ========== Rooms pages fonts ==========
+// ========== Automate pages fonts ==========
 .pageTitle {
 	@include paraStyle($h1fs*1.5, $headerff);
 	padding-top: 5%;
 	padding-left: 10%;
 }
 
-.tablinks {
-	@include paraStyle($h2fs, $bodyff);
-	color: $orange;
+.tabLinksFont {
+	@include paraStyle($h1fs, $bodyff);
+	color: black;
+	margin-right: 5%;
 }
 
 .subTitle {
@@ -106,4 +107,21 @@ hr {
 	color: $grey;
 	text-align: center;
 }
+
+.smallerFontTitle {
+	font-size: 2rem;
+}
+
+.smallerFont {
+	font-size: 1rem;
+}
+
+
+// ========= Statitis page fonts =========
+.overview p {
+	@include paraStyle($bodyfs, $bodyff);
+	text-align: center;
+}
+
+
 

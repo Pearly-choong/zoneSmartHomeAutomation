@@ -29,6 +29,41 @@ a {
   background-color: #EF4924;
   margin-bottom: 10%; }
 
+.fa-cog {
+  font-size: 2rem;
+  color: white; }
+
+.settingNav {
+  display: none; }
+
+.nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+  .nav ul {
+    background-color: #EF4924;
+    text-align: center;
+    padding: 8%; }
+    .nav ul li img {
+      width: 30%;
+      height: 30%; }
+    .nav ul li {
+      color: #333;
+      font-size: 0.7rem;
+      font-family: "Lato", sans-serif; }
+
+.fa-home, .activeIcon, .fa-wifi, .fa-shield-alt, .fa-chart-bar {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 7%; }
+
+.activeIcon {
+  color: white; }
+
+#active {
+  color: white; }
+
 h1 {
   font-size: 1.3rem;
   font-family: "Josefin Sans", sans-serif; }
@@ -99,10 +134,11 @@ hr {
   padding-top: 5%;
   padding-left: 10%; }
 
-.tablinks {
-  font-size: 1rem;
+.tabLinksFont {
+  font-size: 1.3rem;
   font-family: "Lato", sans-serif;
-  color: #EF4924; }
+  color: black;
+  margin-right: 5%; }
 
 .subTitle {
   font-size: 0.9rem;
@@ -113,6 +149,17 @@ hr {
   font-size: 0.7rem;
   font-family: "Lato", sans-serif;
   color: #636262;
+  text-align: center; }
+
+.smallerFontTitle {
+  font-size: 2rem; }
+
+.smallerFont {
+  font-size: 1rem; }
+
+.overview p {
+  font-size: 0.9rem;
+  font-family: "Lato", sans-serif;
   text-align: center; }
 
 .backImg {
@@ -132,15 +179,29 @@ hr {
   width: 50%; }
 
 .homeBckImg {
-  width: 95%;
+  width: 90%;
   height: 50%;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 5%; }
+  opacity: .9;
+  display: flex;
+  justify-content: center; }
 
 .profileImg {
   width: 25%;
   height: 25%; }
+
+.profileImgSetting {
+  width: 20%;
+  height: 20%; }
+
+.graph {
+  width: 50%;
+  height: 50%; }
+
+.graphCenter {
+  display: flex;
+  justify-content: center; }
 
 .fa-spinner {
   color: #EF4924;
@@ -274,7 +335,7 @@ hr {
 .homeStatus {
   position: absolute;
   z-index: 2;
-  top: 80%;
+  top: 83%;
   background-color: rgba(0, 0, 0, 0.4);
   width: 90%;
   margin-left: 5%; }
@@ -315,13 +376,14 @@ small {
   padding-right: 7%;
   padding-top: 5%; }
 
-.roomBorder, .deviceBorder {
+.roomBorder, .deviceBorder, .securityBorder {
   border: 2px solid #EF4924;
-  padding: 5%; }
-  .roomBorder .center, .deviceBorder .center {
+  padding: 5%;
+  box-shadow: 5px 10px 10px #888888; }
+  .roomBorder .center, .deviceBorder .center, .securityBorder .center {
     display: flex;
     justify-content: center; }
-    .roomBorder .center img, .deviceBorder .center img {
+    .roomBorder .center img, .deviceBorder .center img, .securityBorder .center img {
       width: 80%;
       height: 50%; }
 
@@ -332,17 +394,41 @@ small {
   row-gap: 1rem;
   margin: 10%; }
 
+.roomsGrid {
+  margin-bottom: 3%; }
+
 .tab, .para {
   padding-left: 10%; }
 
 .tab button, .para button {
-  padding-right: 10%; }
+  cursor: pointer; }
+
+.tab button:hover, .para button:hover, .tab button:active, .para button:active {
+  background-color: #EF4924;
+  border-radius: 3px;
+  padding: 2%;
+  color: white; }
 
 .tabContent {
-  height: 500px; }
+  height: 390px;
+  display: none; }
 
 .deviceBorder img {
   width: 50%;
   height: 50%; }
+
+.fa-plus {
+  margin-left: 3%; }
+
+.fa-thermometer-three-quarters {
+  font-size: 5rem; }
+
+.lightBulb {
+  width: 30%;
+  height: 30%; }
+
+.burglarIcon {
+  width: 5%;
+  height: 5%; }
 
 /*# sourceMappingURL=style.css.map */

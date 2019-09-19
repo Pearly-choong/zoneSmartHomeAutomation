@@ -6,12 +6,6 @@
 }
 
 
-@mixin imgEffect ($position, $margin, $overflow) {
-	position: $position;
-	margin: $margin;
-	overflow: $overflow;
-}
-
 
 @mixin paraStyle ($fs, $ff) {
 	font-size: $fs;
@@ -19,4 +13,8 @@
 	
 }
 
-
+@mixin imgEffect ($position, $margin, $overflow) {
+	position: $position;
+	margin: $margin;
+	overflow: $overflow;
+}
