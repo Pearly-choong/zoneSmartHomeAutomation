@@ -12,7 +12,7 @@ p {
 }
 
 
-// style the text on landing page
+// =========== style the text on landing page ===========
 .text {
 	@include paraStyle($h1fs, $headerff);
 	color: $orange;
@@ -29,7 +29,7 @@ p {
 
 
 
-// login page fonts
+// ==========login page fonts ==========
 .text h1 {	
 	@include paraStyle($h1fs*2, $headerff);
 }
@@ -39,6 +39,7 @@ p {
 	color: $grey;
 }
 
+// style hr
 hr {
 	width: 20%;
 	margin-left: 15%;
@@ -47,40 +48,8 @@ hr {
 
 
 
-// home page - container holding the image and the text
-.container {
-	position: relative;
-}
 
-
-// home page fonts
-.greeting {
-	position: absolute;
-	text-align: left;
-	top: 3%;
-	left: 5%;
-	z-index: 1;
-	padding-left: 3%;
-	padding-top: 2%;
-	h2 {
-		padding-left: 2%;
-		padding-top: 1%;
-	}
-}
-
-
-
-.homeStatus {
-	position: absolute;
-	z-index: 2;
-	top: 80%;
-	background-color: $overlayColor;
-	width: 90%;
-	margin-left: 5%;
-
-	
-}
-
+// ========= style list items (homeStatus display) =======
 .homeStatus ul {
 	padding: 3%;
 	li {
@@ -92,7 +61,7 @@ hr {
 }
 
 
-
+// button text on home page
 .title {
 	@include paraStyle($h2fs, $bodyff);
 	font-weight: bold;
@@ -100,11 +69,13 @@ hr {
 }
 
 
+// button text on TeReo language
 .categoryGroup p {
 	color: white;
 }
 
 
+// logout text
 .logoutSign a {
 	@include paraStyle($bodyfs, $bodyff);
 	color: $green;
@@ -113,15 +84,16 @@ hr {
 }
 
 
-// Rooms pages fonts
+// ========== Rooms pages fonts ==========
 .pageTitle {
 	@include paraStyle($h1fs*1.5, $headerff);
 	padding-top: 5%;
 	padding-left: 10%;
 }
 
-.tabelinks {
-	@include paraStyle($bodyfs, $bodyff);
+.tablinks {
+	@include paraStyle($h2fs, $bodyff);
+	color: $orange;
 }
 
 .subTitle {

@@ -68,29 +68,6 @@ hr {
   margin-left: 15%;
   border: 1px solid #EF4924; }
 
-.container {
-  position: relative; }
-
-.greeting {
-  position: absolute;
-  text-align: left;
-  top: 3%;
-  left: 5%;
-  z-index: 1;
-  padding-left: 3%;
-  padding-top: 2%; }
-  .greeting h2 {
-    padding-left: 2%;
-    padding-top: 1%; }
-
-.homeStatus {
-  position: absolute;
-  z-index: 2;
-  top: 80%;
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 90%;
-  margin-left: 5%; }
-
 .homeStatus ul {
   padding: 3%; }
   .homeStatus ul li {
@@ -122,9 +99,10 @@ hr {
   padding-top: 5%;
   padding-left: 10%; }
 
-.tabelinks {
-  font-size: 0.9rem;
-  font-family: "Lato", sans-serif; }
+.tablinks {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: #EF4924; }
 
 .subTitle {
   font-size: 0.9rem;
@@ -136,69 +114,6 @@ hr {
   font-family: "Lato", sans-serif;
   color: #636262;
   text-align: center; }
-
-.fa-spinner {
-  color: #EF4924;
-  font-size: 3rem; }
-
-.mainBtn {
-  font-size: 1rem;
-  font-family: "Lato", sans-serif;
-  padding-top: 20%;
-  text-align: center;
-  color: white;
-  width: 50%;
-  padding: 0.7rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  outline: none;
-  background-color: #EF4924;
-  transition: background-color 0.2s ease-out, color 0.2s ease-out;
-  border-radius: 4%; }
-
-.firstBtnLogin, .firstBtnSignUp {
-  margin-top: 15%;
-  padding-left: 17%; }
-
-.secondBtnLogin, .secondBtnSignUp {
-  text-align: center;
-  padding-top: 10%;
-  padding-right: 22%; }
-
-.firstBtnSignUp {
-  padding-left: 25%; }
-
-.iconAutomate, .iconSecurity, .iconStatistic {
-  width: 30%;
-  height: 30%;
-  padding-right: 8%; }
-
-.fa-sign-out-alt {
-  color: #34D293; }
-
-.categoryBox {
-  background-color: #EF4924;
-  border-radius: 3%;
-  margin: 5%;
-  padding: 5%;
-  width: 60%; }
-
-.categoryBtn {
-  margin-top: 10%;
-  margin-left: 25%; }
-
-.logoutSign {
-  float: right;
-  padding-right: 7%;
-  padding-top: 5%; }
-
-.roomBorder img, .deviceBorder img {
-  width: 80%;
-  height: 50%; }
-
-.deviceBorder img {
-  width: 50%;
-  height: 50%; }
 
 .backImg {
   background-image: url("../images/landing.jpg");
@@ -226,6 +141,37 @@ hr {
 .profileImg {
   width: 25%;
   height: 25%; }
+
+.fa-spinner {
+  color: #EF4924;
+  font-size: 5rem; }
+
+.mainBtn {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  padding-top: 20%;
+  text-align: center;
+  color: white;
+  width: 50%;
+  padding: 0.7rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  outline: none;
+  background-color: #EF4924;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+  border-radius: 4%; }
+
+.firstBtnLogin, .firstBtnSignUp {
+  margin-top: 15%;
+  padding-left: 17%; }
+
+.secondBtnLogin, .secondBtnSignUp {
+  text-align: center;
+  padding-top: 10%;
+  padding-right: 22%; }
+
+.firstBtnSignUp {
+  padding-left: 25%; }
 
 .space {
   padding-left: 10%; }
@@ -310,6 +256,29 @@ hr {
   width: 91.63%;
   float: left; }
 
+.greeting {
+  position: absolute;
+  text-align: left;
+  top: 3%;
+  left: 5%;
+  z-index: 1;
+  padding-left: 3%;
+  padding-top: 2%; }
+  .greeting h2 {
+    padding-left: 2%;
+    padding-top: 1%; }
+
+.container {
+  position: relative; }
+
+.homeStatus {
+  position: absolute;
+  z-index: 2;
+  top: 80%;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 90%;
+  margin-left: 5%; }
+
 span img {
   float: left;
   padding: 5%; }
@@ -319,12 +288,42 @@ small {
   font-size: 0.9rem;
   font-family: "Lato", sans-serif; }
 
-.textAlign {
+.profilePara {
   padding-top: 8%; }
+
+.iconAutomate, .iconSecurity, .iconStatistic {
+  width: 30%;
+  height: 30%;
+  padding-right: 8%; }
+
+.fa-sign-out-alt {
+  color: #34D293; }
+
+.categoryBox {
+  background-color: #EF4924;
+  border-radius: 3%;
+  margin: 5%;
+  padding: 5%;
+  width: 60%; }
+
+.categoryBtn {
+  margin-top: 10%;
+  margin-left: 25%; }
+
+.logoutSign {
+  float: right;
+  padding-right: 7%;
+  padding-top: 5%; }
 
 .roomBorder, .deviceBorder {
   border: 2px solid #EF4924;
   padding: 5%; }
+  .roomBorder .center, .deviceBorder .center {
+    display: flex;
+    justify-content: center; }
+    .roomBorder .center img, .deviceBorder .center img {
+      width: 80%;
+      height: 50%; }
 
 .gridWrapper {
   display: grid;
@@ -333,14 +332,17 @@ small {
   row-gap: 1rem;
   margin: 10%; }
 
-.tab, .info {
+.tab, .para {
   padding-left: 10%; }
 
-.tab button, .info button {
+.tab button, .para button {
   padding-right: 10%; }
 
-.center {
-  display: flex;
-  justify-content: center; }
+.tabContent {
+  height: 500px; }
+
+.deviceBorder img {
+  width: 50%;
+  height: 50%; }
 
 /*# sourceMappingURL=style.css.map */

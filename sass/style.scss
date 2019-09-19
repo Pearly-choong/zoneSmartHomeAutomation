@@ -3,14 +3,61 @@
 @import 'mixin';
 @import 'header-nav';
 @import 'fonts';
-@import 'button-icons';
 @import 'images';
 @import 'tablet';
 
 
+// style loading spinning icon
+.fa-spinner {
+	color: $orange;
+	font-size: 5rem;
+}
+
+// style the button (the common use for whole app)
+.mainBtn {
+	@include paraStyle($h2fs, $bodyff);
+	padding-top: 20%;
+	text-align: center;
+	color: white;
+	width: 50%;
+	padding: 0.7rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	outline: none;
+	background-color: $orange;
+	transition: background-color 0.2s ease-out, color 0.2s ease-out;
+	border-radius: 4%;
+}
+
+//  =============== Login Page ===============
+// adjust login button position
+.firstBtnLogin {
+	margin-top: 15%;
+	padding-left: 17%;
+}
+
+// adjust sign up button link position
+.secondBtnLogin {
+	text-align: center;
+	padding-top: 10%;
+	padding-right: 22%;
+}
 
 
-// adjust padding for login and sign up title
+//  =============== Sign Up Page ===============
+// adjust sign up button position
+.firstBtnSignUp {
+	@extend .firstBtnLogin;
+	padding-left: 25%;
+}
+
+// adjust login button link position
+.secondBtnSignUp {
+	@extend .secondBtnLogin;
+}
+
+
+// adjust padding for login and sign up title, form layout
 .space {
 	padding-left: 10%;
 }
@@ -29,8 +76,6 @@
 .userName, .password, .email {
 	@include paraStyle($h1fs, $bodyff);
 }
-
-
 
 .name, .passwordEnter, .emailEnter {
 	border-bottom: 2px solid black;
@@ -75,7 +120,12 @@
 // }
 
 
-// loop for repeating column layout 
+
+
+
+// ============== Home Page =================
+
+// loop for repeating column layout (used for homeStatus display)
 @for $i from 1 to 12 {
 	.col-#{$i}{
 		width: $i*8.33%;
@@ -84,6 +134,43 @@
 }
 
 
+// positioning greeting message on background image
+.greeting {
+	position: absolute;
+	text-align: left;
+	top: 3%;
+	left: 5%;
+	z-index: 1;
+	padding-left: 3%;
+	padding-top: 2%;
+	// greeting finished
+	h2 {
+		padding-left: 2%;
+		padding-top: 1%;
+	} 
+	// h2 finished
+}
+
+
+
+// container holding the image and the text
+.container {
+	position: relative;
+}
+
+
+// positioning and adjust layout on status info on background image
+.homeStatus {
+	position: absolute;
+	z-index: 2;
+	top: 80%;
+	background-color: $overlayColor;
+	width: 90%;
+	margin-left: 5%;	
+}
+
+
+// positioning span 
 span img {
 	float: left;
 	padding: 5%;
@@ -94,18 +181,81 @@ small {
 	@include paraStyle($bodyfs, $bodyff);
 }
 
-.textAlign {
+
+// adjust padding for profile paragraph
+.profilePara {
 	padding-top: 8%;
 }
 
 
 
-// Style Room page
-.roomBorder {
-	border: 2px solid $orange;
-	padding: 5%;
+// icons on home page category selection
+.iconAutomate {
+	@include imgSize(30%,30%);
+	padding-right: 8%;
 }
 
+
+.iconSecurity {
+	@extend .iconAutomate;
+}
+
+.iconStatistic {
+	@extend .iconAutomate;
+}
+
+
+
+// logout icon
+.fa-sign-out-alt {
+	color: $green;
+}
+
+
+
+// button on home page
+.categoryBox {
+	background-color: $orange;
+	// border: 5px solid $orange;
+	border-radius: 3%;
+	margin: 5%;
+	padding: 5%;
+	width: 60%;
+}
+
+.categoryBtn {
+	margin-top: 10%;
+	margin-left: 25%;
+}
+
+
+// logout button
+.logoutSign {
+	float: right;
+	padding-right: 7%;
+	padding-top: 5%;
+}
+
+
+
+
+// =========== Rooms Page ============
+
+// Style Room page 
+.roomBorder {
+	border: 2px solid $orange;
+	padding: 5%; 
+	.center {
+		display: flex;
+		justify-content: center;	
+			img {
+				@include imgSize(80%,50%);
+			} //image finished here
+	} // center finished here	
+} // style border finished here
+
+
+// layout display
 .gridWrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -115,6 +265,7 @@ small {
 }
 
 
+// adjust tab links padding
 .tab {
 	padding-left: 10%;
 }
@@ -123,20 +274,30 @@ small {
 	padding-right: 10%;
 }
 
-.info {
+
+// style the tab content 
+.tabContent {
+	height: 500px;
+}
+
+
+// adjust paragraph padding
+.para {
 	@extend .tab;
 }
 
-.center {
-	display: flex;
-	justify-content: center;
-}
 
-
-// style Device page
+// style Device page 
 .deviceBorder {
 	@extend .roomBorder;
 }
+
+// icons on device page
+.deviceBorder img{
+	@include imgSize(50%,50%);
+}
+
+
 
 
 
