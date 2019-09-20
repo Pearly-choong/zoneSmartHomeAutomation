@@ -41,16 +41,20 @@
 	left: 0;
 	bottom: 0;
 	width: 100%;
+
 	ul {
 		background-color: $orange;
 		text-align: center;
 		padding: 8%;
+
 			li img {
 			@include imgSize (30%,30%);	
 			}
+			
 			li {
 				color: $lightGrey;
 				@include paraStyle(0.7rem,$bodyff);
+				padding-bottom: 3%;
 				} //li finished here
 	}//ul list finished	here
 }//nav finished here

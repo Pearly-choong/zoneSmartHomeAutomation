@@ -51,7 +51,8 @@ a {
     .nav ul li {
       color: #333;
       font-size: 0.7rem;
-      font-family: "Lato", sans-serif; }
+      font-family: "Lato", sans-serif;
+      padding-bottom: 3%; }
 
 .fa-home, .activeIcon, .fa-wifi, .fa-shield-alt, .fa-chart-bar {
   font-size: 1.5rem;
@@ -149,7 +150,8 @@ hr {
   font-size: 0.7rem;
   font-family: "Lato", sans-serif;
   color: #636262;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 2%; }
 
 .smallerFontTitle {
   font-size: 2rem; }
@@ -161,6 +163,14 @@ hr {
   font-size: 0.9rem;
   font-family: "Lato", sans-serif;
   text-align: center; }
+
+.history p {
+  font-size: "Lato", sans-serif;
+  font-family: "Lato", sans-serif; }
+
+.historyTitle {
+  font-weight: bold;
+  padding-bottom: 10%; }
 
 .backImg {
   background-image: url("../images/landing.jpg");
@@ -376,14 +386,14 @@ small {
   padding-right: 7%;
   padding-top: 5%; }
 
-.roomBorder, .deviceBorder, .securityBorder {
+.roomBorder, .deviceBorder, .securityBorder, .statisticBorder {
   border: 2px solid #EF4924;
   padding: 5%;
   box-shadow: 5px 10px 10px #888888; }
-  .roomBorder .center, .deviceBorder .center, .securityBorder .center {
+  .roomBorder .center, .deviceBorder .center, .securityBorder .center, .statisticBorder .center {
     display: flex;
     justify-content: center; }
-    .roomBorder .center img, .deviceBorder .center img, .securityBorder .center img {
+    .roomBorder .center img, .deviceBorder .center img, .securityBorder .center img, .statisticBorder .center img {
       width: 80%;
       height: 50%; }
 
@@ -392,7 +402,8 @@ small {
   grid-template-columns: 1fr 1fr;
   column-gap: 1rem;
   row-gap: 1rem;
-  margin: 10%; }
+  margin: 10%;
+  margin-top: 7%; }
 
 .roomsGrid {
   margin-bottom: 3%; }
@@ -413,22 +424,45 @@ small {
   height: 390px;
   display: none; }
 
-.deviceBorder img {
+#lightBulbIcon, #burglarIcon, #smokeIcon, #thermostatIcon {
   width: 50%;
-  height: 50%; }
+  height: 50%;
+  padding-bottom: 15%;
+  padding-top: 10%; }
 
 .fa-plus {
   margin-left: 3%; }
 
-.fa-thermometer-three-quarters {
-  font-size: 5rem; }
+#doorIcon {
+  width: 60%;
+  height: 60%;
+  padding-top: 10%;
+  padding-bottom: 10%; }
 
-.lightBulb {
-  width: 30%;
-  height: 30%; }
+.overview span {
+  padding: 5%; }
 
-.burglarIcon {
-  width: 5%;
-  height: 5%; }
+.today {
+  color: #EF4924;
+  font-weight: bold; }
+
+.statisticBorder {
+  margin: 10%;
+  margin-bottom: 100px; }
+
+.historyBox {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-grow: 1;
+  flex-basis: 0;
+  margin-bottom: 15px; }
+  .historyBox img {
+    max-width: 40px;
+    margin-top: -15px; }
+
+.fa-chevron-left {
+  width: 80%;
+  height: 80%; }
 
 /*# sourceMappingURL=style.css.map */

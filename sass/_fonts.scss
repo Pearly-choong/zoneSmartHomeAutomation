@@ -106,6 +106,7 @@ hr {
 	@include paraStyle(0.7rem, $bodyff);
 	color: $grey;
 	text-align: center;
+	padding-bottom: 2%;
 }
 
 .smallerFontTitle {
@@ -117,11 +118,19 @@ hr {
 }
 
 
-// ========= Statitis page fonts =========
+// ========= Statistic page fonts =========
 .overview p {
 	@include paraStyle($bodyfs, $bodyff);
 	text-align: center;
 }
 
 
+.history p {
+	@include paraStyle($bodyff, $bodyff);
+}
+
+.historyTitle {
+	font-weight: bold; 
+	padding-bottom: 10%;
+}
 
