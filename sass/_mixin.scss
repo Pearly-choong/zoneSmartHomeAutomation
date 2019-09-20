@@ -1,20 +1,21 @@
 /* shorthand mixin for image size */
 
-@mixin imgSize ($w,$h) {
+@mixin img-size ($w,$h) {
 	width: $w;
 	height: $h;
 }
 
 
 
-@mixin paraStyle ($fs, $ff) {
+@mixin para-style ($fs, $ff) {
 	font-size: $fs;
 	font-family: $ff;
 	
 }
 
-@mixin imgEffect ($position, $margin, $overflow) {
-	position: $position;
-	margin: $margin;
-	overflow: $overflow;
-}
+
+// @mixin img-effect ($position, $margin, $overflow) {
+// 	position: $position;
+// 	margin: $margin;
+// 	overflow: $overflow;
+// }

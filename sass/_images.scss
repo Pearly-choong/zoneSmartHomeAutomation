@@ -1,5 +1,5 @@
 // background images on landing page
-.backImg {
+.back-img {
 	background-image: url("../images/landing.jpg");
 	background-size: cover;
 	background-position: center;
@@ -22,8 +22,8 @@
 
 
 // style the image on home page
-.homeBckImg {
-	@include imgSize(90%, 50%);
+.home-bck-img {
+	@include img-size(90%, 50%);
 	margin-right: auto;
 	margin-left: auto;
 	// padding-left: 5%;
@@ -33,23 +33,32 @@
 
 }
 
-//  profile image of Daneil
-.profileImg {
-	@include imgSize(25%,25%);
+//  adjust image size for profile image of Daneil
+.profile-img {
+	@include img-size(25%,25%);
 }
 
 
-.profileImgSetting {
-	@include imgSize(20%,20%);
-}
-
-
-// graph image on statistic page
+// adjust image size for graph image on statistic page
 .graph {
-	@include imgSize(50%,50%);
+	@include img-size(200px,180px);
 }
 
-.graphCenter {
+.graph-center {
 	display: flex;
 	justify-content: center;
 }
+
+
+// adjust image size for camera live feed images on Camera page
+.camera-img {
+	@include img-size(350px,200px);
+}
+
+
+// adjust image size on living room image
+.living-room-img {
+	@include img-size(100%,230px);
+}
+
+

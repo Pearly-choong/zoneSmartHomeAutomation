@@ -1,5 +1,5 @@
 // only for homepage
-.headerBackground {
+.header-background {
 	background-color: $orange;
 	height: 200px;
 	margin-bottom: 20%;
@@ -7,13 +7,13 @@
 
 
 // style header icons (setting cog and notification)
-.headerSettingIcon {
-	@include imgSize (15%, 15%);
+.header-setting-icon {
+	@include img-size (15%, 15%);
 	padding: 3%;
 }
 
-.headerNotificationIcon {
-	@include imgSize(12%, 12%);
+.header-notification-icon {
+	@include img-size(12%, 12%);
 	float: right;
 	padding: 3%;
 }
@@ -31,7 +31,12 @@
 	color: white;
 }
 
-.settingNav {
+
+.profile-img-setting {
+	@include img-size(20%,20%);
+}
+
+.setting-nav {
 	display: none;
 }
 
@@ -48,12 +53,12 @@
 		padding: 8%;
 
 			li img {
-			@include imgSize (30%,30%);	
+			@include img-size (30%,30%);	
 			}
 			
 			li {
 				color: $lightGrey;
-				@include paraStyle(0.7rem,$bodyff);
+				@include para-style(0.7rem,$bodyff);
 				padding-bottom: 3%;
 				} //li finished here
 	}//ul list finished	here
@@ -69,13 +74,22 @@
 	margin: 7%;
 }
 
-.activeIcon {
+.active-icon {
 	@extend .fa-home;
 	color: white;
 }
 
 #active{
 	color: white;
+}
+
+
+// style back button
+.fa-chevron-left {
+	font-size: 2rem;
+	padding: 3%;
+	color: white;
+	
 }
 
 

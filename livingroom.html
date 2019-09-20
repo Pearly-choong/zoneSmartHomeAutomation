@@ -17,51 +17,57 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
 	<!-- link to fontawesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
 
 	<!-- header -->
-	<div class="header">
-		<img class="headerIcon" src="images/icons/back.png" alt="back">
-		<img class="headerIcon" src="images/icons/notificationWhite.png" alt="notification">
-		<i class="far fa-bell"></i>
+	<div class="header no-margin">
+		<a href="automate.html"><i class="fas fa-chevron-left"></i></a>
+		<img class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
+		<!-- <i class="far fa-bell"></i> -->
 	</div>
 
 	<!-- living room camera scenes with status -->
-	<div class="container">
-		<img class="homeBckImg" src="images/livingroom.jpg" alt="livingroom">
-			<div class="record">
-				<p>Cam2</p>
+	<div class="room-container">
+		<img class="living-room-img" src="images/livingroom.jpg" alt="livingroom">
+			<div class="room-container-record">
+				<p>
+				<span><i class="fas fa-video"></i></span>
+				<span>Cam 2</span>
+				</p>
 			</div>
 
-			<div class="livingRoomStatus">
-				<span>
+			<div class="living-room-status">
+				<div class="living-room-status-info">
 					<img src="images/icons/temperature.png" alt="temperature">
-					<text>24°C</text>
-				</span>
+					<p>24°C</p>
+				</div>
 				
-				<span>
+				<div class="living-room-status-info">
 					<img src="images/icons/humid.png" alt="humid">
-					<text>50%</text>
-				</span>
+					<p>50%</p>
+				</div>
 
-				<span>
+				<div class="living-room-status-info">
 					<img src="images/icons/power.png" alt="power">
-					<text>12kw</text>
-				</span>	
+					<p>12kw</p>
+				</div>	
 			</div>
 	</div>
 
 
-	<h1>
-		<span>LIVING ROOM</span>
-		<span class="teReo">RUMA NOHO</span>
+	<h1 class="living-room-title">
+		<span class="page-title smaller-title">LIVING ROOM</span>
+		<span class="te-reo smaller-font">RUMA NOHO</span>
 	</h1>
 	<hr>
 
-	<a class="mainBtn" href="">Turn Off all devices</a>
+	<div class="off-button-group">
+		<a class="main-btn" href="">Turn Off all devices</a>
+		<i class="fas fa-plus fa-plus-more"></i>
+	</div>
 
 </body>
 

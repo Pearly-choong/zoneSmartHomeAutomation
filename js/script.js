@@ -3,11 +3,11 @@
 
 function openTab(evt, roomOrDevice) {
   var i, tabContent, tabLinks;
-  tabContent = document.getElementsByClassName("tabContent");
+  tabContent = document.getElementsByClassName("tab-content");
   for (i = 0; i < tabContent.length; i++) {
     tabContent[i].style.display = "none";
   }
-  tabLinks = document.getElementsByClassName("tabLinks");
+  tabLinks = document.getElementsByClassName("tab-links");
   for (i = 0; i < tabLinks.length; i++) {
     tabLinks[i].className = tabLinks[i].className.replace(" active", "");
   }
@@ -25,7 +25,7 @@ document.getElementById("defaultOpen").click();
 
 // click even for hamburger
 $(document).ready(function(){
-	$('.settingIcon').click(function(){
-  		$('.settingNav').toggleClass("active");
+	$('.setting-icon').click(function(){
+  		$('.setting-nav').toggleClass("active");
 	});
 });

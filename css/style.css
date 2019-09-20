@@ -9,17 +9,17 @@ a {
   color: black; }
 
 /* shorthand mixin for image size */
-.headerBackground {
+.header-background {
   background-color: #EF4924;
   height: 200px;
   margin-bottom: 20%; }
 
-.headerSettingIcon {
+.header-setting-icon {
   width: 15%;
   height: 15%;
   padding: 3%; }
 
-.headerNotificationIcon {
+.header-notification-icon {
   width: 12%;
   height: 12%;
   float: right;
@@ -33,7 +33,11 @@ a {
   font-size: 2rem;
   color: white; }
 
-.settingNav {
+.profile-img-setting {
+  width: 20%;
+  height: 20%; }
+
+.setting-nav {
   display: none; }
 
 .nav {
@@ -54,15 +58,20 @@ a {
       font-family: "Lato", sans-serif;
       padding-bottom: 3%; }
 
-.fa-home, .activeIcon, .fa-wifi, .fa-shield-alt, .fa-chart-bar {
+.fa-home, .active-icon, .fa-wifi, .fa-shield-alt, .fa-chart-bar {
   font-size: 1.5rem;
   color: #333;
   margin: 7%; }
 
-.activeIcon {
+.active-icon {
   color: white; }
 
 #active {
+  color: white; }
+
+.fa-chevron-left {
+  font-size: 2rem;
+  padding: 3%;
   color: white; }
 
 h1 {
@@ -87,14 +96,14 @@ p {
   width: 50%;
   text-align: center; }
 
-.loadText {
+.load-text {
   margin-top: 90%; }
 
 .text h1 {
   font-size: 2.6rem;
   font-family: "Josefin Sans", sans-serif; }
 
-.teReo {
+.te-reo {
   font-size: 1.3rem;
   font-family: "Josefin Sans", sans-serif;
   color: #636262; }
@@ -104,9 +113,9 @@ hr {
   margin-left: 15%;
   border: 1px solid #EF4924; }
 
-.homeStatus ul {
+.home-status ul, .living-room-status ul {
   padding: 3%; }
-  .homeStatus ul li {
+  .home-status ul li, .living-room-status ul li {
     font-size: 0.7rem;
     font-family: "Lato", sans-serif;
     color: white;
@@ -119,29 +128,28 @@ hr {
   font-weight: bold;
   color: white; }
 
-.categoryGroup p {
+.category-group-font p {
   color: white; }
 
-.logoutSign a {
+.logout-sign a {
   font-size: 0.9rem;
   font-family: "Lato", sans-serif;
   color: #34D293;
-  font-weight: bold;
-  font-size: 1rem; }
+  font-weight: bold; }
 
-.pageTitle {
+.page-title {
   font-size: 1.95rem;
   font-family: "Josefin Sans", sans-serif;
   padding-top: 5%;
   padding-left: 10%; }
 
-.tabLinksFont {
+.tab-links-font {
   font-size: 1.3rem;
   font-family: "Lato", sans-serif;
   color: black;
   margin-right: 5%; }
 
-.subTitle {
+.subtitle {
   font-size: 0.9rem;
   font-family: "Lato", sans-serif;
   text-align: center; }
@@ -153,10 +161,10 @@ hr {
   text-align: center;
   padding-bottom: 2%; }
 
-.smallerFontTitle {
+.smaller-font-title {
   font-size: 2rem; }
 
-.smallerFont {
+.smaller-font {
   font-size: 1rem; }
 
 .overview p {
@@ -168,11 +176,18 @@ hr {
   font-size: "Lato", sans-serif;
   font-family: "Lato", sans-serif; }
 
-.historyTitle {
+.history-title {
   font-weight: bold;
   padding-bottom: 10%; }
 
-.backImg {
+.camera-text {
+  font-size: 0.8rem;
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  padding-left: 5%;
+  margin-bottom: 5%; }
+
+.back-img {
   background-image: url("../images/landing.jpg");
   background-size: cover;
   background-position: center;
@@ -188,7 +203,7 @@ hr {
   margin-right: auto;
   width: 50%; }
 
-.homeBckImg {
+.home-bck-img {
   width: 90%;
   height: 50%;
   margin-right: auto;
@@ -197,27 +212,31 @@ hr {
   display: flex;
   justify-content: center; }
 
-.profileImg {
+.profile-img {
   width: 25%;
   height: 25%; }
 
-.profileImgSetting {
-  width: 20%;
-  height: 20%; }
-
 .graph {
-  width: 50%;
-  height: 50%; }
+  width: 200px;
+  height: 180px; }
 
-.graphCenter {
+.graph-center {
   display: flex;
   justify-content: center; }
+
+.camera-img {
+  width: 350px;
+  height: 200px; }
+
+.living-room-img {
+  width: 100%;
+  height: 230px; }
 
 .fa-spinner {
   color: #EF4924;
   font-size: 5rem; }
 
-.mainBtn {
+.main-btn {
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   padding-top: 20%;
@@ -232,35 +251,35 @@ hr {
   transition: background-color 0.2s ease-out, color 0.2s ease-out;
   border-radius: 4%; }
 
-.firstBtnLogin, .firstBtnSignUp {
+.first-btn-login, .first-btn-signup {
   margin-top: 15%;
   padding-left: 17%; }
 
-.secondBtnLogin, .secondBtnSignUp {
+.second-btn-login, .second-btn-signup {
   text-align: center;
   padding-top: 10%;
   padding-right: 22%; }
 
-.firstBtnSignUp {
+.first-btn-signup {
   padding-left: 25%; }
 
 .space {
   padding-left: 10%; }
 
-.bigTitle {
+.big-title {
   margin-top: 25%;
   font-size: 2.6rem;
   font-family: "Josefin Sans", sans-serif; }
 
-.registrationForm {
+.registration-form {
   margin-top: 10%;
   margin-left: 10%; }
 
-.userName, .password, .email {
+.username, .password, .email {
   font-size: 1.3rem;
   font-family: "Lato", sans-serif; }
 
-.name, .passwordEnter, .emailEnter {
+.name, .password-enter, .email-enter {
   border-bottom: 2px solid black;
   border-top: none;
   border-left: none;
@@ -273,13 +292,13 @@ hr {
   color: #3BACD9;
   text-decoration: underline; }
 
-.signUpBtn {
+.signup-btn {
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   color: #3BACD9;
   text-decoration: underline; }
 
-.forgotPassword {
+.forgot-password {
   float: right;
   padding-right: 20%; }
 
@@ -342,7 +361,7 @@ hr {
 .container {
   position: relative; }
 
-.homeStatus {
+.home-status, .living-room-status {
   position: absolute;
   z-index: 2;
   top: 83%;
@@ -359,10 +378,10 @@ small {
   font-size: 0.9rem;
   font-family: "Lato", sans-serif; }
 
-.profilePara {
+.profile-para {
   padding-top: 8%; }
 
-.iconAutomate, .iconSecurity, .iconStatistic {
+.icon-automate, .icon-security, .icon-statistic {
   width: 30%;
   height: 30%;
   padding-right: 8%; }
@@ -370,34 +389,34 @@ small {
 .fa-sign-out-alt {
   color: #34D293; }
 
-.categoryBox {
+.category-box {
   background-color: #EF4924;
   border-radius: 3%;
   margin: 5%;
   padding: 5%;
   width: 60%; }
 
-.categoryBtn {
+.category-btn {
   margin-top: 10%;
   margin-left: 25%; }
 
-.logoutSign {
+.logout-sign {
   float: right;
   padding-right: 7%;
   padding-top: 5%; }
 
-.roomBorder, .deviceBorder, .securityBorder, .statisticBorder {
+.room-border, .device-border, .security-border, .statistic-border {
   border: 2px solid #EF4924;
   padding: 5%;
   box-shadow: 5px 10px 10px #888888; }
-  .roomBorder .center, .deviceBorder .center, .securityBorder .center, .statisticBorder .center {
+  .room-border .center, .device-border .center, .security-border .center, .statistic-border .center {
     display: flex;
     justify-content: center; }
-    .roomBorder .center img, .deviceBorder .center img, .securityBorder .center img, .statisticBorder .center img {
+    .room-border .center img, .device-border .center img, .security-border .center img, .statistic-border .center img {
       width: 80%;
       height: 50%; }
 
-.gridWrapper {
+.grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1rem;
@@ -405,7 +424,7 @@ small {
   margin: 10%;
   margin-top: 7%; }
 
-.roomsGrid {
+.rooms-grid {
   margin-bottom: 3%; }
 
 .tab, .para {
@@ -420,11 +439,11 @@ small {
   padding: 2%;
   color: white; }
 
-.tabContent {
+.tab-content {
   height: 390px;
   display: none; }
 
-#lightBulbIcon, #burglarIcon, #smokeIcon, #thermostatIcon {
+#light-bulb-icon, #burglar-icon, #smoke-icon, #thermostat-icon {
   width: 50%;
   height: 50%;
   padding-bottom: 15%;
@@ -433,7 +452,7 @@ small {
 .fa-plus {
   margin-left: 3%; }
 
-#doorIcon {
+#door-icon {
   width: 60%;
   height: 60%;
   padding-top: 10%;
@@ -446,23 +465,74 @@ small {
   color: #EF4924;
   font-weight: bold; }
 
-.statisticBorder {
+.statistic-border {
   margin: 10%;
   margin-bottom: 100px; }
 
-.historyBox {
+.history-box {
   display: flex;
   justify-content: space-between;
   align-content: flex-start;
   flex-grow: 1;
   flex-basis: 0;
-  margin-bottom: 15px; }
-  .historyBox img {
+  margin-bottom: 6%;
+  padding-right: 1%; }
+  .history-box img {
     max-width: 40px;
     margin-top: -15px; }
 
-.fa-chevron-left {
-  width: 80%;
-  height: 80%; }
+.fa-plus-more {
+  margin-left: 10%; }
+
+.camera-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  text-align: center; }
+
+.camera-container, .room-container {
+  position: relative; }
+
+.camera-container-text, .room-container-record {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  left: 20px; }
+  .camera-container-text p, .room-container-record p {
+    color: #34D293;
+    font-weight: bold;
+    font-size: 0.7rem;
+    font-family: "Lato", sans-serif; }
+
+.no-margin {
+  margin-bottom: 0; }
+
+.living-room-status {
+  width: 100%;
+  margin-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.living-room-status-info img {
+  width: 5%;
+  height: 5%;
+  float: left; }
+
+.living-room-status-info p {
+  display: inline;
+  color: white;
+  font-size: 0.7rem;
+  font-family: "Lato", sans-serif;
+  padding: 5%; }
+
+.living-room-title {
+  margin-top: 8%; }
+
+.off-button-group {
+  text-align: center;
+  padding-top: 10%; }
+
+.smaller-title {
+  font-size: 1.5rem; }
 
 /*# sourceMappingURL=style.css.map */
