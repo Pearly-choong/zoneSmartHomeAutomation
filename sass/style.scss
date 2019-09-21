@@ -6,7 +6,7 @@
 @import 'images';
 @import 'tablet';
 
-// Clarification : 
+// Clarification :
 
 // some icons from fontawesome : which I adjust size by using font-size
 // some icons from iconfinder (downloaded png file) : which I adjust size by using @mixin img-size
@@ -15,7 +15,7 @@
 // style loading spinning icon
 .fa-spinner {
 	color: $orange;
-	font-size: 5rem;
+	font-size: 2rem;
 }
 
 // style the button (the common use for whole app)
@@ -74,7 +74,7 @@
 
 .registration-form {
 	margin-top: 10%;
-	margin-left: 10%;	
+	margin-left: 10%;
 	// width: 100%;
 }
 
@@ -152,7 +152,7 @@
 	h2 {
 		padding-left: 2%;
 		padding-top: 1%;
-	} 
+	}
 	// h2 finished
 }
 
@@ -167,15 +167,15 @@
 // positioning and adjust layout on status info on background image
 .home-status {
 	position: absolute;
-	z-index: 2;
+	z-index: 1;
 	top: 83%;
 	background-color: $overlayColor;
 	width: 90%;
-	margin-left: 5%;	
+	margin-left: 5%;
 }
 
 
-// positioning span 
+// positioning span
 span img {
 	float: left;
 	padding: 5%;
@@ -247,10 +247,10 @@ small {
 // =========== Automate Page ============
 
 
-// Style Room page 
+// Style Room page
 .room-border {
 	border: 2px solid $orange;
-	padding: 5%; 
+	padding: 5%;
 	box-shadow: $boxShadow;
 
 	 .center {
@@ -260,7 +260,7 @@ small {
 			img {
 				@include img-size(80%,50%);
 			} //image finished here
-	 } // center finished here	
+	 } // center finished here
 } // style border finished here
 
 
@@ -274,7 +274,7 @@ small {
 	margin-top: 7%;
 }
 
-// add more padding on room page 
+// add more padding on room page
 .rooms-grid {
 	margin-bottom: 3%;
 }
@@ -285,8 +285,9 @@ small {
 }
 
 .tab button {
-	cursor: pointer;
-	
+	border: none;
+	background-color: white;
+
 }
 
 
@@ -298,7 +299,7 @@ small {
 	// box-shadow: $boxShadow;
 }
 
-// style the tab content 
+// style the tab content
 .tab-content {
 	height: 390px;
 	display: none;
@@ -311,7 +312,7 @@ small {
 }
 
 
-// style Device page 
+// style Device page
 .device-border {
 	@extend .room-border;
 }
@@ -351,6 +352,53 @@ small {
 }
 
 
+.modal-header {
+	background-color: $orange;
+	height: 50px;
+	width: 100%;
+
+	ul {
+		padding-top: 30%;
+		text-align: center;
+
+		p {
+			font-size: 1rem;
+		}
+	}
+}
+
+.full-width {
+	padding-left: 0;
+	margin-top: 30%;
+}
+
+
+.fa-lock {
+	font-size: 2rem;
+	margin-left: 30%;
+}
+
+.fa-lock-open {
+	@extend .fa-lock;
+	color: $green;
+}
+
+.new-color {
+	color: white;
+	top: 21%;
+}
+
+.new-line {
+	width: 100%;
+	margin-left: 0;
+	margin-bottom: 10%;
+	opacity: 0.3;
+}
+
+.warning {
+	color: red;
+}
+
 // ========== Usage Page ==========
 .overview span {
 	padding: 5%;
@@ -375,7 +423,7 @@ small {
 // }
 
 // .history img {
-// 	// @include imgSize(70%,70%);	
+// 	// @include imgSize(70%,70%);
 // }
 
 .history-box {
@@ -412,7 +460,7 @@ small {
 
 .camera-container-text{
 	position: absolute;
-	z-index: 2;
+	z-index: 1;
 	top: 13px;
 	left: 20px;
 
@@ -424,7 +472,7 @@ small {
 }
 
 
-// ========== Livingroom Page =======
+// ================== Livingroom Page =============
 
 .room-container {
 	@extend .camera-container;
@@ -450,9 +498,17 @@ small {
 
 }
 
-.living-room-status-info img {
-	@include img-size(5%,5%);
-	float: left;
+
+.living-room-status-info {
+	text-align: center;
+	padding-top: 7%;
+	padding-bottom: 7%;
+
+}
+
+.fa-thermometer-half, .fa-tint, .fa-bolt {
+	color: white;
+	font-size: $bodyfs;
 }
 
 .living-room-status-info p {
@@ -466,15 +522,169 @@ small {
 	margin-top: 8%;
 }
 
-.off-button-group {
+.all-off-button-group {
 	text-align: center;
 	padding-top: 10%;
+	padding-bottom: 5%;
 }
 
 
 .smaller-title {
 	font-size: 1.5rem;
 }
+
+.control-box {
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+
+.box-border {
+	border: 2px solid $orange;
+	padding: 5%;
+	box-shadow: $boxShadow;
+	border-radius: 3%;
+}
+
+.last-box {
+	margin-bottom: 10%;
+}
+
+.control-box-selection {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.control-slider {
+	padding-top: 3%;
+}
+
+.fas.fa-lightbulb, .bigger-size {
+	font-size: 2.5rem;
+	color: black;
+}
+
+.fas.fa-thermometer-three-quarters {
+	font-size: 3rem;
+	color: black;
+}
+
+
+.left-align {
+	float: left;
+}
+
+
+.on-off-btn {
+		padding-left: 30%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: $green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $green;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+//  intensity slider
+.intensity-control-slider {
+	padding-top: 5%;
+}
+
+#green {
+	float: left;
+  clear: left;
+  width: 300px;
+  margin: 15px;
+}
+
+#green .ui-slider-range { background: #8ae234; }
+#green .ui-slider-handle { border-color: #8ae234; }
+
+
+.mode-control {
+	padding-top: 8%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	p {
+		color: #ccc;
+	}
+}
+
+.cool-mode, .heat-mode, .fan-mode, .auto-mode {
+	text-align: center;
+}
+
+// .fa-snowflake {
+// 	color: $lightBlue;
+// }
+
+.fa-fire, .fa-fan, .fa-autoprefixer, .fa-snowflake {
+	color: #ccc;
+}
+
+
+// ================= Lighting page ================
+.lighting-title {
+	padding-top: 10%;
+}
+
 
 // .col {
 // 	float: left;

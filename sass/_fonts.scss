@@ -30,7 +30,7 @@ p {
 
 
 // ==========login page fonts ==========
-.text h1 {	
+.text h1 {
 	@include para-style($h1fs*2, $headerff);
 }
 
@@ -130,7 +130,7 @@ hr {
 }
 
 .history-title {
-	font-weight: bold; 
+	font-weight: bold;
 	padding-bottom: 10%;
 }
 
@@ -142,4 +142,3 @@ hr {
 	padding-left: 5%;
 	margin-bottom: 5%;
 }
-

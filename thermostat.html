@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Living Room</title>
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/logo1.png">
+
+	<!-- responsive  -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- link to stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- link to google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+	<!-- link to fontawesome -->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<!-- link to jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+	<!-- link to jQuery UI -->
+	 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	 <link rel="stylesheet" href="/resources/demos/style.css">
+</head>
+
+<body>
+
+	<!-- header -->
+	<div class="header no-margin">
+		<a href="automate.html"><i class="fas fa-chevron-left"></i></a>
+		<!-- using jQuery method -->
+		 <img id="noti" class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
+	</div>
+
+	<!-- model notification message pop-up screen -->
+	<div id="id01" class="modal">
+		<div class="modal-content animate">
+				 <span onclick="document.getElementById('id01').style.display='none'" class="close-btn-two" title="Close Modal">&times;</span>
+				 <div class="modal-content-info">
+					 <div class="modal-title">
+							<h1>Notification</h1>
+							<hr>
+					 </div>
+
+					 <ul>
+						 <li>
+								 <i class="fas fa-door-open content-align"></i>
+								 <p class="content-align">Front door not lock!</p>
+						 </li>
+						 <li>
+								<i class="far fa-lightbulb content-align"></i>
+								<p class="content-align">Main light need replacing!</p>
+						 </li>
+					 </ul>
+				</div>
+		</div>
+	</div>
+
+
+
+	<h1 class="lighting-title">
+		<span class="page-title smaller-title">THERMOSTAT</span>
+		<span class="te-reo smaller-font">TAKAWAENGA</span>
+	</h1>
+	<hr>
+
+	<div class="all-off-button-group">
+		<a class="main-btn" href="">Turn Off all devices</a>
+		<i class="fas fa-plus fa-plus-more"></i>
+	</div>
+
+
+  <div class="control-box box-border last-box">
+    <div class="control-box-selection">
+      <div class="selection-box-image">
+        <i class="fas fa-thermometer-three-quarters"></i>
+        <!-- <i id="light-off" class="fas fa-lightbulb"></i> -->
+      </div>
+      <div class="device-name">
+          <p class="device-name-title">Thermostat</p>
+          <p class="desc left-align">10 kw used</p>
+      </div>
+      <div class="on-off-btn">
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="intensity-control-slider">
+      <p>
+        <label for="amount-three">Temperature:</label>
+        <input type="text" id="amount-three" readonly style="border:0; color:#f6931f; font-weight:bold;">
+      </p>
+      <br>
+      <div id="slider-range-min-three"></div>
+      <div id="green-three"></div>
+    </div>
+
+    <div class="mode-control">
+      <div id="cool-on" class="cool-mode">
+        <!-- <img class="mode-icon" src="images/icons/cool.png" alt="cool"> -->
+        <i class="far fa-snowflake"></i>
+        <p class="cool-on-text">Cool</p>
+      </div>
+      <div id="heat-on" class="heat-mode">
+        <!-- <img class="mode-icon" src="images/icons/heat.png" alt="heat"> -->
+        <i class="fas fa-fire"></i>
+        <p class="heat-on-text">Heat</p>
+      </div>
+      <div id="fan-on" class="fan-mode">
+        <!-- <img class="mode-icon" src="images/icons/fan.png" alt="fan"> -->
+        <i class="fas fa-fan"></i>
+        <p class="fan-on-text">Fan</p>
+      </div>
+      <div id="auto-on" class="auto-mode">
+        <!-- <img class="mode-icon" src="images/icons/auto.png" alt="auto"> -->
+        <i class="fab fa-autoprefixer"></i>
+        <p class="auto-on-text">Auto</p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+	<!-- jQuery -->
+	 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+	<!-- jQueiry UI -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+crossorigin="anonymous"></script>
+
+	<!-- javascript file -->
+	<script src="js/script.js"></script>
+	<script src="js/jquery.js"></script>
+
+
+</body>
+
+</html>

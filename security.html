@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Security</title>
@@ -11,25 +11,96 @@
 
 	<!-- link to stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
+
 	<!-- link to google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
 	<!-- link to fontawesome -->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<!-- link to jQuery -->
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
 	<!-- header -->
 	<div class="header">
-		<img class="header-setting-icon" src="images/icons/setting.png" alt="setting">
-		<img class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
-		<!-- <i class="fas fa-user-cog"></i>
-		<i class="far fa-bell"></i> -->
+		<!-- using javascript method -->
+		<img class="header-setting-icon" src="images/icons/setting.png" alt="setting" onclick="openNav()">
+		<!-- using jQuery method -->
+		 <img id="noti" class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
+
+		<!-- menu nav list -->
+		<div id="setting" class="setting-nav-content">
+					<h1>
+						<span class="setting-title">Setting</span>
+						<span class="te-reo">Tautonga</span>
+					</h1>
+					<hr>
+					<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+
+			<ul>
+				<li><img class="profile-img-setting" src="images/danielprofile.png" alt="Daniel"></li>
+				<li>
+					<span>
+					<i class="far fa-address-card"></i>
+					<a class="acc" href="#">Account</a>
+					</span>
+				</li>
+				<li>
+					<span>
+					<i class="far fa-bell"></i>
+					<a href="#">Notification</a>
+					</span>
+				</li>
+				<li>
+					<span>
+					<i class="fas fa-globe"></i>
+					<a href="#">Māori Language</a>
+					</span>
+				</li>
+				<li>
+					<span>
+					<i class="far fa-question-circle"></i>
+					<a href="#">Help</a>
+					</span>
+				</li>
+			</ul>
+		</div>
 	</div>
 
+	<!-- model notification message pop-up screen -->
+	<div id="id01" class="modal">
+		<div class="modal-content animate">
+				 <span onclick="document.getElementById('id01').style.display='none'" class="close-btn-two" title="Close Modal">&times;</span>
+				 <div class="modal-content-info">
+					 <div class="modal-title">
+							<h1>Notification</h1>
+							<hr>
+					 </div>
+
+					 <ul>
+						 <li>
+								 <i class="fas fa-door-open content-align"></i>
+								 <p class="content-align">Front door not lock!</p>
+						 </li>
+						 <li>
+								<i class="far fa-lightbulb content-align"></i>
+								<p class="content-align">Main light need replacing!</p>
+						 </li>
+					 </ul>
+				</div>
+		</div>
+	</div>
+
+
+<!-- started of the page -->
 	<h1>
 		<span class="page-title">SECURITY</span>
 		<span class="te-reo smaller-font">HAUMARUTANGA</span>
@@ -38,7 +109,7 @@
 
 	<br><br>
 
-		
+
 
 <!-- category -->
 	<div class="grid-wrapper">
@@ -58,15 +129,15 @@
 			<p class="desc">Everything is ok</p>
 		</div>
 
-		<a href="door.html">
+		<div id="modal-door">
 			<div class="security-border">
 				<div class="center">
 					<img id="door-icon" src="images/icons/door.png" alt="doors">
 				</div>
 				<p class="subtitle">Doors</p>
-				<p class="desc">1 Open</p>
+				<p class="desc warning">1 Open</p>
 			</div>
-		</a>
+		</div>
 
 		<a href="camera.html">
 			<div class="security-border">
@@ -78,6 +149,32 @@
 			</div>
 		</a>
 	</div>
+
+
+	<!-- model door lock/ unlock pop-up screen -->
+	<div id="id02" class="modal">
+		<div class="modal-content animate full-width">
+				 <span onclick="document.getElementById('id02').style.display='none'" class="close-btn-two new-color" title="Close Modal">&times;</span>
+				 <div class="modal-header">
+					 <!-- <div class="modal-header"></div> -->
+
+					 <ul>
+						 <li>
+								 <p class="content-align">Front Door</p>
+								 <i id="unlock-front" class="fas fa-lock-open content-align"></i>
+								 <i id="lock-front" class="fas fa-lock"></i>
+						 </li>
+						 <hr class="new-line">
+						 <li>
+								<p class="content-align">Back Door</p>
+								<i id="lock-back" class="fas fa-lock content-align"></i>
+								<i id="unlock-back" class="fas fa-lock-open"></i>
+						 </li>
+					 </ul>
+				</div>
+		</div>
+	</div>
+
 
 
 
@@ -120,6 +217,10 @@
 		</div>
 	</div>
 
+
+	<!-- javascript file -->
+		<script src="js/script.js"></script>
+		<script src="js/jquery.js"></script>
 
 </body>
 

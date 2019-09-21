@@ -1,6 +1,20 @@
 // console.log('my script is working');
 
+// =============== Setting navbar ====================
+function openNav() {
+  document.getElementById("setting").style.width = "300px";
+  document.getElementById("setting").style.height = "600px";
+}
 
+function closeNav() {
+  document.getElementById("setting").style.width = "0";
+}
+
+
+
+
+
+// ==================== tab function on Automate page ================
 function openTab(evt, roomOrDevice) {
   var i, tabContent, tabLinks;
   tabContent = document.getElementsByClassName("tab-content");
@@ -17,15 +31,4 @@ function openTab(evt, roomOrDevice) {
 
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-
-
-// $('settingNav').hide();
-
-// click even for hamburger
-$(document).ready(function(){
-	$('.setting-icon').click(function(){
-  		$('.setting-nav').toggleClass("active");
-	});
-});
+  document.getElementById("default").click();

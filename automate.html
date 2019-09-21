@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Automate Rooms | Devices </title>
@@ -11,7 +11,7 @@
 
 	<!-- link to stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
+
 	<!-- link to google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -19,7 +19,13 @@
 	<!-- link to fontawesome -->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- link to jQuery -->
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+
+
 
 </head>
 
@@ -27,18 +33,26 @@
 
 <!-- header -->
 	<div class="header">
+		<!-- using javascript method -->
+		<img class="header-setting-icon" src="images/icons/setting.png" alt="setting" onclick="openNav()">
+		<!-- using jQuery method -->
+		 <img id="noti" class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
 
-		<!-- setting icon -->
-		<i class="fas fa-cog setting-icon"></i>
+		<!-- menu nav list -->
+		<div id="setting" class="setting-nav-content">
+					<h1>
+						<span class="setting-title">Setting</span>
+						<span class="te-reo">Tautonga</span>
+					</h1>
+					<hr>
+					<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
 
-		<!-- setting nav list -->
-		<div class="setting-nav">
 			<ul>
 				<li><img class="profile-img-setting" src="images/danielprofile.png" alt="Daniel"></li>
 				<li>
 					<span>
-						<i class="far fa-user"></i>
-						<a href="#">Account</a>
+					<i class="far fa-address-card"></i>
+					<a class="acc" href="#">Account</a>
 					</span>
 				</li>
 				<li>
@@ -61,27 +75,45 @@
 				</li>
 			</ul>
 		</div>
+	</div>
 
-	<!-- 	<img class="header-setting-icon" src="images/icons/setting.png" alt="setting">
-		<img class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification"> -->
-		<!-- <i class="fas fa-user-cog"></i>
-		<i class="far fa-bell"></i> -->
+	<!-- model notification message pop-up screen -->
+	<div id="id01" class="modal">
+		<div class="modal-content animate">
+				 <span onclick="document.getElementById('id01').style.display='none'" class="close-btn-two" title="Close Modal">&times;</span>
+				 <div class="modal-content-info">
+					 <div class="modal-title">
+							<h1>Notification</h1>
+							<hr>
+					 </div>
+
+					 <ul>
+						 <li>
+								 <i class="fas fa-door-open content-align"></i>
+								 <p class="content-align">Front door not lock!</p>
+						 </li>
+						 <li>
+								<i class="far fa-lightbulb content-align"></i>
+								<p class="content-align">Main light need replacing!</p>
+						 </li>
+					 </ul>
+				</div>
+		</div>
 	</div>
 
 
-	
 		<h1>
 			<span class="page-title smaller-font-title">AUTOMATE</span>
 			<span class="te-reo smaller-font">HANGA AUNOA</span>
 		</h1>
 		<hr>
-	
+
 
 	<br><br>
 
 <!-- tab links -->
 	<div class="tab">
-		<button class="tab-links tab-links-font" onclick="openTab(event,'all-rooms')" id="defaultOpen">Rooms</button>
+		<button class="tab-links tab-links-font" onclick="openTab(event,'all-rooms')" id="default">Rooms</button>
 		<button class="tab-links tab-links-font" onclick="openTab(event,'devices')">Devices</button>
 		<i class="fas fa-plus"></i>
 	</div>
@@ -94,10 +126,10 @@
 		<p class="para">Currently you can manage 4 rooms in your home.</p>
 		<div class="grid-wrapper">
 			<a href="livingroom.html">
-				<div class="room-border">				
+				<div class="room-border">
 					<div class="center">
 						<img src="images/icons/livingroomIcon.png" alt="livingroom">
-					</div>								
+					</div>
 					<p class="subtitle">Living Room</p>
 					<p class="desc">3 devices</p>
 				</div>
@@ -107,7 +139,7 @@
 				<div class="room-border">
 					<div class="center">
 						<img src="images/icons/kitchenIcon.png" alt="kitchen">
-					</div>	
+					</div>
 					<p class="subtitle">Kitchen</p>
 					<p class="desc">2 devices</p>
 				</div>
@@ -142,22 +174,22 @@
 		<div class="grid-wrapper">
 			<a href="lighting.html">
 				<div class="device-border">
-					<div class="center">			
+					<div class="center">
 						<img id="light-bulb-icon" src="images/icons/lightBulb.png" alt="lighting">
-					</div>			
+					</div>
 					<p class="subtitle">Lighting</p>
 					<p class="desc">3 On</p>
-				</div> 
-			</a>            
+				</div>
+			</a>
 
 			<a href="thermostat.html">
 				<div class="device-border">
 					<div class="center">
 						<img id="thermostat-icon" src="images/icons/thermostat2.png" alt="thermostat">
 						<!-- <i class="fas fa-thermometer-three-quarters"></i> -->
-					</div>		
+					</div>
 					<p class="subtitle">Thermostat</p>
-					<p class="desc">2 On</p>	
+					<p class="desc">2 On</p>
 				</div>
 			</a>
 		</div>
@@ -205,10 +237,11 @@
 	</div>
 
 <!-- jquery cdn source -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<!-- <script src="js/jquery-3.4.1.min.js"> </script> -->
 
 <!-- javascript file -->
 	<script src="js/script.js"></script>
+	<script src="js/jquery.js"></script>
 
 </body>
 

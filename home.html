@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Home Page</title>
@@ -11,7 +11,7 @@
 
 	<!-- link to stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
+
 	<!-- link to google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -19,6 +19,13 @@
 	<!-- link to fontawesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	<!-- link to jQuery -->
+	<script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+
 </head>
 
 
@@ -27,10 +34,72 @@
 <div class="header-background">
 <!-- header -->
 	<div class="header-home">
-		<img class="header-setting-icon" src="images/icons/setting.png" alt="setting">
-		<a href="notificaton.html">
-			<img class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
-		</a>
+		<!-- using javascript method -->
+		<img class="header-setting-icon" src="images/icons/setting.png" alt="setting" onclick="openNav()">
+		<!-- <img class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification" onclick="document.getElementById('id01').style.display='block'"> -->
+		<!-- using jQuery method -->
+		 <img id="noti" class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
+		<!-- menu nav list -->
+		<div id="setting" class="setting-nav-content">
+					<h1>
+						<span class="setting-title">Setting</span>
+						<span class="te-reo">Tautonga</span>
+					</h1>
+					<hr>
+					<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+
+			<ul>
+				<li><img class="profile-img-setting" src="images/danielprofile.png" alt="Daniel"></li>
+				<li>
+					<span>
+					<i class="far fa-address-card"></i>
+					<a class="acc" href="#">Account</a>
+					</span>
+				</li>
+				<li>
+					<span>
+					<i class="far fa-bell"></i>
+					<a href="#">Notification</a>
+					</span>
+				</li>
+				<li>
+					<span>
+					<i class="fas fa-globe"></i>
+					<a href="#">Māori Language</a>
+					</span>
+				</li>
+				<li>
+					<span>
+					<i class="far fa-question-circle"></i>
+					<a href="#">Help</a>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- model notification message pop-up screen -->
+	<div id="id01" class="modal">
+		<div class="modal-content animate">
+				 <span onclick="document.getElementById('id01').style.display='none'" class="close-btn-two" title="Close Modal">&times;</span>
+				 <div class="modal-content-info">
+				 	 <div class="modal-title">
+							<h1>Notification</h1>
+						  <hr>
+				   </div>
+
+					 <ul>
+						 <li>
+								 <i class="fas fa-door-open content-align"></i>
+			 				   <p class="content-align">Front door not lock!</p>
+						 </li>
+						 <li>
+			 					<i class="far fa-lightbulb content-align"></i>
+			 					<p class="content-align">Main light need replacing!</p>
+						 </li>
+					 </ul>
+				</div>
+		</div>
 	</div>
 
 <!-- home images with house status -->
@@ -65,7 +134,7 @@
 						<li>Safe<li>
 						<li>Security Level</li>
 					</ul>
-				</div>				
+				</div>
 			</div>
 	</div>
 </div>
@@ -86,7 +155,7 @@
 		<div class="category-box co1">
 			<a href="automate.html">
 				<span>
-				<img class="icon-automate" src="images/icons/automateWhite.png" alt="automate"> 	
+				<img class="icon-automate" src="images/icons/automateWhite.png" alt="automate">
 				<div class="category-group-font">
 					<p class="title">Automate</p>
 					<p>Hanga Aunoa</p>
@@ -97,7 +166,7 @@
 		<div class="category-box co1">
 			<a href="security.html">
 				<span>
-				<img class="icon-security" src="images/icons/securityWhite.png" alt="security">     
+				<img class="icon-security" src="images/icons/securityWhite.png" alt="security">
 				<div class="category-group-font">
 					<p class="title">Security</p>
 					<p>Haumarutanga</p>
@@ -108,7 +177,7 @@
 		<div class="category-box co1">
 			<a href="statistic.html">
 				<span>
-				<img class="icon-statistic" src="images/icons/statisticWhite.png" alt="statistic"> 
+				<img class="icon-statistic" src="images/icons/statisticWhite.png" alt="statistic">
 				<div class="category-group-font">
 					<p class="title">Statistic</p>
 					<p>Tatauranga</p>
@@ -124,6 +193,11 @@
 		<!-- <i class="fas fa-sign-out-alt"></i> -->
 		<a href="login.html">Logout</a>
 	</div>
+
+	<script src="js/jquery-3.4.1.min.js"> </script>
+	<!-- javascript file -->
+	<script src="js/script.js"></script>
+	<script src="js/jquery.js"></script>
 
 </body>
 

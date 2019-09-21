@@ -6,25 +6,171 @@
 }
 
 
-// style header icons (setting cog and notification)
+// style header icons (setting cog)
 .header-setting-icon {
 	@include img-size (15%, 15%);
 	padding: 3%;
 }
 
-.header-notification-icon {
-	@include img-size(12%, 12%);
-	float: right;
-	padding: 3%;
+
+// style navbar menu icons
+.setting-nav-content {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.setting-nav-content {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  @include para-style($h1fs,$bodyff);
+
+}
+
+.close-btn {
+	position: absolute;
+  top: 3%;
+  right: 6%;
+	font-size: 2rem;
+	color: $orange
+}
+
+.setting-title {
+	padding-left: 8%;
+	@include para-style($h1fs*1.5, $headerff);
+}
+
+#setting ul {
+	padding-left: 5%;
+	 li {
+		padding: 5%;
+
+			a {
+				padding-left: 5%;
+			} //a tag finished here
+		} // li tag finished here
 }
 
 
-// all the other pages
+.profile-img-setting {
+	@include img-size(35%,35%);
+	padding-top: 2%;
+}
+
+.fa-address-card, .fa-bell, .fa-globe, .fa-question-circle {
+	color: $orange;
+}
+
+
+
+
+// =========== notification header nav =====
+
+// style header icons ( notification)
+.header-notification-icon {
+	@include img-size(13%, 13%);
+	float: right;
+	padding: 4%;
+}
+
+
+// The Modal (background)
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 20px;
+}
+
+// Modal Content/Box
+.modal-content {
+    background-color: white;
+  	margin-left: auto;
+		margin-right: auto;
+    border: 2px solid $orange;
+    width: 80%;
+	  height: 250px;
+		margin-top: 10%;
+		padding-left: 10%;
+}
+
+.close-btn-two {
+	position: absolute;
+  top: 10%;
+  right: 13%;
+	font-size: 2rem;
+	color: $orange
+}
+
+.modal-content-info {
+	padding-top: 10%;
+
+	.modal-title {
+		padding-bottom: 20%;
+	} // modal-title finished
+} //modal-content-info finished
+
+
+  .fa-door-open, .fa-lightbulb {
+		color: $orange;
+		font-size: 1.5rem;
+		margin-right: 2%;
+	}
+
+
+.modal-content-info p {
+	font-size: 1rem;
+}
+
+.content-align {
+	display: inline-block;
+	padding-bottom: 10%;
+}
+
+
+
+// Add Zoom Animation
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+
+
+// =========== all the other pages =====
 .header {
 	background-color: $orange;
 	margin-bottom: 10%;
 }
 
+#setting ul li {
+
+}
 
 .fa-cog {
 	font-size: 2rem;
@@ -32,15 +178,8 @@
 }
 
 
-.profile-img-setting {
-	@include img-size(20%,20%);
-}
 
-.setting-nav {
-	display: none;
-}
-
-// bottom navbar
+// ==================  bottom navbar
 .nav {
 	position: fixed;
 	left: 0;
@@ -53,9 +192,9 @@
 		padding: 8%;
 
 			li img {
-			@include img-size (30%,30%);	
+			@include img-size (30%,30%);
 			}
-			
+
 			li {
 				color: $lightGrey;
 				@include para-style(0.7rem,$bodyff);
@@ -64,9 +203,6 @@
 	}//ul list finished	here
 }//nav finished here
 
-.nav {
-
-}
 
 .fa-home, .fa-wifi, .fa-shield-alt, .fa-chart-bar {
 	font-size: 1.5rem;
@@ -89,8 +225,5 @@
 	font-size: 2rem;
 	padding: 3%;
 	color: white;
-	
+
 }
-
-
-
