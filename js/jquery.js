@@ -39,15 +39,6 @@ $(document).ready(function(){
   });
 
 
-  // turn off button - images greyscale color
-  // $('#turn-off').on({
-  //   click: function(){
-  //     $('#greyoff').css('filter','grayscale(100%)');
-  //   },
-  //   mouseleave: function(){
-  //     $('#greyoff').css('filter', 'none');
-  //   }
-  // });
   $('#turn-off').click(function(){
      $('#greyoff').css('filter','grayscale(100%)');
      $('#turn-off').hide();
@@ -108,6 +99,15 @@ $(document).ready(function(){
       $('.auto-on-text').css('color','#ccc');
     }
   });
+
+  // $('#room-active').on({
+  //   click: function(){
+  //     $('#default').css('background-color','#EF502D');
+  //   },
+  //   mouseleave: function(){
+  //     $('#default').css('background-color', 'none');
+  //   }
+  // });
 
 });
 

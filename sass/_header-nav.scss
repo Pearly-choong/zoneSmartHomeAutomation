@@ -1,8 +1,9 @@
 // only for homepage
 .header-background {
-	background-color: $orange;
+	// background: #F27141;
+	background: $lightOrange;
 	height: 200px;
-	margin-bottom: 20%;
+	margin-bottom: 45%;
 }
 
 
@@ -165,7 +166,6 @@
 // =========== all the other pages =====
 .header {
 	background-color: $orange;
-	margin-bottom: 10%;
 }
 
 #setting ul li {
@@ -185,9 +185,10 @@
 	left: 0;
 	bottom: 0;
 	width: 100%;
-
+	border: 1px solid #BFBFBF;
+	box-shadow: 2px 2px 2px 2px #888888;
+	background-color: white;
 	ul {
-		background-color: $orange;
 		text-align: center;
 		padding: 8%;
 
@@ -212,11 +213,11 @@
 
 .active-icon {
 	@extend .fa-home;
-	color: white;
+	color: $orange;
 }
 
 #active{
-	color: white;
+	color: $orange;
 }
 
 

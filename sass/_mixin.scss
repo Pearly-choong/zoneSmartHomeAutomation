@@ -1,4 +1,4 @@
-/* shorthand mixin for image size */
+// shorthand mixin for image size
 
 @mixin img-size ($w,$h) {
 	width: $w;
@@ -6,12 +6,13 @@
 }
 
 
-
+// shorthand mixin for font size and font family
 @mixin para-style ($fs, $ff) {
 	font-size: $fs;
 	font-family: $ff;
-	
 }
+
+
 
 
 // @mixin img-effect ($position, $margin, $overflow) {

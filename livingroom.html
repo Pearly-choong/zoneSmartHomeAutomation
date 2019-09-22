@@ -62,128 +62,112 @@
 		</div>
 	</div>
 
-	<!-- living room camera scenes with status -->
-	<div class="room-container">
-		<img id="greyoff" class="living-room-img" src="images/livingroom.jpg" alt="livingroom">
-			<div class="room-container-record">
-				<p>
-				<span><i class="fas fa-video"></i></span>
-				<span>Cam 2</span>
-				</p>
-			</div>
+	<div class="tablet-screen">
+		<h1>
+			<span class="page-title">LIVING ROOM</span>
+			<span class="te-reo">RUMA NOHO</span>
+		</h1>
+		<hr>
+	</div>
 
-			<div class="living-room-status">
-				<div class="living-room-status-info">
-					<!-- <img src="images/icons/temperature.png" alt="temperature"> -->
-					<i class="fas fa-thermometer-half"></i>
-					<p>24°C</p>
+<div class="outer-contianer-wrapper">
+	<div class="big-container-scene-box">
+		<!-- living room camera scenes with status -->
+		<div class="room-container">
+			<img id="greyoff" class="living-room-img" src="images/livingroom.jpg" alt="livingroom">
+				<div class="room-container-record">
+					<p>
+					<span><i class="fas fa-video"></i></span>
+					<span>Cam 2</span>
+					</p>
 				</div>
 
-				<div class="living-room-status-info">
-					<!-- <img src="images/icons/humid.png" alt="humid"> -->
-					<i class="fas fa-tint"></i>
-					<p>50%</p>
+				<div class="living-room-status">
+					<div class="living-room-status-info">
+						<!-- <img src="images/icons/temperature.png" alt="temperature"> -->
+						<i class="fas fa-thermometer-half"></i>
+						<p>24°C</p>
+					</div>
+
+					<div class="living-room-status-info">
+						<!-- <img src="images/icons/humid.png" alt="humid"> -->
+						<i class="fas fa-tint"></i>
+						<p>50%</p>
+					</div>
+
+					<div class="living-room-status-info">
+						<!-- <img src="images/icons/power.png" alt="power"> -->
+						<i class="fas fa-bolt"></i>
+						<p>12kw</p>
+					</div>
 				</div>
+		</div>
 
-				<div class="living-room-status-info">
-					<!-- <img src="images/icons/power.png" alt="power"> -->
-					<i class="fas fa-bolt"></i>
-					<p>12kw</p>
-				</div>
-			</div>
+		<div class="mobile-screen">
+			<h1 class="living-room-title">
+				<span class="page-title smaller-title">LIVING ROOM</span>
+				<span class="te-reo smaller-font">RUMA NOHO</span>
+			</h1>
+			<hr>
+		</div>
+
+
+		<!-- turn off all devices -->
+		<div class="all-off-button-group">
+			<a class="main-btn" href="">Turn Off all devices</a>
+			<i class="fas fa-plus fa-plus-more"></i>
+		</div>
+
 	</div>
 
 
-	<h1 class="living-room-title">
-		<span class="page-title smaller-title">LIVING ROOM</span>
-		<span class="te-reo smaller-font">RUMA NOHO</span>
-	</h1>
-	<hr>
-
-	<div class="all-off-button-group">
-		<a class="main-btn" href="">Turn Off all devices</a>
-		<i class="fas fa-plus fa-plus-more"></i>
-	</div>
-
-
-
-<!-- control / automate devices option 1 -->
-	<div class="control-box box-border">
-		<div class="control-box-selection">
-			<div class="selection-box-image">
-				<i class="fas fa-lightbulb"></i>
-				<!-- <i id="light-off" class="fas fa-lightbulb"></i> -->
-			</div>
-			<div class="device-name">
-					<p class="device-name-title">Main Light</p>
-					<p class="desc left-align">2 kw used</p>
-			</div>
-			<div class="on-off-btn">
-				<label id="turn-off" class="switch">
-	  			<input type="checkbox" checked>
-	  			<span class="slider round"></span>
-				</label>
-				<label id="turn-on" class="switch">
-	  			<input type="checkbox">
-	  			<span class="slider round"></span>
-				</label>
-			</div>
-		</div>
-
-		<div class="intensity-control-slider">
-			<p>
-	  		<label for="amount">Intensity:</label>
-	  		<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-			</p>
-			<br>
-			<div id="slider-range-min"></div>
-			<div id="green"></div>
-		</div>
-	</div>
-
-<!-- control / automate devices option 2 -->
-	<div class="control-box box-border">
-		<div class="control-box-selection">
-			<div class="selection-box-image">
-				<i class="far fa-lightbulb bigger-size"></i>
-			</div>
-			<div class="device-name">
-					<p class="device-name-title">Wall Light</p>
-					<p class="desc left-align">0 kw used</p>
-			</div>
-			<div class="on-off-btn">
-				<label class="switch">
-					<input type="checkbox">
-					<span class="slider round"></span>
-				</label>
-			</div>
-		</div>
-
-		<div class="intensity-control-slider">
-			<p>
-				<label for="amount-two">Intensity:</label>
-				<input type="text" id="amount-two" readonly style="border:0; color:#f6931f; font-weight:bold;">
-			</p>
-			<br>
-			<div id="slider-range-min-two"></div>
-			<div id="green-two"></div>
-		</div>
-	</div>
-
-	<!-- control / automate devices option 3 -->
-		<div class="control-box box-border last-box">
+	<div class="big-container-control-box">
+		<!-- control / automate devices option 1 -->
+		<div class="control-box box-border">
 			<div class="control-box-selection">
 				<div class="selection-box-image">
-					<i class="fas fa-thermometer-three-quarters"></i>
-					<!-- <i id="light-off" class="fas fa-lightbulb"></i> -->
+					<i class="fas fa-lightbulb"></i>
 				</div>
 				<div class="device-name">
-						<p class="device-name-title">Thermostat</p>
-						<p class="desc left-align">10 kw used</p>
+						<p class="device-name-title">Main Light</p>
+						<p class="desc left-align">2 kw used</p>
+				</div>
+				<div class="on-off-btn">
+					<label id="turn-off" class="switch">
+		  			<input type="checkbox" checked>
+		  			<span class="slider round"></span>
+					</label>
+					<label id="turn-on" class="switch">
+		  			<input type="checkbox">
+		  			<span class="slider round"></span>
+					</label>
+				</div>
+			</div>
+
+			<div class="intensity-control-slider">
+				<p>
+		  		<label for="amount">Intensity:</label>
+		  		<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+				</p>
+				<br>
+				<div id="slider-range-min"></div>
+				<div id="green"></div>
+			</div>
+		</div>
+
+	<!-- control / automate devices option 2 -->
+		<div class="control-box box-border">
+			<div class="control-box-selection">
+				<div class="selection-box-image">
+					<i class="far fa-lightbulb bigger-size"></i>
+				</div>
+				<div class="device-name">
+						<p class="device-name-title">Wall Light</p>
+						<p class="desc left-align">0 kw used</p>
 				</div>
 				<div class="on-off-btn">
 					<label class="switch">
-						<input type="checkbox" checked>
+						<input type="checkbox">
 						<span class="slider round"></span>
 					</label>
 				</div>
@@ -191,40 +175,70 @@
 
 			<div class="intensity-control-slider">
 				<p>
-					<label for="amount-three">Temperature:</label>
-					<input type="text" id="amount-three" readonly style="border:0; color:#f6931f; font-weight:bold;">
+					<label for="amount-two">Intensity:</label>
+					<input type="text" id="amount-two" readonly style="border:0; color:#f6931f; font-weight:bold;">
 				</p>
 				<br>
-				<div id="slider-range-min-three"></div>
-				<div id="green-three"></div>
+				<div id="slider-range-min-two"></div>
+				<div id="green-two"></div>
 			</div>
-
-			<div class="mode-control">
-				<div id="cool-on" class="cool-mode">
-					<!-- <img class="mode-icon" src="images/icons/cool.png" alt="cool"> -->
-					<i class="far fa-snowflake"></i>
-					<p class="cool-on-text">Cool</p>
-				</div>
-				<div id="heat-on" class="heat-mode">
-					<!-- <img class="mode-icon" src="images/icons/heat.png" alt="heat"> -->
-					<i class="fas fa-fire"></i>
-					<p class="heat-on-text">Heat</p>
-				</div>
-				<div id="fan-on" class="fan-mode">
-					<!-- <img class="mode-icon" src="images/icons/fan.png" alt="fan"> -->
-					<i class="fas fa-fan"></i>
-					<p class="fan-on-text">Fan</p>
-				</div>
-				<div id="auto-on" class="auto-mode">
-					<!-- <img class="mode-icon" src="images/icons/auto.png" alt="auto"> -->
-					<i class="fab fa-autoprefixer"></i>
-					<p class="auto-on-text">Auto</p>
-				</div>
-			</div>
-
 		</div>
 
+		<!-- control / automate devices option 3 -->
+			<div class="control-box box-border last-box">
+				<div class="control-box-selection">
+					<div class="selection-box-image">
+						<i class="fas fa-thermometer-three-quarters"></i>
+						<!-- <i id="light-off" class="fas fa-lightbulb"></i> -->
+					</div>
+					<div class="device-name">
+							<p class="device-name-title">Thermostat</p>
+							<p class="desc left-align">10 kw used</p>
+					</div>
+					<div class="on-off-btn">
+						<label class="switch">
+							<input type="checkbox" checked>
+							<span class="slider round"></span>
+						</label>
+					</div>
+				</div>
 
+				<div class="intensity-control-slider">
+					<p>
+						<label for="amount-three">Temperature:</label>
+						<input type="text" id="amount-three" readonly style="border:0; color:#f6931f; font-weight:bold;">
+					</p>
+					<br>
+					<div id="slider-range-min-three"></div>
+					<div id="green-three"></div>
+				</div>
+
+				<div class="mode-control">
+					<div id="cool-on" class="cool-mode">
+						<!-- <img class="mode-icon" src="images/icons/cool.png" alt="cool"> -->
+						<i class="far fa-snowflake"></i>
+						<p class="cool-on-text">Cool</p>
+					</div>
+					<div id="heat-on" class="heat-mode">
+						<!-- <img class="mode-icon" src="images/icons/heat.png" alt="heat"> -->
+						<i class="fas fa-fire"></i>
+						<p class="heat-on-text">Heat</p>
+					</div>
+					<div id="fan-on" class="fan-mode">
+						<!-- <img class="mode-icon" src="images/icons/fan.png" alt="fan"> -->
+						<i class="fas fa-fan"></i>
+						<p class="fan-on-text">Fan</p>
+					</div>
+					<div id="auto-on" class="auto-mode">
+						<!-- <img class="mode-icon" src="images/icons/auto.png" alt="auto"> -->
+						<i class="fab fa-autoprefixer"></i>
+						<p class="auto-on-text">Auto</p>
+					</div>
+				</div>
+
+			</div>
+	</div>
+</div>
 
 
 	<!-- jQuery -->

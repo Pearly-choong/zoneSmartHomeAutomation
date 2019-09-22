@@ -17,8 +17,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
 	<!-- link to fontawesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 	<!-- link to jQuery -->
 	<script
@@ -39,13 +38,15 @@
 		<!-- <img class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification" onclick="document.getElementById('id01').style.display='block'"> -->
 		<!-- using jQuery method -->
 		 <img id="noti" class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
+
+
 		<!-- menu nav list -->
 		<div id="setting" class="setting-nav-content">
 					<h1>
 						<span class="setting-title">Setting</span>
 						<span class="te-reo">Tautonga</span>
 					</h1>
-					<hr>
+					<hr class="nav-hr">
 					<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
 
 			<ul>
@@ -85,7 +86,7 @@
 				 <div class="modal-content-info">
 				 	 <div class="modal-title">
 							<h1>Notification</h1>
-						  <hr>
+						  <hr class="nav-hr">
 				   </div>
 
 					 <ul>
@@ -102,57 +103,62 @@
 		</div>
 	</div>
 
-<!-- home images with house status -->
-	<div class="container">
-		<img class="home-bck-img" src="images/home.jpg" alt="myHome">
-			<div class="greeting">
-				<h1>Welcome Home !</h1>
-				<h2>Home Pōwhiri !</h2>
-			</div>
+	<div class="main-container">
+	<!-- home images with house status -->
+		<div class="container">
+			<img class="home-bck-img" src="images/home.jpg" alt="myHome">
+				<div class="greeting">
+					<h1>Welcome Home !</h1>
+					<h2>Home Pōwhiri !</h2>
+				</div>
 
-			<div class="home-status">
-				<div class="col-3">
-					<ul>
-						<li>24°C</li>
-						<li>House temp</li>
-					<ul>
+				<div class="home-status">
+					<div class="col-3">
+						<ul>
+							<li>24°C</li>
+							<li>House temp</li>
+						<ul>
+					</div>
+					<div class="col-3">
+						<ul>
+							<li>13°C<li>
+							<li>Outside temp</li>
+						</ul>
+					</div>
+					<div class="col-3">
+						<ul>
+							<li>4</li>
+							<li>Devices on</li>
+						</ul>
+					</div>
+					<div class="col-3">
+						<ul>
+							<li>Safe<li>
+							<li>Security Level</li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-3">
-					<ul>
-						<li>13°C<li>
-						<li>Outside temp</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>4</li>
-						<li>Devices on</li>
-					</ul>
-				</div>
-				<div class="col-3">
-					<ul>
-						<li>Safe<li>
-						<li>Security Level</li>
-					</ul>
-				</div>
+		</div>
+
+		<!-- user's profile pic and text -->
+			<div class="profile">
+				<span>
+					<img class="profile-img" src="images/danielprofile.png" alt="Daniel">
+					<div class="profile-para">
+						<small>Kia ora, Daniel</small>
+						<small>What are you up to?</small>
+					</div>
 			</div>
 	</div>
+
 </div>
-<!-- user's profile pic and text -->
-	<div class="profile">
-		<span>
-			<img class="profile-img" src="images/danielprofile.png" alt="Daniel">
-			<div class="profile-para">
-				<small>Kia ora, Daniel</small>
-				<small>What are you up to?</small>
-			</div>
-	</div>
+
 
 
 
 <!-- cetegory button to choose where to go -->
 	<div class="category-btn row">
-		<div class="category-box co1">
+		<div class="category-box col">
 			<a href="automate.html">
 				<span>
 				<img class="icon-automate" src="images/icons/automateWhite.png" alt="automate">
@@ -163,7 +169,7 @@
 				</span>
 			</a>
 		</div>
-		<div class="category-box co1">
+		<div class="category-box col">
 			<a href="security.html">
 				<span>
 				<img class="icon-security" src="images/icons/securityWhite.png" alt="security">
@@ -174,7 +180,7 @@
 				</span>
 			</a>
 		</div>
-		<div class="category-box co1">
+		<div class="category-box col">
 			<a href="statistic.html">
 				<span>
 				<img class="icon-statistic" src="images/icons/statisticWhite.png" alt="statistic">
@@ -190,7 +196,7 @@
 <!-- sign out icons -->
 	<!-- <img src="images/icons/logout.png" alt="logout"> -->
 	<div class="logout-sign">
-		<!-- <i class="fas fa-sign-out-alt"></i> -->
+		<i class="fas fa-sign-out-alt"></i>
 		<a href="login.html">Logout</a>
 	</div>
 

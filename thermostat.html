@@ -62,73 +62,81 @@
 		</div>
 	</div>
 
+	<div class="tablet-screen">
+		<h1 class="lighting-title">
+			<span class="page-title">THERMOSTAT</span>
+			<span class="te-reo">TAKAWAENGA</span>
+		</h1>
+		<hr>
+	</div>
 
+	<div class="mobile-screen">
+		<h1 class="lighting-title">
+			<span class="page-title smaller-title">THERMOSTAT</span>
+			<span class="te-reo smaller-font">TAKAWAENGA</span>
+		</h1>
+		<hr>
+	</div>
 
-	<h1 class="lighting-title">
-		<span class="page-title smaller-title">THERMOSTAT</span>
-		<span class="te-reo smaller-font">TAKAWAENGA</span>
-	</h1>
-	<hr>
-
-	<div class="all-off-button-group">
+	<div class="all-off-button-group gap">
 		<a class="main-btn" href="">Turn Off all devices</a>
 		<i class="fas fa-plus fa-plus-more"></i>
 	</div>
 
+	<div class="thermostat-big-container">
+	  <div class="control-box box-border last-box">
+	    <div class="control-box-selection">
+	      <div class="selection-box-image">
+	        <i class="fas fa-thermometer-three-quarters"></i>
+	        <!-- <i id="light-off" class="fas fa-lightbulb"></i> -->
+	      </div>
+	      <div class="device-name">
+	          <p class="device-name-title">Thermostat</p>
+	          <p class="desc left-align">10 kw used</p>
+	      </div>
+	      <div class="on-off-btn">
+	        <label class="switch">
+	          <input type="checkbox" checked>
+	          <span class="slider round"></span>
+	        </label>
+	      </div>
+	    </div>
 
-  <div class="control-box box-border last-box">
-    <div class="control-box-selection">
-      <div class="selection-box-image">
-        <i class="fas fa-thermometer-three-quarters"></i>
-        <!-- <i id="light-off" class="fas fa-lightbulb"></i> -->
-      </div>
-      <div class="device-name">
-          <p class="device-name-title">Thermostat</p>
-          <p class="desc left-align">10 kw used</p>
-      </div>
-      <div class="on-off-btn">
-        <label class="switch">
-          <input type="checkbox" checked>
-          <span class="slider round"></span>
-        </label>
-      </div>
-    </div>
+	    <div class="intensity-control-slider">
+	      <p>
+	        <label for="amount-three">Temperature:</label>
+	        <input type="text" id="amount-three" readonly style="border:0; color:#f6931f; font-weight:bold;">
+	      </p>
+	      <br>
+	      <div id="slider-range-min-three"></div>
+	      <div id="green-three"></div>
+	    </div>
 
-    <div class="intensity-control-slider">
-      <p>
-        <label for="amount-three">Temperature:</label>
-        <input type="text" id="amount-three" readonly style="border:0; color:#f6931f; font-weight:bold;">
-      </p>
-      <br>
-      <div id="slider-range-min-three"></div>
-      <div id="green-three"></div>
-    </div>
+	    <div class="mode-control">
+	      <div id="cool-on" class="cool-mode">
+	        <!-- <img class="mode-icon" src="images/icons/cool.png" alt="cool"> -->
+	        <i class="far fa-snowflake"></i>
+	        <p class="cool-on-text">Cool</p>
+	      </div>
+	      <div id="heat-on" class="heat-mode">
+	        <!-- <img class="mode-icon" src="images/icons/heat.png" alt="heat"> -->
+	        <i class="fas fa-fire"></i>
+	        <p class="heat-on-text">Heat</p>
+	      </div>
+	      <div id="fan-on" class="fan-mode">
+	        <!-- <img class="mode-icon" src="images/icons/fan.png" alt="fan"> -->
+	        <i class="fas fa-fan"></i>
+	        <p class="fan-on-text">Fan</p>
+	      </div>
+	      <div id="auto-on" class="auto-mode">
+	        <!-- <img class="mode-icon" src="images/icons/auto.png" alt="auto"> -->
+	        <i class="fab fa-autoprefixer"></i>
+	        <p class="auto-on-text">Auto</p>
+	      </div>
+	    </div>
 
-    <div class="mode-control">
-      <div id="cool-on" class="cool-mode">
-        <!-- <img class="mode-icon" src="images/icons/cool.png" alt="cool"> -->
-        <i class="far fa-snowflake"></i>
-        <p class="cool-on-text">Cool</p>
-      </div>
-      <div id="heat-on" class="heat-mode">
-        <!-- <img class="mode-icon" src="images/icons/heat.png" alt="heat"> -->
-        <i class="fas fa-fire"></i>
-        <p class="heat-on-text">Heat</p>
-      </div>
-      <div id="fan-on" class="fan-mode">
-        <!-- <img class="mode-icon" src="images/icons/fan.png" alt="fan"> -->
-        <i class="fas fa-fan"></i>
-        <p class="fan-on-text">Fan</p>
-      </div>
-      <div id="auto-on" class="auto-mode">
-        <!-- <img class="mode-icon" src="images/icons/auto.png" alt="auto"> -->
-        <i class="fab fa-autoprefixer"></i>
-        <p class="auto-on-text">Auto</p>
-      </div>
-    </div>
-
-  </div>
-
+	  </div>
+	</div>
 
 
 

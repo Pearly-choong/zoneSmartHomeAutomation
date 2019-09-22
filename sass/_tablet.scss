@@ -1,7 +1,304 @@
-// landscape tablets, 768px and
+// landscape tablets,iPad 3,4 and Pro 9.7"
+//  I set it specific on width 1024 x height 768 on inspect mode
+@media only screen and (min-width: 768px) and (max-width:1024px) and (orientation: landscape){
 
-@media only screen and (min-width: 768px) {
+    // ====== loading page ========
+    .logo {
+      width: 30%;
+    }
+
+    .text {
+      padding-top: 10%;
+    }
+
+    .load-text {
+      margin-top: 30%;
+    }
+
+    .back-img {
+      height: 580px;
+    }
+
+    .fa-spinner {
+      font-size: 3rem;
+    }
 
 
+    // ========= login and sign up page ======
+    .big-title {
+      margin-top: 10%;
+    }
+
+    .registration-hr {
+      width: 8%;
+      margin-left: 13%;
+    }
+
+    .first-btn-login {
+      margin-top: 10%;
+      padding-left: 35%;
+    }
+
+    .second-btn-login {
+      padding-top: 5%;
+      padding-left: 35%;
+    }
+
+
+    .first-btn-signup {
+        margin-top: 8%;
+        padding-left: 40%;
+    }
+
+    .second-btn-signup {
+      margin-top: 3%;
+      padding-left: 36%;
+    }
+
+
+
+
+    // ======== home page =========
+    .header-setting-icon {
+      @include img-size(10%, 10%);
+    }
+
+    .header-notification-icon {
+      @include img-size(11%,11%);
+    }
+
+
+
+    .profile-img {
+      @include img-size(50%,30%);
+    }
+
+    .category-btn {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+      height: 120px;
+      margin-left: 3%;
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+
+    .header-background {
+      margin-bottom: 35%;
+    }
+
+    .profile {
+      padding-top: 55%;
+    }
+
+
+    .main-container {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+
+    }
+
+    .greeting h1{
+      font-size: 2rem;
+    }
+
+    .greeting h2 {
+      font-size: 1.5rem;
+      margin-top: 3%;
+    }
+
+    .home-status ul li {
+      font-size: 1rem;
+      padding: 2%;
+    }
+
+    .modal-content {
+      height: 400px;
+      width: 50%;
+    }
+
+    .close-btn-two {
+      top: 20%;
+      font-size: 2.5rem;
+      padding-right: 15%;
+    }
+
+    .logout-sign {
+      padding-right: 5%;
+      padding-top: 5%;
+    }
+
+    .modal-title {
+      padding-bottom: 10%;
+
+        h1 {
+        font-size: 2rem;
+        }
+    }
+
+
+
+    // ============ bottom nav =======
+    .nav {
+      display: grid;
+      grid-template-columns: 800px;
+      box-shadow: 2px 2px 2px #888888;
+      width: 20%;
+      height: 675px;
+      background-color: white;
+      ul {
+        padding: 10%;
+        li{
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .fa-home, .fa-wifi, .fa-shield-alt, .fa-chart-bar {
+    	font-size: 2.5rem;
+
+    }
+
+
+    // =========== automate page ========
+    .header {
+      margin-bottom: 5%;
+    }
+
+    .page-title {
+      margin-left: 20%;
+
+    }
+
+    hr {
+      margin-left: 35%;
+      width: 10%;
+    }
+
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 1.5rem;
+  		row-gap: 1rem;
+
+    }
+
+    .automate-big-container, .security-big-container {
+      width: 55%;
+      margin-left: 30%;
+      padding-top: 2%;
+    }
+
+    .para {
+      padding-bottom: 5%;
+    }
+
+    .nav-hr {
+      margin-left: 12%;
+      width: 15%;
+    }
+
+    .setting-nav-content {
+      height: 768px;
+    }
+
+    .fa-plus {
+      font-size: 1.5rem;
+    }
+
+    // ====== security page ======
+    .full-width {
+      margin-top: 13%;
+      padding-left: 0;
+    }
+
+    //========= statictic - usage page =========
+    .usage-big-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 18%;
+    }
+
+    .overview {
+      padding-top: 10%;
+    }
+
+    .graph-center {
+      padding-top: 20%;
+    }
+
+    .graph {
+      @include img-size(300px,200px);
+    }
+
+    // ====== camera page =======
+    .camera-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 10%;
+      padding-top: 2%;
+    }
+
+    .camera-img {
+      @include img-size(400px,200px);
+    }
+
+    // ======= living room page ====-=
+    .mobile-screen {
+      display: none;
+    }
+
+    .tablet-screen {
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+
+    .outer-contianer-wrapper {
+       display: grid;
+       grid-template-columns:  1fr 1fr;
+
+    }
+
+    .big-container-scene-box {
+      padding-top: 5%;
+      padding-left: 5%;
+    }
+
+    .living-room-img {
+      @include img-size(100%, 400px);
+    }
+
+    .living-room-status-info {
+      margin-top: 12%;
+      p {
+      font-size: 1rem;
+      }
+    }
+
+    .fa-fire, .fa-fan, .fa-autoprefixer, .fa-snowflake {
+    	font-size: 1.5rem;
+    }
+
+    // ======= lighting page ========
+    .lighting-big-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .lighting-title {
+      padding-top: 5%;
+    }
+
+    // ==== thermostat page ======
+    .thermostat-big-container {
+      width: 60%;
+    }
+
+    .gap {
+      padding-top: 2%;
+    }
 
 }

@@ -63,16 +63,16 @@ hr {
 
 // button text on home page
 .title {
-	@include para-style($h2fs, $bodyff);
-	font-weight: bold;
+	@include para-style($h2fs*1.2, $bodyff);
+	// font-weight: bold;
 	color: white;
 }
 
 
-// button text on TeReo language
-.category-group-font p {
-	color: white;
-}
+	// button text on TeReo language
+	.category-group-font p {
+		color: white;
+	}
 
 
 // logout text

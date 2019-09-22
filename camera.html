@@ -19,17 +19,50 @@
 	<!-- link to fontawesome -->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- link to jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+
+	<!-- link to jQuery UI -->
+	 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	 <link rel="stylesheet" href="/resources/demos/style.css">
 </head>
 
 <body>
 	<!-- header -->
 	<div class="header">
 		<a href="security.html"><i class="fas fa-chevron-left"></i></a>
-		<img class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
-		<!-- <i class="far fa-bell"></i> -->
+		<!-- using jQuery method -->
+		<img id="noti" class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
 	</div>
 
+	<!-- model notification message pop-up screen -->
+	<div id="id01" class="modal">
+		<div class="modal-content animate">
+				 <span onclick="document.getElementById('id01').style.display='none'" class="close-btn-two" title="Close Modal">&times;</span>
+				 <div class="modal-content-info">
+					 <div class="modal-title">
+							<h1>Notification</h1>
+							<hr class="nav-hr">
+					 </div>
+
+					 <ul>
+						 <li>
+								 <i class="fas fa-door-open content-align"></i>
+								 <p class="content-align">Front door not lock!</p>
+						 </li>
+						 <li>
+								<i class="far fa-lightbulb content-align"></i>
+								<p class="content-align">Main light need replacing!</p>
+						 </li>
+					 </ul>
+				</div>
+		</div>
+	</div>
+
+
+<!--  start of the page -->
 	<h1>
 		<span class="page-title">CAMERA</span>
 		<span class="te-reo">KĀMERA</span>
@@ -85,10 +118,19 @@
 		</div>
 	</div>
 
-	<!-- <div class="col">
-			<img class="camera-img" src="images/kitchen.jpg" alt="kitchen">
-			<p class="camera-text">Cam 3</p>
-		</div> -->
+	<!-- jQuery -->
+	 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+	<!-- jQueiry UI -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+crossorigin="anonymous"></script>
+
+	<!-- javascript file -->
+	<script src="js/script.js"></script>
+	<script src="js/jquery.js"></script>
+
 
 </body>
 
