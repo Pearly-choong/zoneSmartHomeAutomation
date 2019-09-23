@@ -2,7 +2,9 @@
 $('#lock-front').hide();
 $('#unlock-back').hide();
 $('#turn-on').hide();
-
+$('#turn-off-two').hide();
+$('#turn-on-three').hide();
+$('#turn-on-all').hide();
 
 $(document).ready(function(){
 
@@ -38,18 +40,50 @@ $(document).ready(function(){
     $('#lock-back').hide();
   });
 
-
+// first lightbulb on/off - main light
   $('#turn-off').click(function(){
      $('#greyoff').css('filter','grayscale(100%)');
      $('#turn-off').hide();
      $('#turn-on').show();
+     $('#light-bulb-one').css('color','#ccc');
   });
 
   $('#turn-on').click(function(){
      $('#greyoff').css('filter','none');
      $('#turn-on').hide();
       $('#turn-off').show();
+      $('#light-bulb-one').css('color','#ffd700');
   });
+
+// second lightbub on/off - wall light
+
+  $('#turn-on-two').click(function(){
+     $('#turn-on-two').hide();
+     $('#turn-off-two').show();
+     $('#light-bulb-two').css('color','#ffd700');
+  });
+
+  $('#turn-off-two').click(function(){
+     $('#turn-off-two').hide();
+      $('#turn-on-two').show();
+      $('#light-bulb-two').css('color','#ccc');
+  });
+
+
+  // thermostat on/off switch
+  $('#turn-off-three').click(function(){
+     $('#turn-off-three').hide();
+     $('#turn-on-three').show();
+     $('.fas.fa-thermometer-three-quarters').css('color','#ccc');
+  });
+
+  $('#turn-on-three').click(function(){
+     $('#turn-on-three').hide();
+      $('#turn-off-three').show();
+      $('.fas.fa-thermometer-three-quarters').css('color','black');
+  });
+
+
 
 
  // turn on/off button for cool mode, active blue color
@@ -110,6 +144,7 @@ $(document).ready(function(){
   // });
 
 });
+
 
 
 // ==================== slider function (light 1) ================

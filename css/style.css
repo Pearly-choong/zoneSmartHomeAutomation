@@ -934,9 +934,13 @@ small {
 .control-slider {
   padding-top: 3%; }
 
-.fas.fa-lightbulb, .bigger-size {
+.fas.fa-lightbulb {
   font-size: 2.5rem;
-  color: black; }
+  color: #ffd700; }
+
+#light-bulb-two {
+  font-size: 2.5rem;
+  color: #ccc; }
 
 .fas.fa-thermometer-three-quarters {
   font-size: 3rem;

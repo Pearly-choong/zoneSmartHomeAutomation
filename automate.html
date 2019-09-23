@@ -36,16 +36,16 @@
 		<!-- using javascript method -->
 		<img class="header-setting-icon" src="images/icons/setting.png" alt="setting" onclick="openNav()">
 		<!-- using jQuery method -->
-		 <img id="noti" class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
+		<img id="noti" class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
 
 		<!-- menu nav list -->
 		<div id="setting" class="setting-nav-content">
-					<h1>
-						<span class="setting-title">Setting</span>
-						<span class="te-reo">Tautonga</span>
-					</h1>
-					<hr class="nav-hr">
-					<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+			<h1>
+				<span class="setting-title">Setting</span>
+				<span class="te-reo">Tautonga</span>
+			</h1>
+			<hr class="nav-hr">
+			<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
 
 			<ul>
 				<li><img class="profile-img-setting" src="images/danielprofile.png" alt="Daniel"></li>
@@ -102,6 +102,7 @@
 	</div>
 
 
+<!-- page title and subheading  -->
 		<h1>
 			<span class="page-title smaller-font-title">AUTOMATE</span>
 			<span class="te-reo smaller-font">HANGA AUNOA</span>
@@ -111,92 +112,92 @@
 
 	<br><br>
 
-<div class="automate-big-container">
-<!-- tab links -->
-	<div class="tab">
-		<button class="tab-links tab-links-font" onclick="openTab(event,'all-rooms')" id="default">Rooms</button>
-		<button class="tab-links tab-links-font" onclick="openTab(event,'devices')">Devices</button>
-		<i class="fas fa-plus"></i>
-	</div>
-
-	<br>
-
-
-<!-- tab content -->
-	<div id="all-rooms" class="wrapper tab-content rooms-grid">
-		<p class="para">Currently you can manage 4 rooms in your home.</p>
-		<div class="grid-wrapper">
-			<a href="livingroom.html">
-				<div class="room-border">
-					<div class="center">
-						<img src="images/icons/livingroomIcon.png" alt="livingroom">
-					</div>
-					<p class="subtitle">Living Room</p>
-					<p class="desc">3 devices</p>
-				</div>
-			</a>
-
-			<a href="#">
-				<div class="room-border">
-					<div class="center">
-						<img src="images/icons/kitchenIcon.png" alt="kitchen">
-					</div>
-					<p class="subtitle">Kitchen</p>
-					<p class="desc">2 devices</p>
-				</div>
-			</a>
-
-			<a href="#">
-				<div class="room-border">
-					<div class="center">
-						<img src="images/icons/bedroomIcon.png" alt="masterBedroom">
-					</div>
-					<p class="subtitle">Master Bedroom</p>
-					<p class="desc">3 devices</p>
-				</div>
-			</a>
-
-			<a href="#">
-				<div class="room-border">
-					<div class="center">
-						<img src="images/icons/officeIcon.png" alt="office">
-					</div>
-					<p class="subtitle">Office</p>
-					<p class="desc">1 devices</p>
-				</div>
-			</a>
+	<div class="automate-big-container">
+	<!-- tab links -->
+		<div class="tab">
+			<button class="tab-links tab-links-font" onclick="openTab(event,'all-rooms')" id="default">Rooms</button>
+			<button class="tab-links tab-links-font" onclick="openTab(event,'devices')">Devices</button>
+			<i class="fas fa-plus"></i>
 		</div>
-	</div>
+
+		<br>
 
 
-
-	<div  id="devices" class="wrapper tab-content">
-		<p class="para">Currently you can manage 2 different category devices in you home.</p>
-		<div class="grid-wrapper">
-			<a href="lighting.html">
-				<div class="device-border">
-					<div class="center">
-						<img id="light-bulb-icon" src="images/icons/lightBulb.png" alt="lighting">
+	<!-- tab content : rooms tab -->
+		<div id="all-rooms" class="wrapper tab-content rooms-grid">
+			<p class="para">Currently you can manage 4 rooms in your home.</p>
+			<div class="grid-wrapper">
+				<a href="livingroom.html">
+					<div class="room-border">
+						<div class="center">
+							<img src="images/icons/livingroomIcon.png" alt="livingroom">
+						</div>
+						<p class="subtitle">Living Room</p>
+						<p class="desc">3 devices</p>
 					</div>
-					<p class="subtitle">Lighting</p>
-					<p class="desc">3 On</p>
-				</div>
-			</a>
+				</a>
 
-			<a href="thermostat.html">
-				<div class="device-border">
-					<div class="center">
-						<img id="thermostat-icon" src="images/icons/thermostat2.png" alt="thermostat">
-						<!-- <i class="fas fa-thermometer-three-quarters"></i> -->
+				<a href="#">
+					<div class="room-border">
+						<div class="center">
+							<img src="images/icons/kitchenIcon.png" alt="kitchen">
+						</div>
+						<p class="subtitle">Kitchen</p>
+						<p class="desc">2 devices</p>
 					</div>
-					<p class="subtitle">Thermostat</p>
-					<p class="desc">2 On</p>
-				</div>
-			</a>
+				</a>
+
+				<a href="#">
+					<div class="room-border">
+						<div class="center">
+							<img src="images/icons/bedroomIcon.png" alt="masterBedroom">
+						</div>
+						<p class="subtitle">Master Bedroom</p>
+						<p class="desc">3 devices</p>
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="room-border">
+						<div class="center">
+							<img src="images/icons/officeIcon.png" alt="office">
+						</div>
+						<p class="subtitle">Office</p>
+						<p class="desc">1 devices</p>
+					</div>
+				</a>
+			</div>
 		</div>
-	</div>
 
-</div>
+
+		<!-- tab content : devices tab -->
+		<div  id="devices" class="wrapper tab-content">
+			<p class="para">Currently you can manage 2 different category devices in you home.</p>
+			<div class="grid-wrapper">
+				<a href="lighting.html">
+					<div class="device-border">
+						<div class="center">
+							<img id="light-bulb-icon" src="images/icons/lightBulb.png" alt="lighting">
+						</div>
+						<p class="subtitle">Lighting</p>
+						<p class="desc">3 On</p>
+					</div>
+				</a>
+
+				<a href="thermostat.html">
+					<div class="device-border">
+						<div class="center">
+							<img id="thermostat-icon" src="images/icons/thermostat2.png" alt="thermostat">
+							<!-- <i class="fas fa-thermometer-three-quarters"></i> -->
+						</div>
+						<p class="subtitle">Thermostat</p>
+						<p class="desc">2 On</p>
+					</div>
+				</a>
+			</div>
+		</div>
+
+	</div>
 
 
 <!-- bottom fix navbar -->

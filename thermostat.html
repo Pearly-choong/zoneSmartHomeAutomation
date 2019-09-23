@@ -35,7 +35,7 @@
 	<div class="header no-margin">
 		<a href="automate.html"><i class="fas fa-chevron-left"></i></a>
 		<!-- using jQuery method -->
-		 <img id="noti" class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
+		<img id="noti" class="header-notification-icon" src="images/icons/notificationWhite.png" alt="notification">
 	</div>
 
 	<!-- model notification message pop-up screen -->
@@ -62,6 +62,7 @@
 		</div>
 	</div>
 
+<!-- only display on table screen -->
 	<div class="tablet-screen">
 		<h1 class="lighting-title">
 			<span class="page-title">THERMOSTAT</span>
@@ -69,6 +70,7 @@
 		</h1>
 		<hr>
 	</div>
+<!-- finished here for table screen -->
 
 	<div class="mobile-screen">
 		<h1 class="lighting-title">
@@ -95,10 +97,14 @@
 	          <p class="desc left-align">10 kw used</p>
 	      </div>
 	      <div class="on-off-btn">
-	        <label class="switch">
-	          <input type="checkbox" checked>
-	          <span class="slider round"></span>
-	        </label>
+					<label for="turn-off-three" id="turn-off-three" class="switch">
+						<input type="checkbox" checked>
+						<span class="slider round"></span>
+					</label>
+					<label for="turn-on-three" id="turn-on-three" class="switch">
+						<input type="checkbox">
+						<span class="slider round"></span>
+					</label>
 	      </div>
 	    </div>
 
