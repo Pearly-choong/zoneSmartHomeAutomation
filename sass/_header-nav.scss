@@ -1,4 +1,4 @@
-// only for homepage
+// =====  only for homepage
 .header-background {
 	// background: #F27141;
 	background: $lightOrange;
@@ -73,7 +73,7 @@
 
 
 
-// =========== notification header nav =====
+// ==================== notification header nav ==================
 
 // style header icons ( notification)
 .header-notification-icon {
@@ -163,7 +163,7 @@
 
 
 
-// =========== all the other pages =====
+// =================== style all the other pages header =============
 .header {
 	background-color: $orange;
 }
@@ -178,8 +178,18 @@
 }
 
 
+// =============== back button on header ==========
+// style back button
+.fa-chevron-left {
+	font-size: 2rem;
+	padding: 3%;
+	color: white;
 
-// ==================  bottom navbar
+}
+
+
+
+// ==================  bottom main navbar ==================
 .nav {
 	position: fixed;
 	left: 0;
@@ -218,13 +228,4 @@
 
 #active{
 	color: $orange;
-}
-
-
-// style back button
-.fa-chevron-left {
-	font-size: 2rem;
-	padding: 3%;
-	color: white;
-
 }

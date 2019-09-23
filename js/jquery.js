@@ -1,10 +1,14 @@
 // console.log('my script is working');
+
+
 $('#lock-front').hide();
 $('#unlock-back').hide();
 $('#turn-on').hide();
 $('#turn-off-two').hide();
 $('#turn-on-three').hide();
 $('#turn-on-all').hide();
+
+
 
 $(document).ready(function(){
 
@@ -40,7 +44,7 @@ $(document).ready(function(){
     $('#lock-back').hide();
   });
 
-// first lightbulb on/off - main light
+  // first lightbulb on/off - main light
   $('#turn-off').click(function(){
      $('#greyoff').css('filter','grayscale(100%)');
      $('#turn-off').hide();
@@ -55,7 +59,7 @@ $(document).ready(function(){
       $('#light-bulb-one').css('color','#ffd700');
   });
 
-// second lightbub on/off - wall light
+  // second lightbub on/off - wall light
 
   $('#turn-on-two').click(function(){
      $('#turn-on-two').hide();
@@ -134,14 +138,6 @@ $(document).ready(function(){
     }
   });
 
-  // $('#room-active').on({
-  //   click: function(){
-  //     $('#default').css('background-color','#EF502D');
-  //   },
-  //   mouseleave: function(){
-  //     $('#default').css('background-color', 'none');
-  //   }
-  // });
 
 });
 

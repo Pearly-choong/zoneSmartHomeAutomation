@@ -29,7 +29,7 @@ p {
 
 
 
-// ==========login page fonts ==========
+// ==========login page fonts ==============
 .text h1 {
 	@include para-style($h1fs*2, $headerff);
 }
@@ -46,6 +46,11 @@ hr {
 	border: 1px solid $orange;
 }
 
+
+// different font size title of the page on login and sign up page
+.big-title {
+		@include para-style($h1fs*2, $headerff);
+}
 
 
 
@@ -80,7 +85,6 @@ hr {
 	@include para-style($bodyfs, $bodyff);
 	color: $green;
 	font-weight: bold;
-	// font-size: $h2fs;
 }
 
 
@@ -118,7 +122,7 @@ hr {
 }
 
 
-// ========= Statistic page fonts =========
+// =============== Statistic page fonts =========
 .overview p {
 	@include para-style($bodyfs, $bodyff);
 	text-align: center;
@@ -135,7 +139,7 @@ hr {
 }
 
 
-// ========= Camera page fonts =========
+// ============== Camera page fonts =========
 .camera-text {
 	@include para-style(0.8rem,$bodyff);
 	text-align: left;

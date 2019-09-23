@@ -36,7 +36,7 @@
 }
 
 
-
+// =============== Login & Sign Up Page ===================
 
 // adjust padding for login and sign up title, form layout
 .space {
@@ -44,11 +44,7 @@
 }
 
 
-.big-title {
-		@include para-style($h1fs*2, $headerff);
-}
-
-
+// style login / sign up form
 .registration-form {
 	margin-top: 10%;
 	margin-left: 10%;
@@ -93,19 +89,8 @@
 
 
 
-// span {
-// 	float: left;
-// }
 
-// span .group {
-//   display: block;
-// }
-
-
-
-
-
-// ============== Home Page =================---
+// ================ Home Page ===================
 
 // loop for repeating column layout
 @for $i from 1 to 12 {
@@ -125,13 +110,13 @@
 	z-index: 1;
 	padding-left: 3%;
 	padding-top: 2%;
-	// greeting finished
+
 	h2 {
 		padding-left: 2%;
 		padding-top: 1%;
-	}
-	// h2 finished
-}
+	}// h2 finished
+
+}// greeting finished
 
 
 
@@ -171,12 +156,11 @@ small {
 
 
 
-// icons on home page category selection
+// style icons on home page category selection
 .icon-automate {
 	width: 30%;
 	padding-right: 8%;
 }
-
 
 .icon-security {
 	@extend .icon-automate;
@@ -212,7 +196,7 @@ small {
 
 
 
-// =========== Automate Page ============
+// =================== Automate Page ===============
 
 
 // Style Room page
@@ -232,111 +216,7 @@ small {
 } // style border finished here
 
 
-//  specific for mobile display (iphone 6/7/8)
-// @media only screen and (max-width: 375px){
-@media only screen and (min-width: 375px) and (max-width: 667px){
-	.header {
-		margin-bottom: 10%;
-	}
 
-	// layout display
-	.grid-wrapper {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 1rem;
-		row-gap: 1rem;
-		margin: 10%;
-		margin-top: 7%;
-	}
-
-	// add more padding on room page
-	.rooms-grid {
-		margin-bottom: 3%;
-	}
-
-	// adjust tab links padding
-	.tab {
-		padding-left: 10%;
-	}
-
-
-	.big-title {
-			margin-top: 25%;
-	}
-
-	//  =============== Login Page ===============
-	// adjust login button position
-	.first-btn-login {
-		margin-top: 15%;
-		padding-left: 17%;
-	}
-
-	// adjust sign up button link position
-	.second-btn-login {
-		text-align: center;
-		padding-top: 10%;
-		padding-right: 22%;
-	}
-
-
-
-	//  =============== Sign Up Page ===============
-	// adjust sign up button position
-	.first-btn-signup {
-		margin-top: 15%;
-		padding-left: 25%;
-	}
-
-	// adjust login button link position
-	.second-btn-signup {
-		text-align: center;
-		padding-top: 10%;
-		padding-right: 22%;
-	}
-
-	// =========== home page category button =========
-	.category-btn {
-		margin-top: 15%;
-		margin-left: 22%;
-	}
-
-	// logout button
-	.logout-sign {
-		padding-right: 8%;
-		padding-top: 4%;
-		padding-bottom: 2%;
-	}
-
-	// ======= door modal pop-up screen =======
-	.full-width {
-		padding-left: 0;
-		margin-top: 30%;
-	}
-
-	// ======camera page =========
-	.camera-wrapper {
-		display: grid;
-		grid-template-columns: 1fr;
-		row-gap: 1rem;
-		text-align: center;
-	}
-
-	//======== living room =======
-	.tablet-screen {
-		display: none;
-	}
-
-	.living-room-status-info p {
-		@include para-style(0.7rem, $bodyff);
-		padding: 5%;
-	}
-
-	// ================= Lighting page ================
-	.lighting-title {
-		padding-top: 10%;
-	}
-
-}
 
 .tab button {
 	border: none;
@@ -350,7 +230,6 @@ small {
 	border-radius: 3px;
 	padding: 2%;
 	color: white;
-	// box-shadow: $boxShadow;
 }
 
 // style the tab content
@@ -387,13 +266,14 @@ small {
 
 
 
-// =============Security Page ===========
+// ===================== Security Page ===============
 
 .security-border {
 	@extend .room-border;
 }
 
 
+// style icons on security page
 #burglar-icon, #smoke-icon {
 	@extend #light-bulb-icon;
 }
@@ -449,7 +329,7 @@ small {
 	color: red;
 }
 
-// ========== statistic - Usage Page ==========
+// =================== statistic - Usage Page ==============
 .overview span {
 	padding: 5%;
 }
@@ -468,14 +348,6 @@ small {
 }
 
 
-// .row {
-// 	overflow: auto;
-// }
-
-// .history img {
-// 	// @include imgSize(70%,70%);
-// }
-
 .history-box {
 	display: flex;
 	justify-content: space-between;
@@ -491,12 +363,11 @@ small {
 }
 
 
-// =========== Camera Page ===========
+// ==================== Camera Page ================
 
 .fa-plus-more {
 	margin-left: 10%;
 }
-
 
 
 .camera-container {
@@ -528,9 +399,7 @@ small {
 
 }
 
-.no-margin {
-	margin-bottom: 0;
-}
+
 
 
 .living-room-status {
@@ -616,7 +485,6 @@ small {
 
 
 
-
 .fas.fa-thermometer-three-quarters {
 	font-size: 3rem;
 	color: black;
@@ -632,6 +500,8 @@ small {
 		padding-left: 30%;
 }
 
+
+// style on/off switch buttons
 .switch {
   position: relative;
   display: inline-block;
@@ -683,7 +553,8 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
+
+// Rounded sliders
 .slider.round {
   border-radius: 34px;
 }
@@ -698,6 +569,7 @@ input:checked + .slider:before {
 	padding-top: 5%;
 }
 
+//  style slider intensity colour *** somehow doesn't work??
 #green {
 	float: left;
   clear: left;
@@ -709,6 +581,7 @@ input:checked + .slider:before {
 #green .ui-slider-handle { border-color: #8ae234; }
 
 
+// style mode control on thermostat option
 .mode-control {
 	padding-top: 8%;
 	display: grid;
@@ -722,9 +595,6 @@ input:checked + .slider:before {
 	text-align: center;
 }
 
-// .fa-snowflake {
-// 	color: $lightBlue;
-// }
 
 .fa-fire, .fa-fan, .fa-autoprefixer, .fa-snowflake {
 	color: #ccc;
@@ -732,9 +602,112 @@ input:checked + .slider:before {
 
 
 
+// =============== specific for mobile display (iphone 6/7/8) ============
+// media query for mobile
+@media only screen and (min-width: 375px) and (max-width: 667px){
+	.header {
+		margin-bottom: 10%;
+	}
+
+	.no-margin {
+		margin-bottom: 0;
+	}
+
+	// layout display
+	.grid-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1rem;
+		row-gap: 1rem;
+		margin: 10%;
+		margin-top: 7%;
+	}
+
+	// add more padding on room page
+	.rooms-grid {
+		margin-bottom: 3%;
+	}
+
+	// adjust tab links padding
+	.tab {
+		padding-left: 10%;
+	}
 
 
-// .col {
-// 	float: left;
-// 	width: 50%;
-// }
+	.big-title {
+			margin-top: 25%;
+	}
+
+	//  =============== Login Page =============
+	// adjust login button position
+	.first-btn-login {
+		margin-top: 15%;
+		padding-left: 17%;
+	}
+
+	// adjust sign up button link position
+	.second-btn-login {
+		text-align: center;
+		padding-top: 10%;
+		padding-right: 22%;
+	}
+
+
+
+	//  =============== Sign Up Page ===============
+	// adjust sign up button position
+	.first-btn-signup {
+		margin-top: 15%;
+		padding-left: 25%;
+	}
+
+	// adjust login button link position
+	.second-btn-signup {
+		text-align: center;
+		padding-top: 10%;
+		padding-right: 22%;
+	}
+
+	// =========== home page category button =========
+	.category-btn {
+		margin-top: 15%;
+		margin-left: 22%;
+	}
+
+	// logout button
+	.logout-sign {
+		padding-right: 8%;
+		padding-top: 4%;
+		padding-bottom: 2%;
+	}
+
+	// ======= door modal pop-up screen =======
+	.full-width {
+		padding-left: 0;
+		margin-top: 30%;
+	}
+
+	// ======camera page =========
+	.camera-wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: 1rem;
+		text-align: center;
+	}
+
+	//======== living room =======
+	.tablet-screen {
+		display: none;
+	}
+
+	.living-room-status-info p {
+		@include para-style(0.7rem, $bodyff);
+		padding: 5%;
+	}
+
+	// ================= Lighting page =========
+	.lighting-title {
+		padding-top: 10%;
+	}
+
+}

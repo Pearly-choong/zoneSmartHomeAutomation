@@ -1,5 +1,8 @@
-// landscape tablets,iPad 3,4 and Pro 9.7"
-//  I set it specific on width 1024 x height 768 on inspect mode
+
+//  media query for tablet
+// ******  landscape tablets,iPad 3,4 and Pro 9.7" *****
+// I set it specifically on WIDTH 1024 X HEIGHT 768 - INSPECT MODE
+
 @media only screen and (min-width: 768px) and (max-width:1024px) and (orientation: landscape){
 
     // ====== loading page ========
@@ -58,7 +61,7 @@
 
 
 
-    // ======== home page =========
+    // ========== home page ============
     .header-setting-icon {
       @include img-size(10%, 10%);
     }
@@ -141,7 +144,7 @@
 
 
 
-    // ============ bottom nav =======
+    // ============ bottom nav ==========
     .nav {
       display: grid;
       grid-template-columns: 800px;
@@ -209,13 +212,13 @@
       font-size: 1.5rem;
     }
 
-    // ====== security page ======
+    // ============ security page ========
     .full-width {
       margin-top: 13%;
       padding-left: 0;
     }
 
-    //========= statictic - usage page =========
+    //========== statictic - usage page =========
     .usage-big-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -234,7 +237,7 @@
       @include img-size(300px,200px);
     }
 
-    // ====== camera page =======
+    // =========== camera page =======
     .camera-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -246,7 +249,7 @@
       @include img-size(400px,200px);
     }
 
-    // ======= living room page ====-=
+    // =========== living room page ========
     .mobile-screen {
       display: none;
     }
@@ -282,7 +285,11 @@
     	font-size: 1.5rem;
     }
 
-    // ======= lighting page ========
+    .no-margin {
+    	margin-bottom: 0;
+    }
+
+    // ============= lighting page ==========
     .lighting-big-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -292,7 +299,7 @@
       padding-top: 5%;
     }
 
-    // ==== thermostat page ======
+    // =========== thermostat page ==========
     .thermostat-big-container {
       width: 60%;
     }
