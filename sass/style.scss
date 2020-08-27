@@ -4,7 +4,7 @@
 @import 'header-nav';
 @import 'fonts';
 @import 'images';
-@import 'tablet';
+@import 'media-query';
 
 
 // Clarification :
@@ -189,6 +189,7 @@ small {
 
 // logout icon
 .fa-sign-out-alt {
+	font-size: $h2fs*1.2;
 	color: $green;
 }
 
@@ -602,112 +603,3 @@ input:checked + .slider:before {
 
 
 
-// =============== specific for mobile display (iphone 6/7/8) ============
-// media query for mobile
-@media only screen and (min-width: 375px) and (max-width: 667px){
-	.header {
-		margin-bottom: 10%;
-	}
-
-	.no-margin {
-		margin-bottom: 0;
-	}
-
-	// layout display
-	.grid-wrapper {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 1rem;
-		row-gap: 1rem;
-		margin: 10%;
-		margin-top: 7%;
-	}
-
-	// add more padding on room page
-	.rooms-grid {
-		margin-bottom: 3%;
-	}
-
-	// adjust tab links padding
-	.tab {
-		padding-left: 10%;
-	}
-
-
-	.big-title {
-			margin-top: 25%;
-	}
-
-	//  =============== Login Page =============
-	// adjust login button position
-	.first-btn-login {
-		margin-top: 15%;
-		padding-left: 17%;
-	}
-
-	// adjust sign up button link position
-	.second-btn-login {
-		text-align: center;
-		padding-top: 10%;
-		padding-right: 22%;
-	}
-
-
-
-	//  =============== Sign Up Page ===============
-	// adjust sign up button position
-	.first-btn-signup {
-		margin-top: 15%;
-		padding-left: 25%;
-	}
-
-	// adjust login button link position
-	.second-btn-signup {
-		text-align: center;
-		padding-top: 10%;
-		padding-right: 22%;
-	}
-
-	// =========== home page category button =========
-	.category-btn {
-		margin-top: 15%;
-		margin-left: 22%;
-	}
-
-	// logout button
-	.logout-sign {
-		padding-right: 8%;
-		padding-top: 4%;
-		padding-bottom: 2%;
-	}
-
-	// ======= door modal pop-up screen =======
-	.full-width {
-		padding-left: 0;
-		margin-top: 30%;
-	}
-
-	// ======camera page =========
-	.camera-wrapper {
-		display: grid;
-		grid-template-columns: 1fr;
-		row-gap: 1rem;
-		text-align: center;
-	}
-
-	//======== living room =======
-	.tablet-screen {
-		display: none;
-	}
-
-	.living-room-status-info p {
-		@include para-style(0.7rem, $bodyff);
-		padding: 5%;
-	}
-
-	// ================= Lighting page =========
-	.lighting-title {
-		padding-top: 10%;
-	}
-
-}

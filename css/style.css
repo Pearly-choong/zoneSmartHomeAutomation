@@ -235,7 +235,7 @@ hr {
   color: white; }
 
 .logout-sign a {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-family: "Lato", sans-serif;
   color: #34D293;
   font-weight: bold; }
@@ -335,7 +335,180 @@ hr {
   width: 100%;
   height: 230px; }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .header {
+    margin-bottom: 10%; }
+
+  .no-margin {
+    margin-bottom: 0; }
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin: 10%;
+    margin-top: 7%; }
+
+  .rooms-grid {
+    margin-bottom: 3%; }
+
+  .tab, .para {
+    padding-left: 10%; }
+
+  .big-title {
+    margin-top: 25%; }
+
+  .first-btn-login {
+    margin-top: 15%;
+    padding-left: 17%; }
+
+  .second-btn-login {
+    text-align: center;
+    padding-top: 10%;
+    padding-right: 22%; }
+
+  .first-btn-signup {
+    margin-top: 15%;
+    padding-left: 25%; }
+
+  .second-btn-signup {
+    text-align: center;
+    padding-top: 10%;
+    padding-right: 22%; }
+
+  .category-btn {
+    margin-top: 15%;
+    margin-left: 22%; }
+
+  .logout-sign {
+    padding-right: 8%;
+    padding-top: 4%;
+    padding-bottom: 2%; }
+
+  .full-width {
+    padding-left: 0;
+    margin-top: 30%; }
+
+  .camera-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    text-align: center; }
+
+  .tablet-screen {
+    display: none; }
+
+  .living-room-status-info p {
+    font-size: 0.7rem;
+    font-family: "Lato", sans-serif;
+    padding: 5%; }
+
+  .lighting-title {
+    padding-top: 10%; } }
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 30%; }
+
+  .text {
+    padding-top: 10%; }
+
+  .load-text {
+    margin-top: 30%; }
+
+  .back-img {
+    height: 580px; }
+
+  .fa-spinner {
+    font-size: 3rem; }
+
+  .greeting h1 {
+    font-size: 2rem; }
+
+  .greeting h2 {
+    font-size: 1.7rem; }
+
+  span img {
+    padding: 5%; }
+
+  .profile small {
+    font-size: 1.8rem; }
+
+  .profile-para {
+    padding-top: 8%; }
+
+  .title {
+    font-size: 2rem;
+    font-family: "Lato", sans-serif; }
+
+  .category-group-font p {
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif; }
+
+  .icon-automate, .icon-security, .icon-statistic, .icon-security, .icon-statistic {
+    padding-top: 0; }
+
+  .header-background {
+    height: 400px; }
+
+  .category-btn {
+    float: left;
+    width: 70%; }
+
+  .category-box {
+    background-color: #EF502D;
+    border-radius: 3%;
+    margin: 5%;
+    padding: 5%;
+    width: 60%;
+    margin-top: 20%; }
+
+  .home-status, .living-room-status {
+    padding-top: 1%; }
+    .home-status ul li, .living-room-status ul li {
+      font-size: 1.2rem; }
+
+  .logout-sign {
+    float: right;
+    padding: 5% 5%; }
+
+  .fa-sign-out-alt, .logout-sign a {
+    font-size: 2.21rem; }
+
+  .room-border, .device-border, .security-border, .statistic-border, .device-border {
+    border: 2px solid #EF502D;
+    padding: 5%;
+    box-shadow: 5px 10px 10px #888888; }
+    .room-border .center, .device-border .center, .security-border .center, .statistic-border .center, .device-border .center {
+      display: flex;
+      justify-content: center; }
+      .room-border .center img, .device-border .center img, .security-border .center img, .statistic-border .center img, .device-border .center img {
+        width: 80%;
+        height: 50%; }
+
+  .tab button, .para button {
+    border: none;
+    background-color: white; }
+
+  .tab button:hover, .para button:hover, .tab button:active, .para button:active {
+    background-color: #EF502D;
+    border-radius: 3px;
+    padding: 2%;
+    color: white; }
+
+  .tab-content {
+    height: 390px;
+    display: none; }
+
+  #light-bulb-icon, #burglar-icon, #smoke-icon, #thermostat-icon {
+    width: 20%;
+    height: 20%;
+    padding-bottom: 15%;
+    padding-top: 10%; }
+
+  .fa-plus {
+    margin-left: 3%; } }
+@media only screen and (min-width: 1024px) {
   .logo {
     width: 30%; }
 
@@ -397,7 +570,8 @@ hr {
     font-size: 1.5rem; }
 
   .header-background {
-    margin-bottom: 35%; }
+    margin-bottom: 35%;
+    height: 200px; }
 
   .profile {
     padding-top: 55%; }
@@ -702,6 +876,7 @@ small {
   float: right; }
 
 .fa-sign-out-alt {
+  font-size: 1.2rem;
   color: #34D293; }
 
 .room-border, .device-border, .security-border, .statistic-border {
@@ -961,77 +1136,5 @@ input:checked + .slider:before {
 
 .fa-fire, .fa-fan, .fa-autoprefixer, .fa-snowflake {
   color: #ccc; }
-
-@media only screen and (min-width: 375px) and (max-width: 667px) {
-  .header {
-    margin-bottom: 10%; }
-
-  .no-margin {
-    margin-bottom: 0; }
-
-  .grid-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-    row-gap: 1rem;
-    margin: 10%;
-    margin-top: 7%; }
-
-  .rooms-grid {
-    margin-bottom: 3%; }
-
-  .tab, .para {
-    padding-left: 10%; }
-
-  .big-title {
-    margin-top: 25%; }
-
-  .first-btn-login {
-    margin-top: 15%;
-    padding-left: 17%; }
-
-  .second-btn-login {
-    text-align: center;
-    padding-top: 10%;
-    padding-right: 22%; }
-
-  .first-btn-signup {
-    margin-top: 15%;
-    padding-left: 25%; }
-
-  .second-btn-signup {
-    text-align: center;
-    padding-top: 10%;
-    padding-right: 22%; }
-
-  .category-btn {
-    margin-top: 15%;
-    margin-left: 22%; }
-
-  .logout-sign {
-    padding-right: 8%;
-    padding-top: 4%;
-    padding-bottom: 2%; }
-
-  .full-width {
-    padding-left: 0;
-    margin-top: 30%; }
-
-  .camera-wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 1rem;
-    text-align: center; }
-
-  .tablet-screen {
-    display: none; }
-
-  .living-room-status-info p {
-    font-size: 0.7rem;
-    font-family: "Lato", sans-serif;
-    padding: 5%; }
-
-  .lighting-title {
-    padding-top: 10%; } }
 
 /*# sourceMappingURL=style.css.map */

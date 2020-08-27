@@ -82,7 +82,7 @@ hr {
 
 // logout text
 .logout-sign a {
-	@include para-style($bodyfs, $bodyff);
+	@include para-style($h2fs*1.2, $bodyff);
 	color: $green;
 	font-weight: bold;
 }
