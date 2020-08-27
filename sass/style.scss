@@ -36,6 +36,9 @@
 }
 
 
+
+
+
 // =============== Login & Sign Up Page ===================
 
 // adjust padding for login and sign up title, form layout
@@ -87,6 +90,34 @@
 }
 
 
+	//  =============== Login Page =============
+	// adjust login button position
+	.first-btn-login {
+		margin-top: 15%;
+		padding-left: 17%;
+	}
+
+	// adjust sign up button link position
+	.second-btn-login {
+		text-align: center;
+		padding-top: 10%;
+		padding-right: 22%;
+	}
+
+
+	//  =============== Sign Up Page ===============
+	// adjust sign up button position
+	.first-btn-signup {
+		margin-top: 15%;
+		padding-left: 25%;
+	}
+
+	// adjust login button link position
+	.second-btn-signup {
+		text-align: center;
+		padding-top: 10%;
+		padding-right: 22%;
+	}
 
 
 
@@ -185,11 +216,14 @@ small {
 // logout button
 .logout-sign {
 	float: right;
+	padding-right: 8%;
+	padding-top: 4%;
+	padding-bottom: 2%;
 }
 
 // logout icon
 .fa-sign-out-alt {
-	font-size: $h2fs*1.2;
+	//font-size: $h2fs*1.2;
 	color: $green;
 }
 
@@ -264,7 +298,15 @@ small {
 	margin-left: 3%;
 }
 
-
+// layout display
+.grid-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 1rem;
+	row-gap: 1rem;
+	margin: 10%;
+	margin-top: 7%;
+  }
 
 
 // ===================== Security Page ===============
@@ -389,6 +431,8 @@ small {
 }
 
 
+
+
 // ================== Livingroom Page =============
 
 .room-container {
@@ -399,7 +443,6 @@ small {
 	@extend .camera-container-text;
 
 }
-
 
 
 
@@ -429,6 +472,8 @@ small {
 .living-room-status-info p {
 	display: inline;
 	color: white;
+	padding: 5%;
+	@include para-style(0.7rem, $bodyff);		
 }
 
 .living-room-title {
@@ -600,6 +645,23 @@ input:checked + .slider:before {
 .fa-fire, .fa-fan, .fa-autoprefixer, .fa-snowflake {
 	color: #ccc;
 }
+
+
+
+
+
+
+	
+	// ======= door modal pop-up screen =======
+	.full-width {
+		padding-left: 0;
+		margin-top: 30%;
+	}
+
+
+
+
+
 
 
 

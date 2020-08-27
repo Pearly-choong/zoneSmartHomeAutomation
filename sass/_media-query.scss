@@ -9,115 +9,130 @@
   
   // =============== specific for mobile display (iphone 6/7/8) ============
 // media query for mobile
-@media only screen and (min-width: 375px) and (max-width: 667px){
-	.header {
-		margin-bottom: 10%;
-	}
+@media only screen and (max-width: 600px) {
+  // @media only screen and (min-width: 375px) and (max-width: 667px){
+    .category-btn{
+      margin-left: 22%;
+    }
 
-	.no-margin {
-		margin-bottom: 0;
-	}
+    
+    .tablet-screen {
+      display: none;
+    }
 
-	// layout display
-	.grid-wrapper {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		column-gap: 1rem;
-		row-gap: 1rem;
-		margin: 10%;
-		margin-top: 7%;
-	}
+    .camera-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+      text-align: center;
+    }
+    
+    .header {
+      margin-bottom: 10%;
+    }
+    
+    .no-margin {
+      margin-bottom: 0;
+    }
+    
+    // add more padding on room page
+    .rooms-grid {
+      margin-bottom: 3%;
+    }
 
-	// add more padding on room page
-	.rooms-grid {
-		margin-bottom: 3%;
-	}
-
-	// adjust tab links padding
-	.tab {
-		padding-left: 10%;
-	}
-
-
-	.big-title {
-			margin-top: 25%;
-	}
-
-	//  =============== Login Page =============
-	// adjust login button position
-	.first-btn-login {
-		margin-top: 15%;
-		padding-left: 17%;
-	}
-
-	// adjust sign up button link position
-	.second-btn-login {
-		text-align: center;
-		padding-top: 10%;
-		padding-right: 22%;
-	}
+    // adjust tab links padding
+    .tab {
+      padding-left: 10%;
+    }
 
 
+    .big-title {
+        margin-top: 25%;
+    }
 
-	//  =============== Sign Up Page ===============
-	// adjust sign up button position
-	.first-btn-signup {
-		margin-top: 15%;
-		padding-left: 25%;
-	}
+    // ================= Lighting page =========
+    .lighting-title {
+      padding-top: 10%;
+    }
 
-	// adjust login button link position
-	.second-btn-signup {
-		text-align: center;
-		padding-top: 10%;
-		padding-right: 22%;
-	}
-
-	// =========== home page category button =========
-	.category-btn {
-		margin-top: 15%;
-		margin-left: 22%;
-	}
-
-	// logout button
-	.logout-sign {
-		padding-right: 8%;
-		padding-top: 4%;
-		padding-bottom: 2%;
-	}
-
-	// ======= door modal pop-up screen =======
-	.full-width {
-		padding-left: 0;
-		margin-top: 30%;
-	}
-
-	// ======camera page =========
-	.camera-wrapper {
-		display: grid;
-		grid-template-columns: 1fr;
-		row-gap: 1rem;
-		text-align: center;
-	}
-
-	//======== living room =======
-	.tablet-screen {
-		display: none;
-	}
-
-	.living-room-status-info p {
-		@include para-style(0.7rem, $bodyff);
-		padding: 5%;
-	}
-
-	// ================= Lighting page =========
-	.lighting-title {
-		padding-top: 10%;
-	}
+  
 
 }
 
-  // =============== tablet display ============
+
+@media only screen and (min-width: 420px){
+    .category-btn{
+      padding-top: 8%;
+      margin-left: 22%;
+    }
+
+    .home-status{
+      //padding-top: 1%;
+      padding-bottom: 1%;
+      ul li {
+        font-size: 0.8rem;
+      }
+    }
+
+    .category-box {
+      padding: 7%;
+    }
+   
+    .icon-automate, .icon-security, .icon-statistic {
+      padding-top: 0;
+    }
+
+}
+
+@media only screen and (min-width: 600px){
+  .greeting h1{
+    font-size: $h2fs*1.7;
+  }
+
+  .greeting h2 {
+    font-size: $h2fs*1.5;
+  }
+  
+  .category-btn{
+    padding-top: 15%;
+  }
+
+  .home-status ul li {
+      font-size: 1rem;
+    }
+  
+  .category-box {
+      padding: 15%;
+  }
+
+  .profile small {
+    font-size: $bodyfs*1.5;
+   }
+  
+  .title {
+      @include para-style($h2fs*2, $bodyff);
+      
+  }
+  
+  // button text on TeReo language
+  .category-group-font p {
+      @include para-style($h2fs*1.5, $bodyff);
+  }
+
+  // logout icon
+  .fa-sign-out-alt{
+      font-size: $h2fs*1.5;
+  }
+
+  // logout text
+  .logout-sign a {
+      font-size: $h1fs*1.3;
+  }   
+
+}
+
+
+  // ===================== tablet display ==================
   @media only screen and (min-width: 768px) {
     // ====== loading page ========
     .logo {
@@ -178,10 +193,6 @@
       @include para-style($h2fs*1.5, $bodyff);
     }
 
-    // style icons on home page category selection
-    .icon-automate, .icon-security, .icon-statistic {
-      padding-top: 0;
-    }
 
     .header-background {
       height: 400px;
@@ -191,6 +202,8 @@
     .category-btn{
       float: left;
       width: 70%;
+      margin-top: 0;
+      padding-top: 0;
     }
 
     .category-box {
@@ -215,17 +228,15 @@
 
 
 
-    // logout button
-    .logout-sign {
-      float: right;
-      padding: 5% 5%;
+    // logout icon
+    .fa-sign-out-alt{
+      font-size: $h2fs*2;
     }
 
-    // logout icon & text
-    .fa-sign-out-alt, .logout-sign a {
+     // logout text
+    .logout-sign a {
       font-size: $h1fs*1.7;
     }
-
     
 
 // Style Room page
@@ -268,25 +279,18 @@
 }
 
 
-// // adjust paragraph padding
-// .para {
-// 	@extend .tab;
-// }
+  // icons on device page
+  #light-bulb-icon, #thermostat-icon {
+    @include img-size(20%,20%);
+    padding-bottom : 15%;
+    padding-top: 10%;
+  }
 
 
-
-// icons on device page
-#light-bulb-icon, #thermostat-icon {
-	@include img-size(20%,20%);
-	padding-bottom : 15%;
-	padding-top: 10%;
-}
-
-
-// plus icon
-.fa-plus {
-	margin-left: 3%;
-}
+  // plus icon
+  .fa-plus {
+    margin-left: 3%;
+  }
 
 
 
@@ -364,10 +368,21 @@
       @include img-size(11%,11%);
     }
 
+    // span img {
+    //   padding: 5%;
+    // }
 
+    .profile small {
+     font-size: $bodyfs*1.7;
+    }
 
     .profile-img {
-      @include img-size(50%,30%);
+      @include img-size(70%,40%);
+      margin-right: 40%;
+    }
+
+    .category-box{
+      width: 75%;
     }
 
     .category-btn {
@@ -376,10 +391,15 @@
       width: 100%;
       height: 120px;
       margin-left: 3%;
+      
     }
 
-    .title {
-      font-size: 1.5rem;
+    .category-group-font p {
+      font-size: 1.1rem;
+    } 
+
+    .category-group-font .title {
+      font-size: 1.6rem;
     }
 
 
@@ -392,6 +412,7 @@
       padding-top: 55%;
     }
 
+   
 
     .main-container {
       display: grid;
@@ -409,8 +430,12 @@
     }
 
     .home-status ul li {
-      font-size: 1rem;
-      padding: 2%;
+      font-size: 1.2rem;
+      padding: 0;
+    }
+
+    .icon-automate, .icon-security, .icon-statistic {
+      padding-top: 5%;
     }
 
     .modal-content {
@@ -426,7 +451,15 @@
 
     .logout-sign {
       padding-right: 5%;
-      padding-top: 5%;
+      padding-top: 0;
+    }
+
+    .fa-sign-out-alt{
+        font-size: $h2fs*2;
+    }
+    
+    .logout-sign a {
+        font-size: $h1fs*1.5;
     }
 
     .modal-title {
@@ -602,5 +635,44 @@
     .gap {
       padding-top: 2%;
     }
+
+}
+
+
+@media only screen and (min-width:1200px){
+  
+  .home-bck-img {
+    @include img-size(90%, 400px);
+  
+  }
+
+  .header-background {
+    margin-bottom: 25%;
+  }
+
+  .home-status {
+    top: 79%;
+  }
+
+  .profile {
+    padding-top: 30%;
+  }
+
+  .profile-img {
+    @include img-size(60%,120px);
+  }
+
+  .category-box {
+    height: 110px;
+  }
+
+  .category-btn {
+    grid-template-columns: 400px 400px 400px;
+  }
+
+  .logout-sign {
+    padding-right: 3%;
+    
+  }
 
 }
