@@ -15,7 +15,14 @@
       margin-left: 22%;
     }
 
+    .home-status {
+      top: 83%;
+    }
     
+    .logout-sign {
+      padding-top: 4%;
+    }
+
     .tablet-screen {
       display: none;
     }
@@ -67,7 +74,7 @@
     }
 
     .home-status{
-      //padding-top: 1%;
+        top: 83%;
       padding-bottom: 1%;
       ul li {
         font-size: 0.8rem;
@@ -80,6 +87,10 @@
    
     .icon-automate, .icon-security, .icon-statistic {
       padding-top: 0;
+    }
+
+    .logout-sign {
+      padding-top: 4%;
     }
 
 }
@@ -451,7 +462,7 @@
 
     .logout-sign {
       padding-right: 5%;
-      padding-top: 0;
+      padding-top: 3%;
     }
 
     .fa-sign-out-alt{
@@ -647,7 +658,7 @@
   }
 
   .header-background {
-    margin-bottom: 25%;
+    margin-bottom: 24%;
   }
 
   .home-status {
@@ -672,7 +683,21 @@
 
   .logout-sign {
     padding-right: 3%;
-    
+    padding-top: 1%;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1600px){
+  .home-status {
+    top: 75%;
+  }
+
+  .profile-img {
+    max-width: 80%;
+    height: 150px;
   }
 
 }

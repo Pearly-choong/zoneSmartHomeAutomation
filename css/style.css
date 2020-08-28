@@ -339,6 +339,12 @@ hr {
   .category-btn {
     margin-left: 22%; }
 
+  .home-status, .living-room-status {
+    top: 83%; }
+
+  .logout-sign {
+    padding-top: 4%; }
+
   .tablet-screen {
     display: none; }
 
@@ -371,6 +377,7 @@ hr {
     margin-left: 22%; }
 
   .home-status, .living-room-status {
+    top: 83%;
     padding-bottom: 1%; }
     .home-status ul li, .living-room-status ul li {
       font-size: 0.8rem; }
@@ -379,7 +386,10 @@ hr {
     padding: 7%; }
 
   .icon-automate, .icon-security, .icon-statistic, .icon-security, .icon-statistic {
-    padding-top: 0; } }
+    padding-top: 0; }
+
+  .logout-sign {
+    padding-top: 4%; } }
 @media only screen and (min-width: 600px) {
   .greeting h1 {
     font-size: 1.7rem; }
@@ -619,7 +629,7 @@ hr {
 
   .logout-sign {
     padding-right: 5%;
-    padding-top: 0; }
+    padding-top: 3%; }
 
   .fa-sign-out-alt {
     font-size: 2rem; }
@@ -758,7 +768,7 @@ hr {
     height: 400px; }
 
   .header-background {
-    margin-bottom: 25%; }
+    margin-bottom: 24%; }
 
   .home-status, .living-room-status {
     top: 79%; }
@@ -777,7 +787,15 @@ hr {
     grid-template-columns: 400px 400px 400px; }
 
   .logout-sign {
-    padding-right: 3%; } }
+    padding-right: 3%;
+    padding-top: 1%; } }
+@media only screen and (min-width: 1600px) {
+  .home-status, .living-room-status {
+    top: 75%; }
+
+  .profile-img {
+    max-width: 80%;
+    height: 150px; } }
 .fa-spinner {
   color: #EF502D;
   font-size: 2rem; }
@@ -911,7 +929,6 @@ hr {
 .home-status, .living-room-status {
   position: absolute;
   z-index: 1;
-  top: 83%;
   background-color: rgba(0, 0, 0, 0.4);
   width: 90%;
   margin-left: 5%; }
@@ -942,7 +959,6 @@ small {
 .logout-sign {
   float: right;
   padding-right: 8%;
-  padding-top: 4%;
   padding-bottom: 2%; }
 
 .fa-sign-out-alt {
