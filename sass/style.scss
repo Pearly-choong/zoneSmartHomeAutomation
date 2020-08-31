@@ -268,11 +268,11 @@ small {
 // }
 
 // icons on device page
-#light-bulb-icon, #thermostat-icon {
-	@include img-size(50%,50%);
-	padding-bottom : 15%;
-	padding-top: 10%;
-}
+// #light-bulb-icon, #thermostat-icon {
+// 	@include img-size(50%,50%);
+// 	padding-bottom : 15%;
+// 	padding-top: 10%;
+// }
 
 
 // plus icon
@@ -298,17 +298,17 @@ small {
 // }
 
 
-// style icons on security page
-#burglar-icon, #smoke-icon {
-	@extend #light-bulb-icon;
-}
+// // style icons on security page
+// #burglar-icon, #smoke-icon {
+// 	@extend #light-bulb-icon;
+// }
 
 
-#door-icon {
-	@include img-size(60%,60%);
-	padding-top: 10%;
-	padding-bottom: 10%;
-}
+// #door-icon {
+// 	@include img-size(60%,60%);
+// 	padding-top: 10%;
+// 	padding-bottom: 10%;
+// }
 
 
 .modal-header {
@@ -394,6 +394,10 @@ small {
 	margin-left: 10%;
 }
 
+.camera-big-container {
+	width: 100%;
+	margin: 0;
+}
 
 .camera-container {
 	position: relative;
@@ -403,7 +407,7 @@ small {
 	position: absolute;
 	z-index: 1;
 	top: 13px;
-	left: 20px;
+	//left: 20px;
 
 	p {
 		color: $green;

@@ -186,33 +186,6 @@
 }
 
 
-
-// // ==================  bottom main navbar ==================
-// .nav {
-// 	position: fixed;
-// 	left: 0;
-// 	bottom: 0;
-// 	width: 100%;
-// 	border: 1px solid #BFBFBF;
-// 	box-shadow: 2px 2px 2px 2px #888888;
-// 	background-color: white;
-// 	ul {
-// 		text-align: center;
-// 		padding: 8%;
-
-// 			li img {
-// 			@include img-size (30%,30%);
-// 			}
-
-// 			li {
-// 				color: $lightGrey;
-// 				@include para-style(0.7rem,$bodyff);
-// 				padding-bottom: 3%;
-// 				} //li finished here
-// 	}//ul list finished	here
-// }//nav finished here
-
-
 .fa-home, .fa-wifi, .fa-shield-alt, .fa-chart-bar {
 	font-size: 1.5rem;
 	color: $lightGrey;

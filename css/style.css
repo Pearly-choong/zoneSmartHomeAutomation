@@ -267,7 +267,6 @@ hr {
   font-size: 0.8rem;
   font-family: "Lato", sans-serif;
   text-align: left;
-  padding-left: 5%;
   margin-bottom: 5%; }
 
 .back-img {
@@ -357,6 +356,12 @@ hr {
     row-gap: 1rem;
     text-align: center; }
 
+  .camera-container-text, .room-container-record {
+    left: 5%; }
+
+  .camera-text {
+    padding-left: 5%; }
+
   .header {
     margin-bottom: 10%; }
 
@@ -382,6 +387,18 @@ hr {
       .room-border .center img, .statistic-border .center img, .device-border .center img, .security-border .center img {
         width: 80%;
         height: 50%; }
+
+  #light-bulb-icon, #thermostat-icon, #burglar-icon, #smoke-icon {
+    width: 50%;
+    height: 50%;
+    padding-bottom: 15%;
+    padding-top: 10%; }
+
+  #door-icon {
+    width: 60%;
+    height: 60%;
+    padding-top: 10%;
+    padding-bottom: 10%; }
 
   .lighting-title {
     padding-top: 10%; }
@@ -455,7 +472,19 @@ hr {
         color: #333;
         font-size: 0.7rem;
         font-family: "Lato", sans-serif;
-        padding-bottom: 3%; } }
+        padding-bottom: 3%; }
+
+  .camera-container-text, .room-container-record {
+    left: 12%; }
+
+  .camera-text {
+    padding-left: 12%; } }
+@media only screen and (min-width: 500px) {
+  .camera-container-text, .room-container-record {
+    left: 18%; }
+
+  .camera-text {
+    padding-left: 18%; } }
 @media only screen and (min-width: 600px) {
   .back-img {
     height: 1000px; }
@@ -510,7 +539,34 @@ hr {
       justify-content: center; }
       .room-border .center img, .statistic-border .center img, .device-border .center img, .security-border .center img {
         width: 50%;
-        height: 40%; } }
+        height: 40%; }
+
+  #light-bulb-icon, #thermostat-icon, #burglar-icon, #smoke-icon {
+    width: 50%;
+    height: 50%;
+    padding-bottom: 15%;
+    padding-top: 10%; }
+
+  #door-icon, #camera-icon {
+    width: 60%;
+    height: 60%;
+    padding-top: 10%;
+    padding-bottom: 10%; }
+
+  .camera-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    text-align: center; }
+
+  .camera-container-text, .room-container-record {
+    left: 25%; }
+
+  .camera-text {
+    padding-left: 25%; } }
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  .tablet-screen {
+    display: none; } }
 @media only screen and (min-width: 768px) {
   .logo {
     width: 30%; }
@@ -592,26 +648,20 @@ hr {
   .logout-sign a {
     font-size: 2.21rem; }
 
-  .room-border, .statistic-border, .security-border {
-    padding: 1%; }
-    .room-border .center img, .statistic-border .center img, .security-border .center img {
-      width: 50%;
-      height: 40%; }
-
-  .device-border {
-    padding: 1%; }
-    .device-border .center img {
-      width: 50%;
-      height: 40%; }
-
-  #light-bulb-icon, #burglar-icon, #smoke-icon, #thermostat-icon {
-    width: 20%;
-    height: 20%;
-    padding-bottom: 15%;
-    padding-top: 10%; }
+  .room-border .center img, .statistic-border .center img, .device-border .security-border .center img {
+    width: 50%;
+    height: 40%; }
 
   .fa-plus {
-    margin-left: 3%; } }
+    margin-left: 3%; }
+
+  .camera-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 2%; }
+
+  .camera-container-text, .room-container-record {
+    left: 10%; } }
 @media only screen and (min-width: 1024px) {
   .logo {
     width: 20%; }
@@ -658,13 +708,13 @@ hr {
     padding-right: 10%; }
 
   .header-setting-icon {
-    width: 10%;
-    height: 10%;
+    width: 9%;
+    height: 9%;
     margin-left: 20%; }
 
   .header-notification-icon {
-    width: 11%;
-    height: 11%; }
+    width: 10%;
+    height: 10%; }
 
   .profile small {
     font-size: 1.53rem; }
@@ -784,6 +834,18 @@ hr {
   .fa-plus {
     font-size: 1.5rem; }
 
+  #light-bulb-icon, #thermostat-icon, #burglar-icon, #smoke-icon {
+    width: 35%;
+    height: 35%;
+    padding-bottom: 15%;
+    padding-top: 8%; }
+
+  #door-icon, #camera-icon {
+    width: 40%;
+    height: 40%;
+    padding-top: 5%;
+    padding-bottom: 8%; }
+
   .full-width {
     margin-top: 13%;
     padding-left: 0; }
@@ -806,8 +868,14 @@ hr {
   .camera-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 10%;
+    margin-left: 3%;
     padding-top: 2%; }
+
+  .camera-container-text, .room-container-record {
+    left: 12%; }
+
+  .camera-text {
+    padding-left: 9%; }
 
   .camera-img {
     width: 400px;
@@ -897,14 +965,26 @@ hr {
 
   .logout-sign {
     padding-right: 3%;
-    padding-top: 1%; } }
+    padding-top: 1%; }
+
+  .camera-container-text, .room-container-record {
+    left: 23%; }
+
+  .camera-text {
+    padding-left: 20%; } }
 @media only screen and (min-width: 1600px) {
   .home-status, .living-room-status {
     top: 75%; }
 
   .profile-img {
     max-width: 80%;
-    height: 150px; } }
+    height: 150px; }
+
+  .camera-container-text, .room-container-record {
+    left: 30%; }
+
+  .camera-text {
+    padding-left: 30%; } }
 .fa-spinner {
   color: #EF502D;
   font-size: 2rem; }
@@ -1071,12 +1151,6 @@ small {
   height: 390px;
   display: none; }
 
-#light-bulb-icon, #burglar-icon, #smoke-icon, #thermostat-icon {
-  width: 50%;
-  height: 50%;
-  padding-bottom: 15%;
-  padding-top: 10%; }
-
 .fa-plus {
   margin-left: 3%; }
 
@@ -1087,12 +1161,6 @@ small {
   row-gap: 1rem;
   margin: 10%;
   margin-top: 7%; }
-
-#door-icon {
-  width: 60%;
-  height: 60%;
-  padding-top: 10%;
-  padding-bottom: 10%; }
 
 .modal-header {
   background-color: #EF502D;
@@ -1150,14 +1218,17 @@ small {
 .fa-plus-more {
   margin-left: 10%; }
 
+.camera-big-container {
+  width: 100%;
+  margin: 0; }
+
 .camera-container, .room-container {
   position: relative; }
 
 .camera-container-text, .room-container-record {
   position: absolute;
   z-index: 1;
-  top: 13px;
-  left: 20px; }
+  top: 13px; }
   .camera-container-text p, .room-container-record p {
     color: #34D293;
     font-weight: bold;
