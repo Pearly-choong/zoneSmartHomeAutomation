@@ -40,19 +40,29 @@
 
 
 // =============== Login & Sign Up Page ===================
-
 // adjust padding for login and sign up title, form layout
 .space {
 	padding-left: 10%;
 }
 
 
-// style login / sign up form
-.registration-form {
-	margin-top: 10%;
-	margin-left: 10%;
-	// width: 100%;
+// adjust sign up button link position
+.second-btn-login {
+	text-align: center;
 }
+
+//  =============== Sign Up Page ===============
+// adjust login button link position
+.second-btn-signup {
+	text-align: center;
+}
+
+
+// style login / sign up form
+// .registration-form {
+// 	margin-top: 10%;
+// 	margin-left: 10%;
+// }
 
 .username, .password, .email {
 	@include para-style($h1fs, $bodyff);
@@ -90,34 +100,6 @@
 }
 
 
-	//  =============== Login Page =============
-	// adjust login button position
-	.first-btn-login {
-		margin-top: 15%;
-		padding-left: 17%;
-	}
-
-	// adjust sign up button link position
-	.second-btn-login {
-		text-align: center;
-		padding-top: 10%;
-		padding-right: 22%;
-	}
-
-
-	//  =============== Sign Up Page ===============
-	// adjust sign up button position
-	.first-btn-signup {
-		margin-top: 15%;
-		padding-left: 25%;
-	}
-
-	// adjust login button link position
-	.second-btn-signup {
-		text-align: center;
-		padding-top: 10%;
-		padding-right: 22%;
-	}
 
 
 
@@ -234,21 +216,21 @@ small {
 // =================== Automate Page ===============
 
 
-// Style Room page
-.room-border {
-	border: 2px solid $orange;
-	padding: 5%;
-	box-shadow: $boxShadow;
+// // Style Room page
+// .room-border {
+// 	border: 2px solid $orange;
+// 	padding: 5%;
+// 	box-shadow: $boxShadow;
 
-	 .center {
-		display: flex;
-		justify-content: center;
+// 	 .center {
+// 		display: flex;
+// 		justify-content: center;
 
-			img {
-				@include img-size(80%,50%);
-			} //image finished here
-	 } // center finished here
-} // style border finished here
+// 			img {
+// 				@include img-size(80%,50%);
+// 			} //image finished here
+// 	 } // center finished here
+// } // style border finished here
 
 
 
@@ -281,9 +263,9 @@ small {
 
 
 // style Device page
-.device-border {
-	@extend .room-border;
-}
+// .device-border {
+// 	@extend .room-border;
+// }
 
 // icons on device page
 #light-bulb-icon, #thermostat-icon {
@@ -311,9 +293,9 @@ small {
 
 // ===================== Security Page ===============
 
-.security-border {
-	@extend .room-border;
-}
+// .security-border {
+// 	@extend .room-border;
+// }
 
 
 // style icons on security page

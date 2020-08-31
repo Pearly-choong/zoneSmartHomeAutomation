@@ -143,26 +143,6 @@ a {
   padding: 3%;
   color: white; }
 
-.nav {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  border: 1px solid #BFBFBF;
-  box-shadow: 2px 2px 2px 2px #888888;
-  background-color: white; }
-  .nav ul {
-    text-align: center;
-    padding: 8%; }
-    .nav ul li img {
-      width: 30%;
-      height: 30%; }
-    .nav ul li {
-      color: #333;
-      font-size: 0.7rem;
-      font-family: "Lato", sans-serif;
-      padding-bottom: 3%; }
-
 .fa-home, .active-icon, .fa-wifi, .fa-shield-alt, .fa-chart-bar {
   font-size: 1.5rem;
   color: #333;
@@ -197,7 +177,7 @@ p {
   text-align: center; }
 
 .load-text {
-  margin-top: 90%; }
+  margin-top: 60%; }
 
 .text h1 {
   font-size: 2.6rem;
@@ -297,14 +277,14 @@ hr {
   width: 100%;
   padding: 0;
   margin: 0;
-  height: 560px; }
+  height: 667px; }
 
 .logo {
-  padding-top: 5%;
+  padding-top: 10%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%; }
+  width: 50%; }
 
 .home-bck-img {
   width: 90%;
@@ -336,6 +316,29 @@ hr {
   height: 230px; }
 
 @media only screen and (max-width: 600px) {
+  .back-img {
+    height: 820px; }
+
+  .registration-form {
+    margin-top: 10%;
+    margin-left: 10%; }
+
+  .first-btn-login {
+    margin-top: 15%;
+    padding-left: 17%; }
+
+  .second-btn-login {
+    padding-top: 5%;
+    padding-right: 20%; }
+
+  .first-btn-signup {
+    margin-top: 15%;
+    padding-left: 25%; }
+
+  .second-btn-signup {
+    padding-top: 10%;
+    padding-right: 20%; }
+
   .category-btn {
     margin-left: 22%; }
 
@@ -369,9 +372,52 @@ hr {
   .big-title {
     margin-top: 25%; }
 
+  .room-border, .statistic-border, .device-border, .security-border {
+    border: 2px solid #EF502D;
+    padding: 5%;
+    box-shadow: 5px 10px 10px #888888; }
+    .room-border .center, .statistic-border .center, .device-border .center, .security-border .center {
+      display: flex;
+      justify-content: center; }
+      .room-border .center img, .statistic-border .center img, .device-border .center img, .security-border .center img {
+        width: 80%;
+        height: 50%; }
+
   .lighting-title {
-    padding-top: 10%; } }
+    padding-top: 10%; }
+
+  .nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid #BFBFBF;
+    box-shadow: 2px 2px 2px 2px #888888;
+    background-color: white; }
+    .nav ul {
+      text-align: center;
+      padding: 8%; }
+      .nav ul li img {
+        width: 30%;
+        height: 30%; }
+      .nav ul li {
+        color: #333;
+        font-size: 0.7rem;
+        font-family: "Lato", sans-serif;
+        padding-bottom: 3%; } }
 @media only screen and (min-width: 420px) {
+  .first-btn-login {
+    margin-top: 15%;
+    padding-left: 17%; }
+
+  .first-btn-signup {
+    margin-top: 15%;
+    padding-left: 25%; }
+
+  .registration-form {
+    margin-top: 10%;
+    margin-left: 10%; }
+
   .category-btn {
     padding-top: 8%;
     margin-left: 22%; }
@@ -389,8 +435,34 @@ hr {
     padding-top: 0; }
 
   .logout-sign {
-    padding-top: 4%; } }
+    padding-top: 4%; }
+
+  .nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid #BFBFBF;
+    box-shadow: 2px 2px 2px 2px #888888;
+    background-color: white; }
+    .nav ul {
+      text-align: center;
+      padding: 8%; }
+      .nav ul li img {
+        width: 30%;
+        height: 30%; }
+      .nav ul li {
+        color: #333;
+        font-size: 0.7rem;
+        font-family: "Lato", sans-serif;
+        padding-bottom: 3%; } }
 @media only screen and (min-width: 600px) {
+  .back-img {
+    height: 1000px; }
+
+  .my-container {
+    padding-top: 15%; }
+
   .greeting h1 {
     font-size: 1.7rem; }
 
@@ -421,7 +493,24 @@ hr {
     font-size: 1.5rem; }
 
   .logout-sign a {
-    font-size: 1.69rem; } }
+    font-size: 1.69rem; }
+
+  .header {
+    margin-bottom: 5%; }
+
+  .tab, .para {
+    padding-left: 10%; }
+
+  .room-border, .statistic-border, .device-border, .security-border {
+    border: 2px solid #EF502D;
+    padding: 5%;
+    box-shadow: 5px 10px 10px #888888; }
+    .room-border .center, .statistic-border .center, .device-border .center, .security-border .center {
+      display: flex;
+      justify-content: center; }
+      .room-border .center img, .statistic-border .center img, .device-border .center img, .security-border .center img {
+        width: 50%;
+        height: 40%; } }
 @media only screen and (min-width: 768px) {
   .logo {
     width: 30%; }
@@ -433,10 +522,24 @@ hr {
     margin-top: 30%; }
 
   .back-img {
-    height: 580px; }
+    height: 1080px; }
 
   .fa-spinner {
     font-size: 3rem; }
+
+  .first-btn-login {
+    padding-left: 30%; }
+
+  .second-btn-login {
+    padding-top: 3%;
+    padding-right: 17%; }
+
+  .first-btn-signup {
+    padding-left: 30%; }
+
+  .second-btn-signup {
+    padding-top: 3%;
+    padding-right: 22%; }
 
   .greeting h1 {
     font-size: 2rem; }
@@ -489,30 +592,17 @@ hr {
   .logout-sign a {
     font-size: 2.21rem; }
 
-  .room-border, .device-border, .security-border, .statistic-border, .device-border {
-    border: 2px solid #EF502D;
-    padding: 5%;
-    box-shadow: 5px 10px 10px #888888; }
-    .room-border .center, .device-border .center, .security-border .center, .statistic-border .center, .device-border .center {
-      display: flex;
-      justify-content: center; }
-      .room-border .center img, .device-border .center img, .security-border .center img, .statistic-border .center img, .device-border .center img {
-        width: 80%;
-        height: 50%; }
+  .room-border, .statistic-border, .security-border {
+    padding: 1%; }
+    .room-border .center img, .statistic-border .center img, .security-border .center img {
+      width: 50%;
+      height: 40%; }
 
-  .tab button, .para button {
-    border: none;
-    background-color: white; }
-
-  .tab button:hover, .para button:hover, .tab button:active, .para button:active {
-    background-color: #EF502D;
-    border-radius: 3px;
-    padding: 2%;
-    color: white; }
-
-  .tab-content {
-    height: 390px;
-    display: none; }
+  .device-border {
+    padding: 1%; }
+    .device-border .center img {
+      width: 50%;
+      height: 40%; }
 
   #light-bulb-icon, #burglar-icon, #smoke-icon, #thermostat-icon {
     width: 20%;
@@ -524,46 +614,53 @@ hr {
     margin-left: 3%; } }
 @media only screen and (min-width: 1024px) {
   .logo {
-    width: 30%; }
+    width: 20%; }
 
   .text {
     padding-top: 10%; }
 
   .load-text {
-    margin-top: 30%; }
+    margin-top: 10%; }
 
   .back-img {
-    height: 580px; }
+    height: 1200px; }
 
   .fa-spinner {
     font-size: 3rem; }
 
+  .registration-form {
+    margin-top: 5%; }
+
+  .my-container {
+    padding-top: 10%; }
+
   .big-title {
-    margin-top: 10%; }
+    margin-top: 0; }
 
   .registration-hr {
     width: 8%;
     margin-left: 13%; }
 
   .first-btn-login {
-    margin-top: 10%;
+    margin-top: 8%;
     padding-left: 35%; }
 
   .second-btn-login {
-    padding-top: 5%;
-    padding-left: 35%; }
+    padding-top: 0;
+    padding-right: 14%; }
 
   .first-btn-signup {
     margin-top: 8%;
     padding-left: 40%; }
 
   .second-btn-signup {
-    margin-top: 3%;
-    padding-left: 36%; }
+    padding-top: 0;
+    padding-right: 10%; }
 
   .header-setting-icon {
     width: 10%;
-    height: 10%; }
+    height: 10%;
+    margin-left: 20%; }
 
   .header-notification-icon {
     width: 11%;
@@ -647,10 +744,10 @@ hr {
     grid-template-columns: 800px;
     box-shadow: 2px 2px 2px #888888;
     width: 20%;
-    height: 675px;
+    top: 0;
     background-color: white; }
     .nav ul {
-      padding: 10%; }
+      padding: 15%; }
       .nav ul li {
         font-size: 0.9rem; }
 
@@ -675,11 +772,7 @@ hr {
 
   .automate-big-container, .security-big-container {
     width: 55%;
-    margin-left: 30%;
-    padding-top: 2%; }
-
-  .para {
-    padding-bottom: 5%; }
+    margin-left: 30%; }
 
   .nav-hr {
     margin-left: 12%;
@@ -763,6 +856,22 @@ hr {
   .gap {
     padding-top: 2%; } }
 @media only screen and (min-width: 1200px) {
+  .first-btn-login {
+    margin-top: 8%;
+    padding-left: 38%; }
+
+  .second-btn-login {
+    padding-top: 0;
+    padding-right: 11%; }
+
+  .first-btn-signup {
+    margin-top: 8%;
+    padding-left: 40%; }
+
+  .second-btn-signup {
+    padding-top: 0;
+    padding-right: 10%; }
+
   .home-bck-img {
     width: 90%;
     height: 400px; }
@@ -818,9 +927,11 @@ hr {
 .space {
   padding-left: 10%; }
 
-.registration-form {
-  margin-top: 10%;
-  margin-left: 10%; }
+.second-btn-login {
+  text-align: center; }
+
+.second-btn-signup {
+  text-align: center; }
 
 .username, .password, .email {
   font-size: 1.3rem;
@@ -848,24 +959,6 @@ hr {
 .forgot-password {
   float: right;
   padding-right: 20%; }
-
-.first-btn-login {
-  margin-top: 15%;
-  padding-left: 17%; }
-
-.second-btn-login {
-  text-align: center;
-  padding-top: 10%;
-  padding-right: 22%; }
-
-.first-btn-signup {
-  margin-top: 15%;
-  padding-left: 25%; }
-
-.second-btn-signup {
-  text-align: center;
-  padding-top: 10%;
-  padding-right: 22%; }
 
 .col-1 {
   width: 8.33%;
@@ -963,17 +1056,6 @@ small {
 
 .fa-sign-out-alt {
   color: #34D293; }
-
-.room-border, .device-border, .security-border, .statistic-border {
-  border: 2px solid #EF502D;
-  padding: 5%;
-  box-shadow: 5px 10px 10px #888888; }
-  .room-border .center, .device-border .center, .security-border .center, .statistic-border .center {
-    display: flex;
-    justify-content: center; }
-    .room-border .center img, .device-border .center img, .security-border .center img, .statistic-border .center img {
-      width: 80%;
-      height: 50%; }
 
 .tab button, .para button {
   border: none;

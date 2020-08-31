@@ -6,11 +6,47 @@
 // @media only screen and (min-width: 768px) and (max-width:1024px) and (orientation: landscape){
 
 
-  
   // =============== specific for mobile display (iphone 6/7/8) ============
 // media query for mobile
 @media only screen and (max-width: 600px) {
   // @media only screen and (min-width: 375px) and (max-width: 667px){
+    
+  .back-img {
+    height: 820px;
+  }
+
+  .registration-form {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  //  =============== Login Page =============
+	// adjust login button position
+	.first-btn-login {
+    margin-top: 15%;
+		padding-left: 17%;
+	}
+
+	// adjust sign up button link position
+	.second-btn-login {
+    padding-top: 5%;
+		padding-right: 20%;
+	}
+
+
+	//  =============== Sign Up Page ===============
+	// adjust sign up button position
+	.first-btn-signup {
+    margin-top: 15%;
+		padding-left: 25%;
+	}
+
+	// adjust login button link position
+	.second-btn-signup {
+    padding-top: 10%;
+		padding-right: 20%;
+	}
+
     .category-btn{
       margin-left: 22%;
     }
@@ -57,10 +93,56 @@
         margin-top: 25%;
     }
 
+    // ========================= automate page =========  
+    // Style Room page
+    .room-border, .device-border, .security-border {
+      border: 2px solid $orange;
+      padding: 5%;
+      box-shadow: $boxShadow;
+
+      .center {
+        display: flex;
+        justify-content: center;
+
+          img {
+            @include img-size(80%,50%);
+          } //image finished here
+      } // center finished here
+    } // style border finished here
+
+
+
     // ================= Lighting page =========
     .lighting-title {
       padding-top: 10%;
     }
+
+
+    // ==================  bottom main navbar ==================
+    .nav {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      border: 1px solid #BFBFBF;
+      box-shadow: 2px 2px 2px 2px #888888;
+      background-color: white;
+      ul {
+        text-align: center;
+        padding: 8%;
+
+          li img {
+          @include img-size (30%,30%);
+          }
+
+          li {
+            color: $lightGrey;
+            @include para-style(0.7rem,$bodyff);
+            padding-bottom: 3%;
+            } //li finished here
+      }//ul list finished	here
+    }//nav finished here
+    
 
   
 
@@ -68,7 +150,23 @@
 
 
 @media only screen and (min-width: 420px){
-    .category-btn{
+  
+	.first-btn-login {
+    margin-top: 15%;
+		padding-left: 17%;
+  }
+  
+  .first-btn-signup {
+    margin-top: 15%;
+		padding-left: 25%;
+  }
+  
+  .registration-form {
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  .category-btn{
       padding-top: 8%;
       margin-left: 22%;
     }
@@ -93,9 +191,43 @@
       padding-top: 4%;
     }
 
+    // ==================  bottom main navbar ==================
+  .nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid #BFBFBF;
+    box-shadow: 2px 2px 2px 2px #888888;
+    background-color: white;
+    ul {
+      text-align: center;
+      padding: 8%;
+
+        li img {
+        @include img-size (30%,30%);
+        }
+
+        li {
+          color: $lightGrey;
+          @include para-style(0.7rem,$bodyff);
+          padding-bottom: 3%;
+          } //li finished here
+    }//ul list finished	here
+  }//nav finished here
+  
+
 }
 
 @media only screen and (min-width: 600px){
+  .back-img {
+    height: 1000px;
+  }  
+  
+  .my-container {
+    padding-top: 15%;
+  }
+
   .greeting h1{
     font-size: $h2fs*1.7;
   }
@@ -140,6 +272,33 @@
       font-size: $h1fs*1.3;
   }   
 
+  .header {
+    margin-bottom: 5%;
+  }
+
+  .tab {
+    padding-left: 10%;
+  }
+
+  // Style Room page
+  .room-border, .device-border, .security-border {
+    border: 2px solid $orange;
+    padding: 5%;
+    box-shadow: $boxShadow;
+
+    .center {
+      display: flex;
+      justify-content: center;
+
+        img {
+          @include img-size(50%,40%);
+        } //image finished here
+    } // center finished here
+  } // style border finished here
+
+
+
+
 }
 
 
@@ -159,7 +318,7 @@
     }
 
     .back-img {
-      height: 580px;
+      height: 1080px;
     }
 
     .fa-spinner {
@@ -167,6 +326,30 @@
     }
 
 
+  	//  =============== Login Page =============
+    // adjust login button position
+    .first-btn-login {
+      padding-left: 30%;
+    }
+
+    // adjust sign up button link position
+    .second-btn-login {
+      padding-top: 3%;
+      padding-right: 17%;
+    }
+
+
+    //  =============== Sign Up Page ===============
+    // adjust sign up button position
+    .first-btn-signup {
+      padding-left: 30%;
+    }
+
+    // adjust login button link position
+    .second-btn-signup {
+      padding-top: 3%;
+      padding-right: 22%;
+    }
 
 
     // ========== home page ============
@@ -251,43 +434,45 @@
     
 
 // Style Room page
-.room-border, .device-border {
-	border: 2px solid $orange;
-	padding: 5%;
-	box-shadow: $boxShadow;
-
+.room-border,  .security-border {
+  padding: 1%;
 	 .center {
-		display: flex;
-		justify-content: center;
-
 			img {
-				@include img-size(80%,50%);
+				@include img-size(50%,40%);
 			} //image finished here
 	 } // center finished here
 } // style border finished here
 
-
-
-
-.tab button {
-	border: none;
-	background-color: white;
-
+.device-border {
+  padding: 1%;
+  .center {
+    img{
+      @include img-size(50%,40%);
+    }
+  }
 }
 
 
-.tab button:hover, .tab button:active{
-	background-color: $orange;
-	border-radius: 3px;
-	padding: 2%;
-	color: white;
-}
 
-// style the tab content
-.tab-content {
-	height: 390px;
-	display: none;
-}
+// .tab button {
+// 	border: none;
+// 	background-color: white;
+
+// }
+
+
+// .tab button:hover, .tab button:active{
+// 	background-color: $orange;
+// 	border-radius: 3px;
+// 	padding: 2%;
+// 	color: white;
+// }
+
+// // style the tab content
+// .tab-content {
+// 	height: 390px;
+// 	display: none;
+// }
 
 
   // icons on device page
@@ -311,12 +496,11 @@
 
 
 
-
 // landscape and bigger screen size
 @media only screen and (min-width: 1024px) {
     // ====== loading page ========
     .logo {
-      width: 30%;
+      width: 20%;
     }
 
     .text {
@@ -324,11 +508,11 @@
     }
 
     .load-text {
-      margin-top: 30%;
+      margin-top: 10%;
     }
 
     .back-img {
-      height: 580px;
+      height: 1200px;
     }
 
     .fa-spinner {
@@ -337,8 +521,16 @@
 
 
     // ========= login and sign up page ======
+    .registration-form {
+      margin-top: 5%;
+    }
+
+    .my-container{
+      padding-top: 10%;
+    }
+
     .big-title {
-      margin-top: 10%;
+      margin-top: 0;
     }
 
     .registration-hr {
@@ -347,13 +539,13 @@
     }
 
     .first-btn-login {
-      margin-top: 10%;
+      margin-top: 8%;
       padding-left: 35%;
     }
 
     .second-btn-login {
-      padding-top: 5%;
-      padding-left: 35%;
+      padding-top: 0;
+      padding-right: 14%;
     }
 
 
@@ -363,8 +555,8 @@
     }
 
     .second-btn-signup {
-      margin-top: 3%;
-      padding-left: 36%;
+      padding-top: 0;
+      padding-right: 10%;
     }
 
 
@@ -373,6 +565,7 @@
     // ========== home page ============
     .header-setting-icon {
       @include img-size(10%, 10%);
+      margin-left: 20%;
     }
 
     .header-notification-icon {
@@ -424,7 +617,6 @@
     }
 
    
-
     .main-container {
       display: grid;
       grid-template-columns: 3fr 1fr;
@@ -489,10 +681,11 @@
       grid-template-columns: 800px;
       box-shadow: 2px 2px 2px #888888;
       width: 20%;
-      height: 675px;
+      //height: 700px;
+      top: 0;
       background-color: white;
       ul {
-        padding: 10%;
+        padding: 15%;
         li{
           font-size: 0.9rem;
         }
@@ -531,12 +724,12 @@
     .automate-big-container, .security-big-container {
       width: 55%;
       margin-left: 30%;
-      padding-top: 2%;
+      //padding-top: 2%;
     }
 
-    .para {
-      padding-bottom: 5%;
-    }
+    // .para {
+    //   padding-bottom: 5%;
+    // }
 
     .nav-hr {
       margin-left: 12%;
@@ -651,42 +844,67 @@
 
 
 @media only screen and (min-width:1200px){
-  
-  .home-bck-img {
-    @include img-size(90%, 400px);
-  
-  }
+  // ========= login and sign up page ======
 
-  .header-background {
-    margin-bottom: 24%;
-  }
+    .first-btn-login {
+      margin-top: 8%;
+      padding-left: 38%;
+    }
 
-  .home-status {
-    top: 79%;
-  }
+    .second-btn-login {
+      padding-top: 0;
+      padding-right: 11%;
+    }
 
-  .profile {
-    padding-top: 30%;
-  }
 
-  .profile-img {
-    @include img-size(60%,120px);
-  }
+    .first-btn-signup {
+        margin-top: 8%;
+        padding-left: 40%;
+    }
 
-  .category-box {
-    height: 110px;
-  }
+    .second-btn-signup {
+      padding-top: 0;
+      padding-right: 10%;
+    }
 
-  .category-btn {
-    grid-template-columns: 400px 400px 400px;
-  }
 
-  .logout-sign {
-    padding-right: 3%;
-    padding-top: 1%;
-  }
 
-}
+    .home-bck-img {
+      @include img-size(90%, 400px);
+    
+    }
+
+    .header-background {
+      margin-bottom: 24%;
+    }
+
+    .home-status {
+      top: 79%;
+    }
+
+    .profile {
+      padding-top: 30%;
+    }
+
+    .profile-img {
+      @include img-size(60%,120px);
+    }
+
+    .category-box {
+      height: 110px;
+    }
+
+    .category-btn {
+      grid-template-columns: 400px 400px 400px;
+    }
+
+    .logout-sign {
+      padding-right: 3%;
+      padding-top: 1%;
+    }
+
+
+  }
 
 
 
