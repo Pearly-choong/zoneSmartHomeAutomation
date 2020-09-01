@@ -89,7 +89,7 @@ a {
   margin-right: auto;
   border: 2px solid #EF502D;
   width: 80%;
-  height: 250px;
+  height: 500px;
   margin-top: 10%;
   padding-left: 10%; }
 
@@ -102,8 +102,6 @@ a {
 
 .modal-content-info {
   padding-top: 10%; }
-  .modal-content-info .modal-title {
-    padding-bottom: 20%; }
 
 .fa-door-open, .fa-lightbulb {
   color: #EF502D;
@@ -421,7 +419,17 @@ hr {
         color: #333;
         font-size: 0.7rem;
         font-family: "Lato", sans-serif;
-        padding-bottom: 3%; } }
+        padding-bottom: 3%; }
+
+  .modal-title {
+    padding-bottom: 20%; }
+
+  .new-color {
+    top: 21%; }
+
+  .full-width {
+    padding-left: 0;
+    margin-top: 30%; } }
 @media only screen and (min-width: 420px) {
   .first-btn-login {
     margin-top: 15%;
@@ -478,7 +486,17 @@ hr {
     left: 12%; }
 
   .camera-text {
-    padding-left: 12%; } }
+    padding-left: 12%; }
+
+  .modal-title {
+    padding-bottom: 20%; }
+
+  .new-color {
+    top: 21%; }
+
+  .full-width {
+    padding-left: 0;
+    margin-top: 30%; } }
 @media only screen and (min-width: 500px) {
   .camera-container-text, .room-container-record {
     left: 18%; }
@@ -661,7 +679,20 @@ hr {
     padding-top: 2%; }
 
   .camera-container-text, .room-container-record {
-    left: 10%; } }
+    left: 10%; }
+
+  .modal-content-info p {
+    font-size: 1.2rem; }
+
+  hr {
+    margin-left: 10%; }
+
+  .new-color {
+    top: 25%; }
+
+  .full-width {
+    padding-left: 0;
+    margin-top: 30%; } }
 @media only screen and (min-width: 1024px) {
   .logo {
     width: 20%; }
@@ -971,7 +1002,19 @@ hr {
     left: 23%; }
 
   .camera-text {
-    padding-left: 20%; } }
+    padding-left: 20%; }
+
+  .close-btn-two {
+    top: 23%; }
+
+  .modal-title {
+    padding-bottom: 10%; }
+
+  .modal-content {
+    height: 580px; }
+
+  .new-color {
+    top: 18%; } }
 @media only screen and (min-width: 1600px) {
   .home-status, .living-room-status {
     top: 75%; }
@@ -984,7 +1027,10 @@ hr {
     left: 30%; }
 
   .camera-text {
-    padding-left: 30%; } }
+    padding-left: 30%; }
+
+  .new-color {
+    top: 20%; } }
 .fa-spinner {
   color: #EF502D;
   font-size: 2rem; }
@@ -1180,8 +1226,7 @@ small {
   color: #34D293; }
 
 .new-color {
-  color: white;
-  top: 21%; }
+  color: white; }
 
 .new-line {
   width: 100%;
@@ -1385,9 +1430,5 @@ input:checked + .slider:before {
 
 .fa-fire, .fa-fan, .fa-autoprefixer, .fa-snowflake {
   color: #ccc; }
-
-.full-width {
-  padding-left: 0;
-  margin-top: 30%; }
 
 /*# sourceMappingURL=style.css.map */

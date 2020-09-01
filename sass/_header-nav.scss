@@ -37,11 +37,11 @@
 }
 
 .close-btn {
-	position: absolute;
+  position: absolute;
   top: 3%;
   right: 6%;
-	font-size: 2rem;
-	color: $orange
+  font-size: 2rem;
+  color: $orange
 }
 
 .setting-title {
@@ -102,18 +102,18 @@
 .modal-content {
     background-color: white;
   	margin-left: auto;
-		margin-right: auto;
+	margin-right: auto;
     border: 2px solid $orange;
     width: 80%;
-	  height: 250px;
-		margin-top: 10%;
-		padding-left: 10%;
+	height: 500px;
+	margin-top: 10%;
+	padding-left: 10%;
 }
 
 .close-btn-two {
 	position: absolute;
-  top: 10%;
-  right: 13%;
+  	top: 10%;
+  	right: 13%;
 	font-size: 2rem;
 	color: $orange
 }
@@ -121,17 +121,14 @@
 .modal-content-info {
 	padding-top: 10%;
 
-	.modal-title {
-		padding-bottom: 20%;
-	} // modal-title finished
-} //modal-content-info finished
+} 
 
 
-  .fa-door-open, .fa-lightbulb {
-		color: $orange;
-		font-size: 1.5rem;
-		margin-right: 2%;
-	}
+.fa-door-open, .fa-lightbulb {
+	color: $orange;
+	font-size: 1.5rem;
+	margin-right: 2%;
+}
 
 
 .modal-content-info p {
